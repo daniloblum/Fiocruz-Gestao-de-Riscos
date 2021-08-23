@@ -1,0 +1,139 @@
+
+@import "sidebar.css";
+@import "header.css";
+@import "footer.css";
+@import "colors.css";
+@import "buttons.css";
+@import "recursos-visuais.css";
+
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+@font-face {
+    font-family: bootstrapIcon;
+    src: url(../fonts/bootstrap-icons.woff);
+}
+
+
+/*
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Aleo', serif;
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'bootstrapIcon';
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Aleo', serif;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+a,
+a:visited {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: underline;
+}
+a:hover,
+a:focus {
+    color: var(--primary-color-light);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+.secondary-color {
+    color: var(--secondary-color);
+}
+strong {
+    font-weight: bold;
+}
+
+.figure-caption {
+    font-size: 75%;
+    color: #6c757d;
+    text-align: center;
+}
+
+.figure-caption .fonte,
+.fonte,
+.video-subtitle{
+    font-size: 75%;
+    color: #6c757d;
+    text-align: center;
+}
+
+.figure-caption a, 
+.figure-caption a:visited,
+.video-subtitle,
+.video-subtitle a,
+.video-subtitle a:visited {
+    color: #6c757d;
+    font-weight: 500;
+    text-decoration: none;
+} {
+
+}
+
+body {
+    background-color: #fbfbfb;
+    font-size: 1.25rem;
+}
+
+.main {
+    position: relative;
+}
+
+/* #page-content {
+    min-height: 100vh;
+} */
+
+section {
+    padding: 40px 0;
+}
+
+section .page-nav {
+    border-top: 1px solid var(--color-light);
+    padding: 40px 0;
+    flex-direction: row;
+}
+
+section .page-nav .button-primary {
+    min-width: 30%;
+}
+
+@media (max-width: 767.1px) {
+    section .page-nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1199px) {
+    section .page-nav .button-primary {
+        min-width: 40%;
+    }
+}
+
+/* SVG Mapa do Brasil */
+svg .info .has-info {
+    cursor: pointer;
+}
+svg .info .has-info:hover .has-info--hover {
+    mix-blend-mode:color;    
+}
+
