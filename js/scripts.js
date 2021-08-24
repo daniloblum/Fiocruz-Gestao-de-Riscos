@@ -21,7 +21,7 @@ $(document).ready( function () {
     }
 })
 
-// Unidade 1 / Aula 1 / Topico 5
+// Módulo 1 / Aula 1 / Topico 5
 // Mapa do Brasil 1
 
 function toggleLegenda(item) {
