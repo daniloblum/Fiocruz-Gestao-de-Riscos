@@ -34,7 +34,7 @@
 .sidebar__header {
   padding: 20px;
 }
-.sidebar__header h3 {
+.sidebar__header h4 {
   color: var(--secondary-color-extra-light);
   font-family: 'Archivo', sans-serif !important;
   opacity: 0.7;
