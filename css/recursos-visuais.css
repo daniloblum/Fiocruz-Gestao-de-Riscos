@@ -43,8 +43,6 @@ section {
   border-bottom-right-radius: 0.75rem !important;
 }
 
-
-
 pre {
   background-color: var(--color-light);
   border: 1px dotted var(--color-dark);
@@ -60,7 +58,7 @@ pre {
 .card h4,
 .card h5,
 .card h6 {
-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 /* Heading */
@@ -1110,6 +1108,34 @@ Modal
   margin-top: 0;
 }
 
+.modal-backdrop.show {
+  opacity: 0.75;
+}
+
+.image-to-modal {
+  cursor: zoom-in;
+}
+
+.modal-video .modal-dialog {
+  max-width: 560px;
+}
+
+.modal-video .modal-content,
+.modal-image .modal-content {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-image .modal-content button,
+.modal-video .modal-content button {
+  align-self:flex-end;
+  padding-bottom: 1rem;
+  color: #fff;
+  opacity: 1;
+}
+
 /* -------------------------------- 
 
 Slider
@@ -1247,8 +1273,6 @@ Slider
     background: var(--laranja-over);
   }
 }
-
-
 
 /* Ajusta os botões*/
 .carousel-cards .carousel-control-next {

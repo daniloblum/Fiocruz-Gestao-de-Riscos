@@ -1,9 +1,9 @@
-@import 'sidebar.css';
-@import 'header.css';
-@import 'footer.css';
 @import 'colors.css';
 @import 'fonts.css';
 @import 'buttons.css';
+@import 'sidebar.css';
+@import 'header.css';
+@import 'footer.css';
 @import 'recursos-visuais.css';
 
 .figure-caption {

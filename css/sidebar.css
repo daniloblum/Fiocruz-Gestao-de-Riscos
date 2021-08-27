@@ -27,7 +27,7 @@
   min-height: 100vh;
 }
 .sidebar__inner hr {
-  background: var(--color-light-hover);
+  background: var(--secondary-color-light);
   margin: 0px 20px;
 }
 
