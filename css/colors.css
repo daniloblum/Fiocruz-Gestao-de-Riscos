@@ -14,6 +14,51 @@
     --color-dark:#1e1e1e;
     --color-light:#e6e6e6;
     --color-light-hover:#e6e6e625;
+
+    --color-white: #ffffff;
 }
 
 /* rgb(0, 146, 148); */
+
+.primary-color {
+  color: var(--primary-color);
+}
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+/* Colors */
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+.text-primary-dark {
+  color: var(--primary-color-dark) !important;
+}
+.text-primary-light {
+  color: var(--primary-color-light) !important;
+}
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+.text-secondary-dark {
+  color: var(--secondary-color-dark) !important;
+}
+.text-secondary-light {
+  color: var(--secondary-color-light) !important;
+}
+.text-secondary-extra-light {
+  color: var(--secondary-color-extra-light) !important;
+}
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+.bg-secondary-light {
+  background-color: var(--secondary-color-extra-light) !important;
+}
+.bg-secondary-dark {
+  background-color: var(--secondary-color-dark) !important;
+}
+.bg-color-light {
+  background-color: var(--color-light) !important;
+}

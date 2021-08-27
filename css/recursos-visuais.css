@@ -43,42 +43,7 @@ section {
   border-bottom-right-radius: 0.75rem !important;
 }
 
-/* Colors */
 
-.text-primary {
-  color: var(--primary-color) !important;
-}
-.text-primary-dark {
-  color: var(--primary-color-dark) !important;
-}
-.text-primary-light {
-  color: var(--primary-color-light) !important;
-}
-.text-secondary {
-  color: var(--secondary-color) !important;
-}
-.text-secondary-dark {
-  color: var(--secondary-color-dark) !important;
-}
-.text-secondary-light {
-  color: var(--secondary-color-light) !important;
-}
-.text-secondary-extra-light {
-  color: var(--secondary-color-extra-light) !important;
-}
-
-.bg-secondary {
-  background-color: var(--secondary-color) !important;
-}
-.bg-secondary-light {
-  background-color: var(--secondary-color-extra-light) !important;
-}
-.bg-secondary-dark {
-  background-color: var(--secondary-color-dark) !important;
-}
-.bg-color-light {
-  background-color: var(--color-light) !important;
-}
 
 pre {
   background-color: var(--color-light);
