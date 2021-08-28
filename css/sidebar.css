@@ -77,7 +77,7 @@
 }
 .sidebar__topic-list .sidebar__list-item.sidebar__list-item--selected {
   color: var(--color-light);
-  font-weight: 500;
+  font-weight: 600;
 }
 .sidebar__list-item i {
   font-size: 16px;
