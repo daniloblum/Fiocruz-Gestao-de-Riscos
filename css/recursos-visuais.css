@@ -1,4 +1,5 @@
 @import '../css/colors.css';
+@import '../css/timeline-horizontal2.css';
 
 /* Página de recursos */
 
@@ -1080,12 +1081,12 @@ Listas
 .obj-lista ol.list-group .list-group-item {
   display: list-item;
   padding-left: 10px;
-  counter-increment: contador-ul;
+  counter-increment: contador-ol;
 }
 
 .obj-lista ol.list-group .list-group-item:before {
   background-color: var(--secondary-color);
-  content: counter(contador-ul);
+  content: counter(contador-ol);
   margin-right: 0.8rem;
   border-radius: 50%;
   color: #fff;
@@ -1097,6 +1098,11 @@ Listas
   display: inline-block;
   box-sizing: border-box;
   line-height: 30px;
+}
+
+.obj-lista ol.list-group .list-group-item.lower-alpha::before {
+  content: counter(contador-ol, lower-alpha) !important;
+  line-height: 27px;;
 }
 
 /* ----------------------------------------------------------------

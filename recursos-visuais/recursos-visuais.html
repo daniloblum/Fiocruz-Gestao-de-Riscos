@@ -1177,13 +1177,15 @@
                         <!-- Fim do Heading Block (Título h2 ou h3 + Lead (se houver)) -->
                     </div>
                 </div>
-
+                
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10 col-lg-8">
+                        <!-- Citação -->
                         <div class="card border-0 shadow quote">
-                            <blockquote class="">
+                            <blockquote>
                                 <i class="bi bi-chat-right-quote mx-auto my-auto"></i>
                                 <div>
+                                    <p>
                                     As organizações são concebidas como sistemas vivos. que existem em uma ambiente mais
                                     amplo do qual
                                     dependem em termos de satisfação de suas várias necessidades.</p>
@@ -1191,6 +1193,7 @@
                                 </div>
                             </blockquote>
                         </div>
+                        <!-- Fim de citação -->
                     </div>
                 </div>
             </div>
@@ -2431,12 +2434,12 @@ div class="card-body <strong>justify-content-center</strong> d-flex flex-column"
                                 <li class="list-group-item">
                                     Compreender o que são as vacinas e qual a sua importância em termos da
                                     saúde dos indivíduos e das populações.</li>
-                                <li class="list-group-item">Conhecer
-                                    conceitos básicos relativos às vacinas e vacinação, como eficácia,
-                                    segurança, efetividade e cobertura vacinal. </li>
+                                <li class="list-group-item lower-alpha">Versão com letras </li>
+
                                 <li class="list-group-item">Conhecer o
                                     Programa Nacional de Imunizações do Brasil, sua trajetória e relevância.
                                 </li>
+                                
                                 <li class="list-group-item">Analisar
                                     os principais desafios colocados às políticas nacionais de imunização no
                                     cenário atual. </li>
@@ -3756,6 +3759,27 @@ div class="card-body <strong>justify-content-center</strong> d-flex flex-column"
                         <p>A linha do tempo horizontal é um recurso indicado para resoluções desktops. Em dispositivos móveis, ela passa para o formato vertical.</p>
                         <p><strong>Atenção:</strong></p>
                         <p>Para não gerar scroll no box projetado, recomenda-se utilizar um texto de até <strong>125 caracteres</strong>, contabilizando os espaços em branco.</p>
+
+                        <p>É necessário adicionar 2 scripts à página: um para o funcionamento da timeline horizontal e outro para iniciá-la.</p>
+
+                        <p><strong>1) Funcionamento da timeline: copie e cole o código abaixo:</strong></p>
+
+                        <code>
+                            &lt;script type="text/javascript" src="../../js/timeline-horizontal2.js"&gt; &lt;/script&gt;
+                        </code>
+
+                        <p class="mt-5"><strong>2) Inicialização da timeline:</strong></p>
+                        <code style="word-break: normal; white-space: pre-wrap;">
+                            &lt;!-- JS Timeline Horizontal Initialize --&gt;
+                            &lt;script&gt;
+                                timeline(document.querySelectorAll('.timeline-hz'), {
+                                    forceVerticalMode: 700,
+                                    mode: 'horizontal',
+                                    verticalStartPosition: 'left',
+                                    visibleItems: 3
+                                });
+                            &lt;/script&gt;
+                        </code>
                     </div>
                 </div>
             </div>
@@ -3764,242 +3788,87 @@ div class="card-body <strong>justify-content-center</strong> d-flex flex-column"
                 <div class="row justify-content-center mb-5">
                     <div class="col-12">
                         <!-- Timeline Horizontal -->
-                        <section class="timeline-horizontal2">
-                            <ol class="timeline-scroll">
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>1971</h4>
-                                <p>Open University do Reino Unido (OU UK)</p>
+                        <div class="timeline-hz">
+                            <div class="timeline__wrap">
+                                <div class="timeline__items">
+                                    <!-- Ítem 1 -->
+                                    <div class="timeline__item">
+                                        <div class="timeline__content shadow">
+                                            <h4>1989</h4>
+                                            <p>Década Internacional para a Redução de Risco de Desastres- RRD (ONU, 1989)</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ítem 2 -->
+                                    <div class="timeline__item">
+                                        <div class="timeline__content shadow">
+                                            <h4>1992</h4>
+                                            <p>A Conferência das Nações Unidas sobre o Meio Ambiente e Desenvolvimento (ONU, 1992)</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ítem 3 -->
+                                    <div class="timeline__item">
+                                        <div class="timeline__content shadow">
+                                            <h4>1999</h4>
+                                            <p>Estratégia Internacional para a Redução de Desastres (UNISDR, 1999)</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ítem 4 -->
+                                    <div class="timeline__item">
+                                        <div class="timeline__content shadow">
+                                            <h4>2002</h4>
+                                            <p>Funções Essenciais da Saúde Pública (OPS, 2002)</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ítem 5 -->
+                                    <div class="timeline__item">
+                                        <div class="timeline__content shadow">
+                                            <h4>2005</h4>
+                                            <p>- Redução do Impacto das Emergências e Desastres em Saúde...</p>
+
+                                            <a href='#' data-toggle="modal" data-target="#aula4-modal1" class="button-secondary align-middle">Ler mais</a>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Ítem 6 -->
+                                    <div class="timeline__item">
+                                        <div class="timeline__content shadow">
+                                            <h4>2014</h4>
+                                            <p>Painel Intergovernamental sobre Mudanças Climáticas (IPCC, 2014)</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ítem 7 -->
+                                    <div class="timeline__item">
+                                        <div class="timeline__content shadow">
+                                            <h4>2015</h4>
+                                            <p>- Marco de Sendai para RRD – 2015-2030 (ONU, 2015)...</p>
+
+                                            <a href='#' data-toggle="modal" data-target="#aula4-modal2" class="button-secondary align-middle">Ler mais</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ítem 8 -->
+                                    <div class="timeline__item">
+                                        <div class="timeline__content shadow">
+                                            <h4>2016</h4>
+                                            <p>Princípios de Bangkok (UNISDR, 2016)</p>
+
+                                            <a href='#' data-toggle="modal" data-target="#aula4-modal3" class="button-secondary align-middle">Ler mais</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>1983</h4>
-                                <p>Lançamento do movimento Software Livre pela GNU</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>1989</h4>
-                                <p>Criação da World Wide Web (WWW) ou A Web por <a href="https://en.wikipedia.org/wiki/Sir_Timothy_John_Berners-Lee" target="_blank">Tim
-                                    Berners-Lee</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>1990</h4>
-                                <p><a href="https://www.unicef.org/brazil/declaracao-mundial-sobre-educacao-para-todos-conferencia-de-jomtien-1990" target="_blank">Declaração Mundial de Educação para Todos</a>, Tailândia</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>1991</h4>
-                                <p>Lançamento da primeira versão do Linux</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>1998</h4>
-                                <p>Código Aberto (Open Source)</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>1999</h4>
-                                <p>Primeira licença aberta dedicada para conteúdo por <a href="https://en.wikipedia.org/wiki/Open_Publication_License" target="_blank">David Wiley (Open
-                                    Publication Content)</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2000</h4>
-                                <p><a href="http://www.direitoshumanos.usp.br/index.php/Direito-a-Educa%C3%A7%C3%A3o/declaracao-de-dakar.html" target="_blank">Declaração de Dakar</a>: Educação para todos</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2001</h4>
-                                <p>Wikipedia, lançada por <a href="https://en.wikipedia.org/wiki/Jimmy_Wales" target="_blank">Jimmy
-                                    Wale</a>s e <a href="https://en.wikipedia.org/wiki/Larry_Sanger" target="_blank">Larry
-                                    Sanger</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2002</h4>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Recursos Educacionais Abertos – definição do termo
-                                    pela Unesco
-                                </p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> <a href="https://www.budapestopenaccessinitiative.org/read" target="_blank">Declaração de
-                                    Budapeste</a>. <a href="https://www.budapestopenaccessinitiative.org/read" target="_blank">Budapeste open access iniciative</a>.
-                                </p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Lançamento do <a href="https://ocw.mit.edu/index.htm" target="_blank">MIT OpenCourseWare</a>
-                                </p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> <a href="https://creativecommons.org/" target="_blank">Creative Commons</a> é lançado
-                                </p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Primeira versão do <a href="https://moodle.org/" target="_blank">MOODLE</a> (Sistema de gestão da aprendizagem)
-                                </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2003</h4>
-                                <p><i class="icon ion-ios-arrow-forward"></i> <a href="http://legacy.earlham.edu/~peters/fos/bethesda.htm" target="_blank">Declaração de
-                                    Bethesda</a>. Sobre publicação científica em acesso aberto. </p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> <a href="https://openaccess.mpg.de/Berlin-Declaration" target="_blank">Declaração de Berlim</a>
-                                    em favor do Acesso Aberto ao conhecimento
-                                </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2006</h4>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Open University lança a plataforma <a href="http://www.open.ac.uk/about/open-educational-resources/openlearn" target="_blank">OpenLearn</a> </p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Primeiro currículo de educação entre vários países
-                                    usando REA: Universidade Virtual dos Pequenos Estados da Comunidade (CommonWealth)</p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Lançamento da Khan Academy
-                                    e educação entre vários países usando REA: Universidade Virtual dos Pequenos Estados da
-                                    Comunidade (CommonWealth)</p>
-                                </div>
-                            </li>
-            
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2007</h4>
-                                <p><i class="icon ion-ios-arrow-forward"></i> <a href="https://www.capetowndeclaration.org/translations/portuguese-translation" target="_blank">Declaração de Cidade do Cabo</a> para Educação Aberta</p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Primeira oferta de um Curso <a href="https://en.wikipedia.org/wiki/Massive_open_online_course" target="_blank">MOOC</a>
-                                    (Massive Open Online Course)
-                                </p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Criada primeira versão da ferramenta de autoria
-                                    gratuita <a href="https://exelearning.net/en/" target="_blank">eXeLearning</a></p>
-                                </div>
-                            </li>
-            
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2008</h4>
-                                <p><i class="icon ion-ios-arrow-forward"></i> <a href="https://www.oerafrica.org/" target="_blank">OER África</a></p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Lançamento do primeiro guia REA:<a href="https://wikieducator.org/OER_Handbook" target="_blank"> OER Handbook</a></p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Início do Projeto REA.br</p>autoria
-                                gratuita <a href="https://exelearning.net/en/" target="_blank">eXeLearning</a><p></p>
-                                </div>
-                            </li>
-            
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2009</h4>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Primeira <a href="https://wikieducator.org/OMD/MPII/MP_Paper_II" target="_blank">dissertação de mestrado
-                                    publicada como um RE</a></p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Criação da <a href="https://oeru.org/oeru-partners/oer-foundation/" target="_blank">OER Foundation</a></p>
-                                </div>
-                            </li>
-            
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2010</h4>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Práticas Educacionais Abertas (PEA)
-                                </p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Criação do Instituto <a href="http://www.educadigital.org.br/" target="_blank">Educadigital</a></p>
-                                </div>
-                            </li>
-            
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2011</h4>
-                                <p><i class="icon ion-ios-arrow-forward"></i> <a href="http://educacaoaberta.org/cadernorea/" target="_blank">Caderno REA para professores</a></p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Lançamento do Repositório Institucional da Fiocruz
-                                    - ARCA
-                                </p>
-                                </div>
-                            </li>
-            
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2012</h4>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Congresso Mundial de REA e <a href="http://www.unesco.org/new/fileadmin/MULTIMEDIA/HQ/CI/WPFD2009/Portuguese_Declaration.html" target="_blank">Declaração REA de Paris</a></p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Lançamento do <a href="https://aberta.org.br/livrorea" target="_blank">Livro REA</a></p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Aprovada <a href="https://aberta.org.br/aprovacao-do-pl-rea-estadual-repercussao-nacional-e-internacional/" target="_blank">Projeto de LEI 989/2011-SP</a> para disponibilizar recursos educacionais na
-                                    internet
-                                </p>
-                                </div>
-                            </li>
-            
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2013</h4>
-                                <p><a href="https://oeru.org/" target="_blank">Open Educational Resources University</a> é
-                                    lançada</p>
-                                </div>
-                            </li>
-            
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2014</h4>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Política de Acesso Aberto ao Conhecimento da
-                                    Fiocruz</p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Inauguração da <a href="http://www.educacaoaberta.org/" target="_blank">Cátedra Unesco de Educação Aberta na
-                                    Unicamp</a></p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Política Geral da Rede REA/OER (Campus Virtual de
-                                    Saúde Pública/OPAS</p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> MIRA: Mapa de Iniciativas de Recursos Abertos</p>
-                                </div>
-                            </li>
-            
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2015</h4>
-                                <p><a href="http://www.unesco.org/new/fileadmin/MULTIMEDIA/HQ/ED/pdf/Qingdao_Declaration.pdf" target="_blank">Declaração de Qingdao</a>: TIC e Educação</p>
-                                </div>
-                            </li>
-            
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2017</h4>
-                                <p><i class="icon ion-ios-arrow-forward"></i> <a href="http://www.oercongress.org/woerc-actionplan/" target="_blank">Declaração de
-                                    Ljubljana/Eslovênia</a>: Congresso Mundial de REA Unesco</p>
-                                <p><i class="icon ion-ios-arrow-forward"></i> Lançamento do Guia <a href="https://guiaea.educadigital.org.br/o-guia/" target="_blank">Como Implementar uma
-                                    Política de Educação Aberta – e de Recursos Educacionais Abertos (REA)</a></p>
-                                </div>
-                            </li>
-            
-                            <li>
-                                <div class="box-quote" style="height: 160px;">
-                                <h4>2019</h4>
-                                <p>Lançamento da <a href="https://educare.fiocruz.br" target="_blank">Plataforma de Recursos
-                                    Educacionais Abertos da Fiocruz - Educare</a></p>
-                                </div>
-                            </li>
-            
-                            <li class="end"></li>
-                            <li></li>
-                            </ol>
-                            <p class="source text-center">Fonte: <a href="https://wikieducator.org/Main_Page" target="_blank">Wikieducator</a>.</p>
-            
-                            <div class="arrows">
-                                <button class="arrow arrow__prev disabled" disabled="">
-                                <!-- <img src="../../img/timeline-arrow_prev.svg" alt="Voltar"> -->
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
-                                <path d="M20,0C9,0,0,9,0,20s9,20,20,20s20-9,20-20S31,0,20,0z M25.4,29.8c-0.6,0.6-1.5,0.6-2.1,0L14.6,21
-                                    c-0.6-0.6-0.6-1.4,0-2l8.8-8.8c0.3-0.3,0.7-0.4,1-0.4s0.7,0.1,1,0.4c0.6,0.6,0.6,1.5,0,2.1L17.7,20l7.7,7.7
-                                    C26,28.3,26,29.2,25.4,29.8z"></path>
-                                </svg>
-                                </button>
-                                <button class="arrow arrow__next float-right">
-                                <!-- <img src="../../img/timeline-arrow_next.svg" alt="Avançar"> -->
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
-                                <path d="M20,40c11,0,20-9,20-20S31,0,20,0S0,9,0,20S9,40,20,40z M14.6,10.2c0.6-0.6,1.5-0.6,2.1,0l8.8,8.8
-                                    c0.6,0.6,0.6,1.4,0,2l-8.8,8.8c-0.3,0.3-0.7,0.4-1,0.4s-0.7-0.1-1-0.4c-0.6-0.6-0.6-1.5,0-2.1l7.7-7.7l-7.7-7.7
-                                    C14,11.7,14,10.8,14.6,10.2z"></path>
-                                </svg>
-            
-                                </button>
                             </div>
-                        </section>
+                        </div>
+                        <!-- Fim de Timeline Horizontal -->
                     </div>
                 </div>
             </div>
         </section>
-
 
         <!-- Navegação -->
         <div class="container">
@@ -4086,7 +3955,17 @@ div class="card-body <strong>justify-content-center</strong> d-flex flex-column"
     <!-- <script src="../js/tabela-scroll.js"></script> -->
     <!--No mobile, scrolla a tabela -->
     <!-- <script src="../js/main-timeline.js"></script> Timeline vertical -->
-    <script src="../js/timeline-horizontal.js"></script> <!-- Timeline horizontal -->
+    <script src="../js/timeline-horizontal2.js"></script> <!-- Timeline horizontal -->
+
+    <!-- JS Timeline Horizontal Initialize -->
+    <script>
+        timeline(document.querySelectorAll('.timeline-hz'), {
+            forceVerticalMode: 700,
+            mode: 'horizontal',
+            verticalStartPosition: 'left',
+            visibleItems: 3
+        });
+    </script>
 
     <!-- Scripts
 	============================================= -->
