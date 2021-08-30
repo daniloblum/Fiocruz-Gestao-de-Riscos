@@ -1,9 +1,9 @@
 // Instant Animation
 
 const headerTitleLabel = document.querySelector(
-  '.header__title div div div h3'
+  '.header__title div div h3'
 );
-const headerTitleText = document.querySelector('.header__title div div div h1');
+const headerTitleText = document.querySelector('.header__title div div h1');
 
 function animate(element, type, delay) {
   element.classList.add('animate__animated', 'animate__' + type);
