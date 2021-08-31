@@ -1,1905 +1,1060 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta
-      name="author"
-      content="Fiocruz: Escola Nacional de Saúde Pública Sérgio Arouca - ENSP"
-    />
-    <meta name="robots" content="noindex" />
-    <meta
-      name="keywords"
-      content="Saúde Pública, Brasil, Fiocruz, Casa Oswaldo Cruz, Curso"
-    />
-    <meta
-      name="description"
-      content="Disciplina sobre a Gestão de Risco de emergência em saúde pública para Covid-19."
-    />
 
-    <!-- Favicons and Touch Icons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="../../images/icons//apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="../../images/icons/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="../../images/icons/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="../../images/icons/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="../../images/icons/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="../../images/icons/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="../../images/icons/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="../../images/icons/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../../images/icons/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="../../images/icons/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../../images/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="../../images/icons/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../../images/icons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../../images/icons/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="../../images/icons/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Fiocruz: Escola Nacional de Saúde Pública Sérgio Arouca - ENSP" />
+  <meta name="robots" content="noindex" />
+  <meta name="keywords" content="Saúde Pública, Brasil, Fiocruz, Casa Oswaldo Cruz, Curso" />
+  <meta name="description" content="Disciplina sobre a Gestão de Risco de emergência em saúde pública para Covid-19." />
 
-    <title>
-      Gestão de Risco de emergência em saúde pública para Covid-19 - Módulo 1 -
-      Aula 2
-    </title>
+  <!-- Favicons and Touch Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../images/icons//apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../../images/icons/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../../images/icons/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../images/icons/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../../images/icons/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../../images/icons/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../../images/icons/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../../images/icons/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/icons/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../../images/icons/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../../images/icons/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../images/icons/favicon-16x16.png" />
+  <link rel="manifest" href="../../images/icons/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="../../images/icons/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap"
-      rel="stylesheet"
-    />
+  <title>
+    Gestão de Risco de emergência em saúde pública para Covid-19 - Módulo 1 -
+    Aula 2
+  </title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap" rel="stylesheet" />
 
-    <!-- Bootstrap Icons CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-    />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="../../css/animate.min.css" />
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
 
-    <!-- Project CSS -->
-    <link rel="stylesheet" href="../../css/style.css" />
-  </head>
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="../../css/animate.min.css" />
 
-  <body>
-    <div class="main">
-      <div class="sidebar">
-        <div class="sidebar__inner">
-          <section class="sidebar__header">
-            <h4 class="m-0">
-              Gestão de Risco de emergência em saúde pública para Covid-19
-            </h4>
-          </section>
-          <hr />
-          <section class="sidebar__section py-2">
-            <a href="../../index.html" class="sidebar__btn">
-              <i class="bi-house mr-2"></i>Voltar para o início
-            </a>
-          </section>
-          <hr />
-          <nav class="sidebar__section">
-            <h6 class="">Aula 2</h6>
-            <h5>
-              Conceitos básicos e terminologias em Emergência em Saúde Pública
-            </h5>
-            <div class="sidebar__topic-list">
-              <div>
-                <a
-                  href="inicio.html"
-                  class="
-                    sidebar__btn sidebar__list-item sidebar__list-item--selected
-                  "
-                  ><i class="bi-check-circle-fill"></i
-                  ><span>Início da aula</span></a
-                >
+  <!-- Project CSS -->
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
 
-                <a
-                  href="topico1.html"
-                  class="
-                    sidebar__btn sidebar__list-item sidebar__list-item--selected
-                  "
-                  ><i class="bi-check-circle-fill"></i
-                  ><span>Introdução</span></a
-                >
-
-                <a
-                  href="topico2.html"
-                  class="
-                    sidebar__btn sidebar__list-item sidebar__list-item--selected
-                  "
-                  ><i class="bi-circle-fill"></i
-                  ><span>Conceito de Emergência em Saúde Pública</span></a
-                >
-
-                <a href="topico3.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i
-                  ><span
-                    >Conceitos básicos e terminologias importantes para
-                    Emergência em Saúde Pública</span
-                  ></a
-                >
-
-                <a href="topico4.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i
-                  ><span
-                    >Fatores de risco para Emergências em Saúde Pública</span
-                  ></a
-                >
-
-                <a href="topico5.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i
-                  ><span
-                    >Setor Saúde e o processo de Gestão de Risco de Emergências
-                    em Saúde Pública</span
-                  ></a
-                >
-
-                <a href="topico6.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i
-                  ><span>Sindemia e COVID-19</span></a
-                >
-
-                <a href="topico7.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i><span>Resumo</span></a
-                >
-
-                <a href="topico8.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i><span>Fim da aula</span></a
-                >
-              </div>
-            </div>
+<body>
+  <div class="main">
+    <div class="sidebar">
+      <div class="sidebar__inner">
+        <section class="sidebar__header">
+          <h4 class="m-0">
+            Gestão de Risco de emergência em saúde pública para Covid-19
+          </h4>
+        </section>
+        <hr />
+        <section class="sidebar__section py-2">
+          <a href="../../index.html" class="sidebar__btn">
+            <i class="bi-house mr-2"></i>Voltar para o início
+          </a>
+        </section>
+        <hr />
+        <nav class="sidebar__section">
+          <h6 class="">Aula 2</h6>
+          <h5>
+            Conceitos básicos e terminologias em Emergência em Saúde Pública
+          </h5>
+          <div class="sidebar__topic-list">
             <div>
-              <a
-                href=""
-                class="sidebar__btn"
-                data-toggle="modal"
-                data-target="#resumo-video"
-              >
-                <i class="bi bi-camera-video mr-2"></i> Resumo da aula
-              </a>
+              <a href="inicio.html" class="
+                    sidebar__btn sidebar__list-item sidebar__list-item--selected
+                  "><i class="bi-check-circle-fill"></i><span>Início da aula</span></a>
+
+              <a href="topico1.html" class="
+                    sidebar__btn sidebar__list-item sidebar__list-item--selected
+                  "><i class="bi-check-circle-fill"></i><span>Introdução</span></a>
+
+              <a href="topico2.html" class="
+                    sidebar__btn sidebar__list-item sidebar__list-item--selected
+                  "><i class="bi-circle-fill"></i><span>Conceito de Emergência em Saúde Pública</span></a>
+
+              <a href="topico3.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Conceitos básicos e terminologias importantes para
+                  Emergência em Saúde Pública</span></a>
+
+              <a href="topico4.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Fatores de risco para Emergências em Saúde Pública</span></a>
+
+              <a href="topico5.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Setor Saúde e o processo de Gestão de Risco de Emergências
+                  em Saúde Pública</span></a>
+
+              <a href="topico6.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Sindemia e COVID-19</span></a>
+
+              <a href="topico7.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Resumo</span></a>
+
+              <a href="topico8.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Fim da aula</span></a>
             </div>
-          </nav>
-          <hr />
-          <section class="sidebar__section">
-            <h6 class="">Aulas</h6>
-            <a href="../aula2/inicio.html" class="sidebar__btn">
-              <i></i>2. Saúde, microbiologia e reformas urbanas
+          </div>
+          <div>
+            <a href="" class="sidebar__btn" data-toggle="modal" data-target="#resumo-video">
+              <i class="bi bi-camera-video mr-2"></i> Resumo da aula
             </a>
-            <a href="../aula3/inicio.html" class="sidebar__btn">
-              <i></i>3. Oswaldo Cruz e o saneamento do Rio de Janeiro
-            </a>
-            <a href="../aula4/inicio.html" class="sidebar__btn">
-              <i></i>4. Das cidades aos sertões
-            </a>
-          </section>
-          <hr />
-          <section class="sidebar__section py-2">
-            <a
-              href=""
-              class="sidebar__btn"
-              data-toggle="modal"
-              data-target="#modal-bibliografia"
-            >
-              <i class="bi-book mr-2"></i> Bibliografia
-            </a>
-          </section>
+          </div>
+        </nav>
+        <hr />
+        <section class="sidebar__section">
+          <h6 class="">Aulas</h6>
+          <a href="../aula1/inicio.html" class="sidebar__btn pr-lg-5">
+            <i></i>1. Contexto das Emergências em Saúde Pública com foco na COVID-19
+          </a>
+          <a href="../aula3/inicio.html" class="sidebar__btn pr-lg-5">
+            <i></i>3. Premissas básicas e princípios do SUS</a>
+        </section>
+        <hr />
+        <section class="sidebar__section py-2">
+          <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-bibliografia">
+            <i class="bi-book mr-2"></i> Bibliografia
+          </a>
+        </section>
 
-          <section class="sidebar__section py-0">
-            <a
-              href=""
-              class="sidebar__btn"
-              data-toggle="modal"
-              data-target="#modal-material-complementar"
-            >
-              <i class="bi bi-journals mr-2"></i> Material Complementar
-            </a>
-          </section>
+        <section class="sidebar__section py-0">
+          <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-material-complementar">
+            <i class="bi bi-journals mr-2"></i> Material Complementar
+          </a>
+        </section>
 
-          <section class="sidebar__section py-2">
-            <a
-              href=""
-              class="sidebar__btn"
-              data-toggle="modal"
-              data-target="#modal-creditos"
-            >
-              <i class="bi bi-list-ul mr-2"></i> Créditos
-            </a>
-          </section>
-          <hr />
-          <section class="sidebar__section py-4">
-            <img
-              src="../../images/logo.svg"
-              alt="Observatório História & Saúde"
-              width="60%"
-            />
-          </section>
-        </div>
+        <section class="sidebar__section py-2">
+          <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-creditos">
+            <i class="bi bi-list-ul mr-2"></i> Créditos
+          </a>
+        </section>
+        <hr />
+        <section class="sidebar__section py-4">
+          <img src="../../images/logo.svg" alt="Observatório História & Saúde" width="60%" />
+        </section>
       </div>
-      <div class="content">
-        <header
-          class="header py-5"
-          style="background-image: url(../../images/modulo1/header-tarja.jpg)"
-        >
-          <div class="container">
-            <div class="header__inner">
-              <!-- <img src="../../images/modulo1/header-tarja.jpg" alt=""> -->
-              <div class="header__title">
-                <div class="row justify-content-center">
-                  <div class="col-12 col-md-10 col-lg-8 text-left">
-                    <h3>Módulo 1</h3>
-                    <h1 class="m-0">Introdução​</h1>
-                  </div>
-                  <!-- <div class="col-lg-4 position-relative">
+    </div>
+    <div class="content">
+      <header class="header py-5" style="background-image: url(../../images/modulo1/header-tarja.jpg)">
+        <div class="container">
+          <div class="header__inner">
+            <!-- <img src="../../images/modulo1/header-tarja.jpg" alt=""> -->
+            <div class="header__title">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-left">
+                  <h3>Módulo 1</h3>
+                  <h1 class="m-0">Introdução​</h1>
+                </div>
+                <!-- <div class="col-lg-4 position-relative">
                               <img class="image1 d-none d-lg-block p-xl-3" src="../../images/modulo1/header-foto.png" alt="">
                               <span class="image3"></span>
                           </div> -->
-                </div>
               </div>
             </div>
           </div>
-        </header>
+        </div>
+      </header>
 
-        <div id="page-content" class="">
-          <!-- Inserir o conteúdo aqui -->
-          <section>
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Heading Block (Título h2 ou h3  + Lead (se houver)) -->
-                  <div class="heading__block">
-                    <span class="heading__before">Aula 2</span>
-                    <h2 class="heading__title">
-                      Conceito de Emergência em Saúde Pública
-                    </h2>
-                    <!-- <p class="heading__lead">A idéia deste modelo é reunir os principais recursos visuais utilizados para as aulas.</p> -->
-                  </div>
-                  <!-- Fim do Heading Block -->
+      <div id="page-content" class="">
+        <!-- Inserir o conteúdo aqui -->
+        <section>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8">
+                <!-- Heading Block (Título h2 ou h3  + Lead (se houver)) -->
+                <div class="heading__block">
+                  <span class="heading__before">Aula 2</span>
+                  <h2 class="heading__title">
+                    Conceito de Emergência em Saúde Pública
+                  </h2>
+                  <!-- <p class="heading__lead">A idéia deste modelo é reunir os principais recursos visuais utilizados para as aulas.</p> -->
                 </div>
+                <!-- Fim do Heading Block -->
               </div>
+            </div>
 
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <h4>1992</h4>
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8">
+                <h4>1992</h4>
+                <p>
+                  Buscando traduzir todo esse processo e situações, o
+                  Institute of Medicine (IOM), dos Estados Unidos, utilizou o
+                  conceito de doença infecciosa emergente como:
+                </p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <!-- Olho de texto -->
+                <div class="olho-de-texto">
                   <p>
-                    Buscando traduzir todo esse processo e situações, o
-                    Institute of Medicine (IOM), dos Estados Unidos, utilizou o
-                    conceito de doença infecciosa emergente como:
+                    “Doença de origem infecciosa cuja incidência em humanos
+                    tem aumentado nas últimas duas décadas ou ameaça aumentar
+                    no futuro próximo.”
                   </p>
                 </div>
+                <!--Fim de Olho de texto -->
               </div>
+            </div>
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Olho de texto -->
-                  <div class="olho-de-texto">
-                    <p>
-                      “Doença de origem infecciosa cuja incidência em humanos
-                      tem aumentado nas últimas duas décadas ou ameaça aumentar
-                      no futuro próximo.”
-                    </p>
-                  </div>
-                  <!--Fim de Olho de texto -->
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <p>Porém este conceito tinha alguns limites:</p>
+                <!-- Lista Simples -->
+                <div class="obj-lista mb-5">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <i class="bi bi-record-circle text-secondary mr-2"></i>
+                      Tempo artificialmente estabelecido (duas décadas);
+                    </li>
+                    <li class="list-group-item">
+                      <i class="bi bi-record-circle text-secondary mr-2"></i>
+                      Ausência de território definido;
+                    </li>
+                    <li class="list-group-item">
+                      <i class="bi bi-record-circle text-secondary mr-2"></i>
+                      Desconsideração da tendência histórica da doença.
+                    </li>
+                  </ul>
                 </div>
+                <!-- Fim de Lista Simples -->
+                <hr />
               </div>
+            </div>
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <p>Porém este conceito tinha alguns limites:</p>
-                  <!-- Lista Simples -->
-                  <div class="obj-lista mb-5">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        Tempo artificialmente estabelecido (duas décadas);
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        Ausência de território definido;
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        Desconsideração da tendência histórica da doença.
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- Fim de Lista Simples -->
-                  <hr />
-                </div>
-              </div>
-
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <h4>2003</h4>
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <h4>2003</h4>
+                <p>
+                  O conceito de doença infecciosa é atualizado pelo IOM como:
+                </p>
+                <!-- Olho de texto -->
+                <div class="olho-de-texto">
                   <p>
-                    O conceito de doença infecciosa é atualizado pelo IOM como:
-                  </p>
-                  <!-- Olho de texto -->
-                  <div class="olho-de-texto">
-                    <p>
-                      “Uma doença infecciosa clinicamente distinta, que tenha
-                      sido re¬centemente reconhecida, ou uma doença infecciosa
-                      conhecida cuja incidência esteja aumentando em um dado
-                      lugar ou entre uma população específica.”
-                    </p>
-                  </div>
-                  <!--Fim de Olho de texto -->
-                </div>
-              </div>
-
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <p>
-                    Carmo <em>et al</em> (2008) dizem que ainda que essa
-                    atualização torne o conceito mais preciso do ponto de vista
-                    espacial, persiste a imprecisão de que parâmetro de
-                    magnitude de incidência deva ser considerado para definir
-                    uma doença infecciosa como emergente.
-                  </p>
-                  <p>
-                    Os autores afirmam ainda que a caracterização de uma doença
-                    infecciosa como emergente para ser mais precisa requer uma
-                    análise da ocorrência para cada doença de forma
-                    contextualizada para cada população, território e tempo
-                    histórico, nos quais as doenças incidem. Dessa forma, uma
-                    melhor utilização desse conceito deve considerar se a doença
-                    infecciosa e o seu surgimento ou o aumento na sua incidência
-                    têm relevância epidemiológica para uma população e
-                    território definido.
-                  </p>
-                  <p>
-                    Carmo (2020) afirma que termo emergência de saúde pública já
-                    constava em ato normativo do governo dos Estados Unidos em
-                    1984. Inicialmente, a utilização do termo era
-                    predominantemente para as doenças transmissíveis. Porém, com
-                    a ocorrência de determinadas situações de emergência, como
-                    uso intencional de armas biológicas (liberação de bacilo de
-                    Antraz em 2001), com o ataque terrorista de setembro de 2001
-                    e com a ocorrência de desastres de grandes proporções como o
-                    furacão Katrina, o termo passou a ser aplicado cada vez mais
-                    para caracterização de eventos de outra natureza. Desta
-                    maneira, para além de doenças infecciosas (reemergente e
-                    emergente) (Carmo <em>et al</em>, 2008 e Carmo, 2020).
+                    “Uma doença infecciosa clinicamente distinta, que tenha
+                    sido re¬centemente reconhecida, ou uma doença infecciosa
+                    conhecida cuja incidência esteja aumentando em um dado
+                    lugar ou entre uma população específica.”
                   </p>
                 </div>
+                <!--Fim de Olho de texto -->
               </div>
+            </div>
 
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <h5>
-                    Regulamento Sanitário Internacional (RSI) e Emergência em
-                    Saúde Pública de Importância Internacional (ESPII)
-                  </h5>
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <p>
+                  Carmo <em>et al</em> (2008) dizem que ainda que essa
+                  atualização torne o conceito mais preciso do ponto de vista
+                  espacial, persiste a imprecisão de que parâmetro de
+                  magnitude de incidência deva ser considerado para definir
+                  uma doença infecciosa como emergente.
+                </p>
+                <p>
+                  Os autores afirmam ainda que a caracterização de uma doença
+                  infecciosa como emergente para ser mais precisa requer uma
+                  análise da ocorrência para cada doença de forma
+                  contextualizada para cada população, território e tempo
+                  histórico, nos quais as doenças incidem. Dessa forma, uma
+                  melhor utilização desse conceito deve considerar se a doença
+                  infecciosa e o seu surgimento ou o aumento na sua incidência
+                  têm relevância epidemiológica para uma população e
+                  território definido.
+                </p>
+                <p>
+                  Carmo (2020) afirma que termo emergência de saúde pública já
+                  constava em ato normativo do governo dos Estados Unidos em
+                  1984. Inicialmente, a utilização do termo era
+                  predominantemente para as doenças transmissíveis. Porém, com
+                  a ocorrência de determinadas situações de emergência, como
+                  uso intencional de armas biológicas (liberação de bacilo de
+                  Antraz em 2001), com o ataque terrorista de setembro de 2001
+                  e com a ocorrência de desastres de grandes proporções como o
+                  furacão Katrina, o termo passou a ser aplicado cada vez mais
+                  para caracterização de eventos de outra natureza. Desta
+                  maneira, para além de doenças infecciosas (reemergente e
+                  emergente) (Carmo <em>et al</em>, 2008 e Carmo, 2020).
+                </p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8">
+                <h5>
+                  Regulamento Sanitário Internacional (RSI) e Emergência em
+                  Saúde Pública de Importância Internacional (ESPII)
+                </h5>
+                <p>
+                  Regulamento Sanitário Internacional é um instrumento
+                  jurídico internacional vinculativo para 196 países em todo o
+                  mundo, que inclui todos os Estados Membros da Organização
+                  Mundial da Saúde (OMS). Tem como objetivo estabelecer
+                  medidas para ampliar as capacidades nacionais para detectar
+                  e responder aos riscos de disseminação ou propagação (no
+                  caso de eventos não infecciosos) de doenças entre os países.
+                </p>
+
+                <p>
+                  Ainda dentro desta discussão com a aprovação do Regulamento
+                  Sanitário Internacional (RSI) pela Assembleia Mundial da
+                  Saúde, em 2005, outro conceito foi difundido, o de
+                  <strong>Emergência em Saúde Pública de importância
+                    internacional</strong>
+                  (OMS):
+                </p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <!-- Olho de texto -->
+                <div class="olho-de-texto">
                   <p>
-                    Regulamento Sanitário Internacional é um instrumento
-                    jurídico internacional vinculativo para 196 países em todo o
-                    mundo, que inclui todos os Estados Membros da Organização
-                    Mundial da Saúde (OMS). Tem como objetivo estabelecer
-                    medidas para ampliar as capacidades nacionais para detectar
-                    e responder aos riscos de disseminação ou propagação (no
-                    caso de eventos não infecciosos) de doenças entre os países.
+                    “Evento extraordinário, o qual é determinado, como
+                    estabelecido neste regulamento: - por constituir um risco
+                    de saúde pública para outro Estado por meio da propagação
+                    internacional de doenças; - por potencialmente requerer
+                    uma resposta internacional coordenada.”
                   </p>
+                </div>
+                <!--Fim de Olho de texto -->
+              </div>
+            </div>
 
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <p>Ainda, segundo as definições do RSI:</p>
+                <!-- Olho de texto -->
+                <div class="olho-de-texto">
                   <p>
-                    Ainda dentro desta discussão com a aprovação do Regulamento
-                    Sanitário Internacional (RSI) pela Assembleia Mundial da
-                    Saúde, em 2005, outro conceito foi difundido, o de
-                    <strong
-                      >Emergência em Saúde Pública de importância
-                      internacional</strong
-                    >
-                    (OMS):
+                    “Evento significa a manifestação de uma doença ou uma
+                    ocorrência que cria um potencial para doença” (OMS, 2005).
                   </p>
                 </div>
+                <!--Fim de Olho de texto -->
               </div>
+            </div>
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Olho de texto -->
-                  <div class="olho-de-texto">
-                    <p>
-                      “Evento extraordinário, o qual é determinado, como
-                      estabelecido neste regulamento: - por constituir um risco
-                      de saúde pública para outro Estado por meio da propagação
-                      internacional de doenças; - por potencialmente requerer
-                      uma resposta internacional coordenada.”
-                    </p>
-                  </div>
-                  <!--Fim de Olho de texto -->
-                </div>
-              </div>
-
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <p>Ainda, segundo as definições do RSI:</p>
-                  <!-- Olho de texto -->
-                  <div class="olho-de-texto">
-                    <p>
-                      “Evento significa a manifestação de uma doença ou uma
-                      ocorrência que cria um potencial para doença” (OMS, 2005).
-                    </p>
-                  </div>
-                  <!--Fim de Olho de texto -->
-                </div>
-              </div>
-
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Box de Atenção -->
-                  <div class="card-box card border-0 shadow mb-5">
-                    <div class="box-quote">
-                      <h5>
-                        <i
-                          class="box-quote__icone bi bi-exclamation-lg"
-                          data-fa-transform="grow-25"
-                          aria-hidden="true"
-                        ></i
-                        >Atenção
-                      </h5>
-                      <div class="boxes-content">
-                        <p>
-                          Desta maneira,
-                          <strong
-                            >os eventos não estão restritos às doenças
-                            infecciosas e não limitam à ocorrência de dano (caso
-                            ou óbito por determinada doença), mas incluem
-                            situações e fatores de risco para sua ocorrência
-                            (que é a própria definição de evento de saúde
-                            pública)</strong
-                          >. Assim, a análise desses eventos favorece a
-                          definição e adoção de medidas de forma mais oportuna,
-                          antes que o dano à saúde da população se torne mais
-                          amplo e grave.
-                          <strong
-                            >Também não são restritos à ocorrência de doenças
-                            transmissíveis, mas contemplam ainda problemas de
-                            saúde de natureza química, radionuclear ou
-                            decorrentes de desastres ambientais, como
-                            terremotos, inundações ou secas</strong
-                          >
-                          (OMS, 2005; Carmo <em>et al</em>, 2008 e Carmo, 2020;
-                          Carmo e Teixeira, 2020).
-                        </p>
-                      </div>
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <!-- Box de Atenção -->
+                <div class="card-box card border-0 shadow mb-5">
+                  <div class="box-quote">
+                    <h5>
+                      <i class="box-quote__icone bi bi-exclamation-lg" data-fa-transform="grow-25" aria-hidden="true"></i>Atenção
+                    </h5>
+                    <div class="boxes-content">
+                      <p>
+                        Desta maneira,
+                        <strong>os eventos não estão restritos às doenças
+                          infecciosas e não limitam à ocorrência de dano (caso
+                          ou óbito por determinada doença), mas incluem
+                          situações e fatores de risco para sua ocorrência
+                          (que é a própria definição de evento de saúde
+                          pública)</strong>. Assim, a análise desses eventos favorece a
+                        definição e adoção de medidas de forma mais oportuna,
+                        antes que o dano à saúde da população se torne mais
+                        amplo e grave.
+                        <strong>Também não são restritos à ocorrência de doenças
+                          transmissíveis, mas contemplam ainda problemas de
+                          saúde de natureza química, radionuclear ou
+                          decorrentes de desastres ambientais, como
+                          terremotos, inundações ou secas</strong>
+                        (OMS, 2005; Carmo <em>et al</em>, 2008 e Carmo, 2020;
+                        Carmo e Teixeira, 2020).
+                      </p>
                     </div>
                   </div>
-                  <!-- Fim do Box de Atenção -->
-                  <p>
-                    Os mesmos autores ressaltam que a utilização e a adaptação
-                    do conceito de emergência de saúde pública tornaram mais
-                    precisa e aplicável pelos sistemas nacionais de vigilância
-                    epidemiológica a definição de eventos que deveriam ser
-                    objeto de monitoramento, proposição e execução de ações que
-                    visassem evitar ou diminuir a probabilidade de disseminação
-                    ou propagação de doenças. Ademais, ao tratar de riscos,
-                    permite a adoção de medidas antecipatórias, com o potencial
-                    de evitar ou reduzir a ocorrência de dano à saúde população
-                    (Carmo <em>et al</em>, 2008).
-                  </p>
+                </div>
+                <!-- Fim do Box de Atenção -->
+                <p>
+                  Os mesmos autores ressaltam que a utilização e a adaptação
+                  do conceito de emergência de saúde pública tornaram mais
+                  precisa e aplicável pelos sistemas nacionais de vigilância
+                  epidemiológica a definição de eventos que deveriam ser
+                  objeto de monitoramento, proposição e execução de ações que
+                  visassem evitar ou diminuir a probabilidade de disseminação
+                  ou propagação de doenças. Ademais, ao tratar de riscos,
+                  permite a adoção de medidas antecipatórias, com o potencial
+                  de evitar ou reduzir a ocorrência de dano à saúde população
+                  (Carmo <em>et al</em>, 2008).
+                </p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <h5>
+                  Emergência em Saúde Pública de Importância Nacional (ESPIN)
+                </h5>
+                <p class="mb-0">
+                  No Brasil, o conceito de Emergência em Saúde Pública de
+                  importância nacional é derivado do que foi adotado no RSI,
+                  em 2005, e utilizado pelo Ministério da Saúde (MS) como:
+                </p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <div class="card border-0 shadow quote">
+                  <blockquote class="">
+                    <i class="bi bi-chat-right-quote mx-auto my-auto"></i>
+                    <div>
+                      <p>
+                        “Evento que apresente risco de propagação ou
+                        disseminação de doenças para mais de uma Unidade
+                        Federada (Estado ou Distrito Federal), com priorização
+                        das doenças de notificação imediata e outros eventos
+                        de saúde pública (independentemente da natureza ou
+                        origem), depois de avaliação de risco, e que possa
+                        necessitar de resposta nacional imediata”
+                      </p>
+                      <span class="text-right quote-autor">Agência Nacional de Vigilância Sanitária, 2010</span>
+                    </div>
+                  </blockquote>
                 </div>
               </div>
+            </div>
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <h5>
-                    Emergência em Saúde Pública de Importância Nacional (ESPIN)
-                  </h5>
-                  <p class="mb-0">
-                    No Brasil, o conceito de Emergência em Saúde Pública de
-                    importância nacional é derivado do que foi adotado no RSI,
-                    em 2005, e utilizado pelo Ministério da Saúde (MS) como:
-                  </p>
-                </div>
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <p>
+                  Porém, em 2011, foi publicado Decreto Presidencial nº 7.616,
+                  por meio do qual foram definidas três situações que poderiam
+                  caracterizar uma emergência de saúde pública:
+                  <br /><strong>
+                    a) epidemiológicas (surtos e epidemias); <br />b)
+                    desastres; <br />c) desassistência.
+                  </strong>
+                </p>
+                <p>
+                  A seguir alguns exemplos citados por Freitas et al (2020)
+                  que caracterizaram a Emergência em Saúde Pública de
+                  importância nacional:<br />As
+                  <strong>situações epidemiológicas</strong>
+                  nesse contexto incluem:
+                </p>
               </div>
+            </div>
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <div class="card border-0 shadow quote">
-                    <blockquote class="">
-                      <i class="bi bi-chat-right-quote mx-auto my-auto"></i>
-                      <div>
-                        <p>
-                          “Evento que apresente risco de propagação ou
-                          disseminação de doenças para mais de uma Unidade
-                          Federada (Estado ou Distrito Federal), com priorização
-                          das doenças de notificação imediata e outros eventos
-                          de saúde pública (independentemente da natureza ou
-                          origem), depois de avaliação de risco, e que possa
-                          necessitar de resposta nacional imediata”
-                        </p>
-                        <span class="text-right quote-autor"
-                          >Agência Nacional de Vigilância Sanitária, 2010</span
-                        >
-                      </div>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <p>
-                    Porém, em 2011, foi publicado Decreto Presidencial nº 7.616,
-                    por meio do qual foram definidas três situações que poderiam
-                    caracterizar uma emergência de saúde pública:
-                    <br /><strong>
-                      a) epidemiológicas (surtos e epidemias); <br />b)
-                      desastres; <br />c) desassistência.
-                    </strong>
-                  </p>
-                  <p>
-                    A seguir alguns exemplos citados por Freitas et al (2020)
-                    que caracterizaram a Emergência em Saúde Pública de
-                    importância nacional:<br />As
-                    <strong>situações epidemiológicas</strong>
-                    nesse contexto incluem:
-                  </p>
-                </div>
-              </div>
-
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!--Slider-->
-                  <div
-                    id="carousel2"
-                    class="carousel slide"
-                    data-ride="false"
-                    data-interval="false"
-                    data-touch="true"
-                    data-keyboard="true"
-                    aria-labelledby="carouselheading"
-                  >
-                    <div class="card shadow border-0 p-2 pb-4 card--in">
-                      <div class="row justify-content-center">
-                        <div
-                          class="
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <!--Slider-->
+                <div id="carousel2" class="carousel slide" data-ride="false" data-interval="false" data-touch="true" data-keyboard="true" aria-labelledby="carouselheading">
+                  <div class="card shadow border-0 p-2 pb-4 card--in">
+                    <div class="row justify-content-center">
+                      <div class="
                             col-12 col-md-12 col-lg-12
                             justify-content-center
                             d-flex
                             flex-column
                             carousel-texto
-                          "
-                        >
-                          <ol class="carousel-indicators">
-                            <li
-                              data-target="#carousel2"
-                              data-slide-to="0"
-                              class="active"
-                            ></li>
-                            <li data-target="#carousel2" data-slide-to="1"></li>
-                            <li data-target="#carousel2" data-slide-to="2"></li>
-                          </ol>
+                          ">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                          <li data-target="#carousel2" data-slide-to="1"></li>
+                          <li data-target="#carousel2" data-slide-to="2"></li>
+                        </ol>
 
-                          <div class="carousel-inner p-4">
-                            <!-- Ítem 1 -->
-                            <article class="carousel-item active">
-                              <div class="row justify-content-center m-0">
-                                <div class="col-11 col-md-10">
-                                  <p>
-                                    Surtos ou epidemias que apresentem risco de
-                                    disseminação nacional e que sejam produzidos
-                                    por agentes infecciosos inesperados.
-                                    Exemplo: surtos de febre amarela em 2016 e
-                                    2017, com expansão da ocorrência do vírus no
-                                    Brasil; microcefalia/síndrome congênita do
-                                    zika; pandemia da COVID-19 em 2020 e 2021 no
-                                    país.
-                                  </p>
-                                </div>
+                        <div class="carousel-inner p-4">
+                          <!-- Ítem 1 -->
+                          <article class="carousel-item active">
+                            <div class="row justify-content-center m-0">
+                              <div class="col-11 col-md-10">
+                                <p>
+                                  Surtos ou epidemias que apresentem risco de
+                                  disseminação nacional e que sejam produzidos
+                                  por agentes infecciosos inesperados.
+                                  Exemplo: surtos de febre amarela em 2016 e
+                                  2017, com expansão da ocorrência do vírus no
+                                  Brasil; microcefalia/síndrome congênita do
+                                  zika; pandemia da COVID-19 em 2020 e 2021 no
+                                  país.
+                                </p>
                               </div>
-                            </article>
+                            </div>
+                          </article>
 
-                            <!-- Ítem 2 -->
-                            <article class="carousel-item">
-                              <div class="row justify-content-center m-0">
-                                <div class="col-11 col-md-10">
-                                  <p>
-                                    Cenários de convivência com epidemias e
-                                    surtos de doenças: dengue, sarampo e
-                                    tuberculose.
-                                  </p>
-                                </div>
+                          <!-- Ítem 2 -->
+                          <article class="carousel-item">
+                            <div class="row justify-content-center m-0">
+                              <div class="col-11 col-md-10">
+                                <p>
+                                  Cenários de convivência com epidemias e
+                                  surtos de doenças: dengue, sarampo e
+                                  tuberculose.
+                                </p>
                               </div>
-                            </article>
+                            </div>
+                          </article>
 
-                            <!-- Ítem 3 -->
-                            <article class="carousel-item">
-                              <div class="row justify-content-center m-0">
-                                <div class="col-11 col-md-10">
-                                  <p>
-                                    Cenários que apresentem gravidade elevada ou
-                                    extrapolem a capacidade de resposta da
-                                    gestão estadual do SUS. Exemplos: em 2018, o
-                                    município do Rio de Janeiro, na contramão do
-                                    restante do país, teve elevado número de
-                                    casos de chikungunya, superando todos os
-                                    registros de anos anteriores; pandemia da
-                                    COVID-19 em 2020 e 2021 no país, com elevado
-                                    número de casos, extrapolando nos diferentes
-                                    estados e municípios, em diferentes momentos
-                                    ou mesmo de modo sincronizado, a capacidade
-                                    de resposta nas esferas de gestão do SUS,
-                                    exemplo de Manaus.
-                                  </p>
-                                </div>
+                          <!-- Ítem 3 -->
+                          <article class="carousel-item">
+                            <div class="row justify-content-center m-0">
+                              <div class="col-11 col-md-10">
+                                <p>
+                                  Cenários que apresentem gravidade elevada ou
+                                  extrapolem a capacidade de resposta da
+                                  gestão estadual do SUS. Exemplos: em 2018, o
+                                  município do Rio de Janeiro, na contramão do
+                                  restante do país, teve elevado número de
+                                  casos de chikungunya, superando todos os
+                                  registros de anos anteriores; pandemia da
+                                  COVID-19 em 2020 e 2021 no país, com elevado
+                                  número de casos, extrapolando nos diferentes
+                                  estados e municípios, em diferentes momentos
+                                  ou mesmo de modo sincronizado, a capacidade
+                                  de resposta nas esferas de gestão do SUS,
+                                  exemplo de Manaus.
+                                </p>
                               </div>
-                            </article>
-                          </div>
-
-                          <a
-                            class="carousel-control-prev"
-                            href="#carousel2"
-                            role="button"
-                            data-slide="prev"
-                          >
-                            <span
-                              class="carousel-control-prev-icon dark-arrow"
-                              aria-hidden="true"
-                            ></span>
-                            <span class="sr-only">Anterior</span>
-                          </a>
-                          <a
-                            class="carousel-control-next"
-                            href="#carousel2"
-                            role="button"
-                            data-slide="next"
-                          >
-                            <span
-                              class="carousel-control-next-icon dark-arrow"
-                              aria-hidden="true"
-                            ></span>
-
-                            <span class="sr-only">Próximo</span>
-                          </a>
+                            </div>
+                          </article>
                         </div>
-                        <!--Fim do caroussel inner-->
+
+                        <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon dark-arrow" aria-hidden="true"></span>
+                          <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon dark-arrow" aria-hidden="true"></span>
+
+                          <span class="sr-only">Próximo</span>
+                        </a>
                       </div>
+                      <!--Fim do caroussel inner-->
                     </div>
                   </div>
-                  <!--Fim do Slider-->
                 </div>
+                <!--Fim do Slider-->
               </div>
+            </div>
 
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <p>
-                    Já os <strong>desastres</strong> incluem eventos que
-                    configurem situação de emergência ou estado de calamidade
-                    pública reconhecido pelo Poder Executivo Federal e que
-                    impliquem atuação direta na área de saúde pública. Exemplo:
-                    desastre da região serrana do estado do Rio de Janeiro, em
-                    2011, com decreto de calamidade pública em sete cidades:
-                    Nova Friburgo, Teresópolis, Petrópolis, Bom Jardim, São José
-                    do Vale do Rio Preto, Sumidouro e Areal; derramamento de
-                    óleo na costa do Nordeste; rompimento de barragem de
-                    rejeitos de mineração atingindo Mariana e Brumadinho (MG).
-                  </p>
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8">
+                <p>
+                  Já os <strong>desastres</strong> incluem eventos que
+                  configurem situação de emergência ou estado de calamidade
+                  pública reconhecido pelo Poder Executivo Federal e que
+                  impliquem atuação direta na área de saúde pública. Exemplo:
+                  desastre da região serrana do estado do Rio de Janeiro, em
+                  2011, com decreto de calamidade pública em sete cidades:
+                  Nova Friburgo, Teresópolis, Petrópolis, Bom Jardim, São José
+                  do Vale do Rio Preto, Sumidouro e Areal; derramamento de
+                  óleo na costa do Nordeste; rompimento de barragem de
+                  rejeitos de mineração atingindo Mariana e Brumadinho (MG).
+                </p>
 
-                  <p>
-                    E, pode ser considerada
-                    <strong>desassistência à população</strong>:
-                  </p>
+                <p>
+                  E, pode ser considerada
+                  <strong>desassistência à população</strong>:
+                </p>
 
-                  <!-- Accordion -->
-                  <div id="accordionExample" class="accordion">
-                    <!-- Accordion item 1 -->
-                    <div id="headingOne" class="accordion__header">
-                      <a
-                        href="#"
-                        data-toggle="collapse"
-                        data-target="#collapseOne"
-                        aria-expanded="false"
-                        aria-controls="collapseOne"
-                        class="d-block position-relative collapsible-link py-2"
-                        >Situação de emergência ou calamidade pública com risco
-                        a saúde dos cidadãos por incapacidade</a
-                      >
+                <!-- Accordion -->
+                <div id="accordionExample" class="accordion">
+                  <!-- Accordion item 1 -->
+                  <div id="headingOne" class="accordion__header">
+                    <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative collapsible-link py-2">Situação de emergência ou calamidade pública com risco
+                      a saúde dos cidadãos por incapacidade</a>
+                  </div>
+                  <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-4">
+                      <p class="font-weight-light m-0">
+                        Evento que, devidamente reconhecido mediante a
+                        decretação de situação de emergência ou calamidade
+                        pública pelo ente federado afetado, coloque em risco a
+                        saúde dos cidadãos por incapacidade. Exemplo: em 2019,
+                        ao tomar posse, o governador do Distrito Federal
+                        declarou situação de Emergência em Saúde Pública (ESP)
+                        ao se deparar com o desabastecimento do estoque de
+                        medicamentos, materiais e insumos da rede de saúde;
+                        pendências de pagamentos de fornecedores; suspensão ou
+                        interrupção de contratos; déficit de pessoal; e
+                        fechamento de diversos leitos em unidades de terapia
+                        intensiva (UTIs), inclusive neonatais.
+                      </p>
                     </div>
-                    <div
-                      id="collapseOne"
-                      aria-labelledby="headingOne"
-                      data-parent="#accordionExample"
-                      class="collapse"
-                    >
-                      <div class="card-body p-4">
-                        <p class="font-weight-light m-0">
-                          Evento que, devidamente reconhecido mediante a
-                          decretação de situação de emergência ou calamidade
-                          pública pelo ente federado afetado, coloque em risco a
-                          saúde dos cidadãos por incapacidade. Exemplo: em 2019,
-                          ao tomar posse, o governador do Distrito Federal
-                          declarou situação de Emergência em Saúde Pública (ESP)
-                          ao se deparar com o desabastecimento do estoque de
-                          medicamentos, materiais e insumos da rede de saúde;
-                          pendências de pagamentos de fornecedores; suspensão ou
-                          interrupção de contratos; déficit de pessoal; e
-                          fechamento de diversos leitos em unidades de terapia
-                          intensiva (UTIs), inclusive neonatais.
-                        </p>
-                      </div>
-                    </div>
+                  </div>
 
-                    <!-- Accordion item 2 -->
-                    <div id="headingTwo" class="accordion__header">
-                      <a
-                        href="#"
-                        data-toggle="collapse"
-                        data-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                        class="
+                  <!-- Accordion item 2 -->
+                  <div id="headingTwo" class="accordion__header">
+                    <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="
                           d-block
                           position-relative
                           collapsed
                           collapsible-link
                           py-2
-                        "
-                        >Insuficiência de atendimento à demanda</a
-                      >
-                    </div>
-                    <div
-                      id="collapseTwo"
-                      aria-labelledby="headingTwo"
-                      data-parent="#accordionExample"
-                      class="collapse"
-                    >
-                      <div class="card-body p-4">
-                        <p class="font-weight-light">
-                          Insuficiência de atendimento à demanda e que
-                          extrapolem a capacidade de resposta das direções
-                          estadual, distrital e municipal do SUS. Exemplos: em
-                          abril de 2019, a dengue levou o estado de Minas Gerais
-                          a decretar situação de Emergência em Saúde Pública;
-                          Pandemia da COVID-19 em 2020 e 2021, Manaus declara
-                          colapso do setor saúde público e privado (falta de
-                          leitos, insumos, profissionais).
-                        </p>
-                        <p class="font-weight-light m-0">
-                          Tendo como referência Carmo (2020), o conceito de
-                          emergência de saúde pública, contexto nacional e
-                          internacional, é dirigido para a
-                          <strong> prática da saúde pública </strong>. Isto
-                          porque este tem sido utilizado para descrever
-                          situações (denominadas de eventos de saúde pública)
-                          que constituem ou apresentam risco imediato de
-                          produção, disseminação ou agravamento de danos à saúde
-                          da população, independentemente da natureza ou origem.
-                          Esse termo, quando aplicado, implica na
-                          <strong>
-                            necessidade de adoção de medidas imediatas de saúde
-                            pública </strong
-                          >, envolvendo não somente a atenção, a vigilância em
-                          saúde, mas também outras áreas de atuação de acordo
-                          com as características do evento que estejam
-                          envolvidas no processo de Gestão de Risco de
-                          Emergências em Saúde Pública.
-                        </p>
-                      </div>
+                        ">Insuficiência de atendimento à demanda</a>
+                  </div>
+                  <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-4">
+                      <p class="font-weight-light">
+                        Insuficiência de atendimento à demanda e que
+                        extrapolem a capacidade de resposta das direções
+                        estadual, distrital e municipal do SUS. Exemplos: em
+                        abril de 2019, a dengue levou o estado de Minas Gerais
+                        a decretar situação de Emergência em Saúde Pública;
+                        Pandemia da COVID-19 em 2020 e 2021, Manaus declara
+                        colapso do setor saúde público e privado (falta de
+                        leitos, insumos, profissionais).
+                      </p>
+                      <p class="font-weight-light m-0">
+                        Tendo como referência Carmo (2020), o conceito de
+                        emergência de saúde pública, contexto nacional e
+                        internacional, é dirigido para a
+                        <strong> prática da saúde pública </strong>. Isto
+                        porque este tem sido utilizado para descrever
+                        situações (denominadas de eventos de saúde pública)
+                        que constituem ou apresentam risco imediato de
+                        produção, disseminação ou agravamento de danos à saúde
+                        da população, independentemente da natureza ou origem.
+                        Esse termo, quando aplicado, implica na
+                        <strong>
+                          necessidade de adoção de medidas imediatas de saúde
+                          pública </strong>, envolvendo não somente a atenção, a vigilância em
+                        saúde, mas também outras áreas de atuação de acordo
+                        com as características do evento que estejam
+                        envolvidas no processo de Gestão de Risco de
+                        Emergências em Saúde Pública.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <!-- Navegação da aula -->
-          <section>
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <div class="page-nav d-flex justify-content-around">
-                    <a
-                      class="button-primary mb-5 mb-md-0"
-                      href="topico1.html"
-                      rel="prev"
-                      >Tópico anterior</a
-                    >
-                    <a class="button-primary" href="topico3.html" rel="next"
-                      >Próximo tópico</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-
-        <footer>
+        <!-- Navegação da aula -->
+        <section>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-12 col-md-10 col-lg-8">
-                <ul class="logos">
-                  <li>
-                    <img
-                      src="../../images/COC.svg"
-                      alt="Logo da Casa Oswaldo Cruz"
-                      height="80px"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="../../images/fiocruz.svg"
-                      alt="Logo da Fiocruz"
-                      height="80px"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="../../images/sus.svg"
-                      alt="Logo do Sistema Único de Saúde"
-                      height="60px"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="../../images/ministerio-da-saude-e-governo-federal.svg"
-                      alt="Logo do Ministério da Saúde e Governo Federal"
-                      height="50px"
-                    />
-                  </li>
-                </ul>
+                <div class="page-nav d-flex justify-content-around">
+                  <a class="button-primary mb-5 mb-md-0" href="topico1.html" rel="prev">Tópico anterior</a>
+                  <a class="button-primary" href="topico3.html" rel="next">Próximo tópico</a>
+                </div>
               </div>
             </div>
           </div>
-        </footer>
+        </section>
       </div>
-    </div>
 
-    <!-- Sidebar Toggle only on mobile -->
-    <div id="sidebar-toggle">
-      <div class="box">
-        <div class="btn not-active">
-          <span></span>
-          <span></span>
-          <span></span>
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <ul class="logos">
+                <li><img src="../../images/ensp.svg" alt="Logo da Escola Nacional de Saúde Pública Sério Arouca (ENSP)" height="80px"></li>
+                <li><img src="../../images/fiocruz.svg" alt="Logo da Fiocruz" height="80px"></li>
+                <li><img src="../../images/sus.svg" alt="Logo do Sistema Único de Saúde" height="60px"></li>
+                <li><img src="../../images/ministerio-da-saude-e-governo-federal.svg" alt="Logo do Ministério da Saúde e Governo Federal" height="50px"></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Sidebar Toggle only on mobile -->
+  <div id="sidebar-toggle">
+    <div class="box">
+      <div class="btn not-active">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
+  </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
-    <!-- Sticky Sidebar -->
+  <!-- Sticky Sidebar -->
 
-    <script type="text/javascript" src="../../js/ResizeSensor.js"></script>
-    <script type="text/javascript" src="../../js/sticky-sidebar.js"></script>
-    <script type="text/javascript" src="../../js/sidebar.js"></script>
+  <script type="text/javascript" src="../../js/ResizeSensor.js"></script>
+  <script type="text/javascript" src="../../js/sticky-sidebar.js"></script>
+  <script type="text/javascript" src="../../js/sidebar.js"></script>
 
-    <script type="text/javascript">
-      var sidebar = new StickySidebar('.sidebar', {
-        topSpacing: 0,
-        bottomSpacing: 0,
-        containerSelector: '.main',
-        innerWrapperSelector: '.sidebar__inner',
-        minWidth: 991,
-      });
-    </script>
+  <script type="text/javascript">
+    var sidebar = new StickySidebar('.sidebar', {
+      topSpacing: 0,
+      bottomSpacing: 0,
+      containerSelector: '.main',
+      innerWrapperSelector: '.sidebar__inner',
+      minWidth: 991,
+    });
+  </script>
 
-    <script type="text/javascript" src="../../js/scripts.js"></script>
-    <script type="text/javascript" src="../../js/anime.min.js"></script>
-    <script type="text/javascript" src="../../js/custom-anime.js"></script>
+  <script type="text/javascript" src="../../js/scripts.js"></script>
+  <script type="text/javascript" src="../../js/anime.min.js"></script>
+  <script type="text/javascript" src="../../js/custom-anime.js"></script>
 
-    <!-- Modal Video resumo da aula -->
-    <div
-      class="modal modal-video fade p-0"
-      id="resumo-video"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+  <!-- Modal Video resumo da aula -->
+  <div class="modal modal-video fade p-0" id="resumo-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+        </button>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/9_V-1mM1j1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Bibliografia -->
+  <div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-bibliografia">Bibliografia</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
           </button>
-          <iframe
-            width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/9_V-1mM1j1c"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
         </div>
-      </div>
-    </div>
+        <div class="modal-body">
+          <div id="accordion-bibliografia" class="accordion mb-5">
 
-    <!-- Modal Bibliografia -->
-    <div
-      class="modal fade"
-      id="modal-bibliografia"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-bibliografia">Bibliografia</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="accordion-bibliografia" class="accordion mb-5">
-              <!-- Accordion item 1 -->
-              <div id="headingOne" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                  class="d-block position-relative collapsible-link py-2"
-                  >Aula 1</a
-                >
-              </div>
-              <div
-                id="collapseOne"
-                aria-labelledby="headingOne"
-                data-parent="#accordion-bibliografia"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
+            <!-- Accordion item 1 -->
+            <div id="headingOne-bibliografia" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseOne-bibliografia" aria-expanded="false" aria-controls="collapseOne-bibliografia" class="d-block position-relative collapsible-link py-2">Aula 1</a>
+            </div>
+            <div id="collapseOne-bibliografia" aria-labelledby="headingOne-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
                 </div>
               </div>
+            </div>
 
-              <!-- Accordion item 2 -->
-              <div id="headingTwo" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 2</a
-                >
-              </div>
-              <div
-                id="collapseTwo"
-                aria-labelledby="headingTwo"
-                data-parent="#accordion-bibliografia"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina
-                        na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia
-                        de Almeida Neves. (org.). Brasil republicano. Economia e
-                        sociedade, poder e política, cultura e representações.
-                        Rio de Janeiro: Editora Civilização Brasileira, 2003,
-                        v.1, pp. 231-286.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e
-                        epidemias na Corte imperial. São Paulo: Companhia das
-                        Letras, 1996, pp. 97-185.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as
-                        epidemias e a formação dos serviços de saúde em São
-                        Paulo. São Paulo: Unesp, 1986.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CASTRO-SANTOS, Luiz Antônio de.
-                        <em>A reforma sanitária pelo alto:</em> o pioneirismo
-                        paulista no início do século XX. Dados, v. 36, n.3,
-                        1993, pp. 361-92.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio; EDLER, F. C.
-                        <em>História e Cultura da Medicina no Brasil.</em> 1.
-                        ed. São Paulo: Aori Produções Culturais, 2012. v.1.
-                        2081p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio.
-                        <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A
-                        Trajetória do Instituto Pasteur de São Paulo 1903-1915.
-                        1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. e Teixeira, Luiz A.
-                        <em>Cobras, Lagartos e Outros Bichos:</em> uma História
-                        Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed.
-                        Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. (org.)
-                        <em>Manguinhos do sonho à vida:</em> a ciência na Belle
-                        Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020.
-                        v.1. 320p.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L.
-                        <em>Dos micróbios aos mosquitos.</em> Febre amarela e a
-                        revolução pausteriana no Brasil. Rio de Janeiro: Editora
-                        Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​
-                      </li>
-                    </ul>
-                  </div>
+            <!-- Accordion item 2 -->
+            <div id="headingTwo-bibliografia" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseTwo-bibliografia" aria-expanded="false" aria-controls="collapseTwo-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
+            </div>
+            <div id="collapseTwo-bibliografia" aria-labelledby="headingTwo-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CARMO, E. H; TEIXEIRA, M. G. Desastres tecnológicos e emergências de saúde pública: o caso do derramamento de óleo no litoral do Brasil. <strong>Cadernos de Saúde Pública</strong>, 36, e00234419, 2020.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      LIMA, E; SILVA, R. M. D. S. R; FRUTUOSO, R. L; BAHIA, A; BEZERRA, B. B. S; ROHLFS, D. B. Emergência em Saúde Pública por inundações: a atuação do Ministério da Saúde em ocorrências no Brasil de 2004. <strong>Revista Saúde em Debate</strong>, Rio de janeiro, v. 44, n. Especial 2, p. 9-19, julho 2020.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      NARVÁEZ, L.; LAVELL, A. N.; ORTEGA, G. P. <strong>La gestión del riesgo de desastres: un enfoque baseado en processos</strong>. Lima: Secretaria General de La Comunidad Andina, 2009.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      ROCHA, V; LONDE, L.R. <strong>Desastres: velhos e novos desafios para a saúde coletiva</strong>. Rio de Janeiro: Editora Fiocruz, 2021.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      SOUZA, L.D.P. A pandemia da COVID-19 e os reflexos na relação meio ambiente e sociedade. <strong>Revista Brasileira de Meio Ambiente</strong>, 8(4), 2020.
+                      ​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      UNITED NATIONS OFFICE FOR DISASTER RISK REDUCTION. <strong>Sendai framework for disaster risk reduction</strong>: 2015-2030. Geneva: United Nations Office for Disaster Risk Reduction; 2015.
+                    <strong></li></strong>
+                  </ul>
                 </div>
               </div>
+            </div>
 
-              <!-- Accordion item 3 -->
-              <div id="headingThree" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 3</a
-                >
-              </div>
-              <div
-                id="collapseThree"
-                aria-labelledby="headingThree"
-                data-parent="#accordion-bibliografia"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 4 -->
-              <div id="headingFour" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 4</a
-                >
-              </div>
-              <div
-                id="collapseFour"
-                aria-labelledby="headingFour"
-                data-parent="#accordion-bibliografia"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
+            <!-- Accordion item 3 -->
+            <div id="headingThree-bibliografia" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseThree-bibliografia" aria-expanded="false" aria-controls="collapseThree-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula
+                3</a>
+            </div>
+            <div id="collapseThree-bibliografia" aria-labelledby="headingThree-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      ARKEMAN, M. <strong>SUS: a propaganda é a alma do negócio?</strong> Publicado em 02 de Junho de 2021. Disponível <a href="https://www.abrasco.org.br/site/noticias/sus-a-propaganda-e-a-alma-do-negocio-artigo-de-marco-akerman/59873/" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BRASIL. Ministério da Saúde. Portaria nº 104/GM, de 25 de janeiro de 2011. <strong>Define as terminologias adotadas em legislação nacional, conforme o disposto no Regulamento Sanitário Internacional 2005 (RSI 2005), a relação de doenças, agravos e eventos em saúde pública de notificação compulsória em todo o território nacional e estabelece fluxo, critérios, responsabilidades e atribuições aos profissionais e serviços de saúde</strong>. Diário Oficial da República Federativa do Brasil: seção 1, Brasília, DF, 11 jan. 2011b.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CERUTTI, D. F; OLIVEIRA, L. A aplicação da gestão de risco em desastres no Sistema Único de Saúde (SUS). <strong>Caderno Saúde Coletiva</strong>. Rio de Janeiro, 19(4), 417-24, 2011.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      GUIMARÃES, C. <strong>A importância de um sistema de saúde público e universal no enfrentamento à epidemia</strong>. Publicado em 25 de Março de 2020. Acessado em 15 de Junho de 2021. Disponível <a href="https://www.epsjv.fiocruz.br/noticias/reportagem/a-importancia-de-um-sistema-de-saude-publico-e-universal-no-enfrentamento-a" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      PAIM, J.S; SILVA, L.M.V. Universalidade, integralidade, equidade e SUS. <strong>BIS, Bol. Inst. Saúde</strong>, São Paulo, v. 12, n. 2, ago.  2010.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      ROCHA, V; LONDE, L.R. <strong>Desastres: velhos e novos desafios para a saúde coletiva</strong>. Rio de Janeiro: Editora Fiocruz, 2021.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      TRIPARTITE, G.T.D.C.I. <strong>Diretrizes para Organização das Redes de Atenção à Saúde do SUS</strong>. Brasília. Grupo Intergestores da Comissão Intergestores Tripartide, pp 1-16, 2010.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      VENTURA, D. <strong>Coronavírus: não existe segurança sem acesso universal à saúde</strong>. Jornal da USP. Publicado em 31 de Março de 2020. Link disponível <a href="https://jornal.usp.br/artigos/coronavirus-nao-existe-seguranca-sem-acesso-universal-a-saude/" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      VÍDEO. <strong>O princípio da equidade e a pandemia de Coronavírus - vídeo 1</strong>. Disponível <a href="https://www.youtube.com/watch?v=Re8ktjMuRy0&t=203s" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      VÍDEO. <strong>Os princípios do SUS</strong>. Disponível <a href="https://www.youtube.com/watch?v=PzVxQkNyqLs&t=223s" target="_blank" rel="noopener noreferrer">aqui</a>. 
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="button-primary" data-dismiss="modal">
-              Close
-            </button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
 
-    <!-- Modal Material Complementar -->
-    <div
-      class="modal fade"
-      id="modal-material-complementar"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-material-complementar">
-              Material Complementar
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="accordion-material-complementar" class="accordion mb-5">
-              <!-- Accordion item 1 -->
-              <div id="headingOne" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                  class="d-block position-relative collapsible-link py-2"
-                  >Aula 1</a
-                >
-              </div>
-              <div
-                id="collapseOne"
-                aria-labelledby="headingOne"
-                data-parent="#accordion-material-complementar"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
+
+  </div>
+
+  <!-- Modal Material Complementar -->
+  <div class="modal fade" id="modal-material-complementar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-material-complementar">Material Complementar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="accordion-material-complementar" class="accordion mb-5">
+
+            <!-- Accordion item 1 -->
+            <div id="headingOne-complementar" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseOne-complementar" aria-expanded="false" aria-controls="collapseOne-complementar" class="d-block position-relative collapsible-link py-2">Aula 1</a>
+            </div>
+            <div id="collapseOne-complementar" aria-labelledby="headingOne-complementar" data-parent="#accordion-material-complementar" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
                 </div>
               </div>
+            </div>
 
-              <!-- Accordion item 2 -->
-              <div id="headingTwo" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 2</a
-                >
-              </div>
-              <div
-                id="collapseTwo"
-                aria-labelledby="headingTwo"
-                data-parent="#accordion-material-complementar"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina
-                        na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia
-                        de Almeida Neves. (org.). Brasil republicano. Economia e
-                        sociedade, poder e política, cultura e representações.
-                        Rio de Janeiro: Editora Civilização Brasileira, 2003,
-                        v.1, pp. 231-286.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e
-                        epidemias na Corte imperial. São Paulo: Companhia das
-                        Letras, 1996, pp. 97-185.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as
-                        epidemias e a formação dos serviços de saúde em São
-                        Paulo. São Paulo: Unesp, 1986.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CASTRO-SANTOS, Luiz Antônio de.
-                        <em>A reforma sanitária pelo alto:</em> o pioneirismo
-                        paulista no início do século XX. Dados, v. 36, n.3,
-                        1993, pp. 361-92.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio; EDLER, F. C.
-                        <em>História e Cultura da Medicina no Brasil.</em> 1.
-                        ed. São Paulo: Aori Produções Culturais, 2012. v.1.
-                        2081p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio.
-                        <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A
-                        Trajetória do Instituto Pasteur de São Paulo 1903-1915.
-                        1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. e Teixeira, Luiz A.
-                        <em>Cobras, Lagartos e Outros Bichos:</em> uma História
-                        Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed.
-                        Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. (org.)
-                        <em>Manguinhos do sonho à vida:</em> a ciência na Belle
-                        Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020.
-                        v.1. 320p.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L.
-                        <em>Dos micróbios aos mosquitos.</em> Febre amarela e a
-                        revolução pausteriana no Brasil. Rio de Janeiro: Editora
-                        Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​
-                      </li>
-                    </ul>
-                  </div>
+            <!-- Accordion item 2 -->
+            <div id="headingTwo-complementar" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseTwo-complementar" aria-expanded="false" aria-controls="collapseTwo-complementar" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
+            </div>
+            <div id="collapseTwo-complementar" aria-labelledby="headingTwo-complementar" data-parent="#accordion-material-complementar" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge
+                      Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e
+                      política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1,
+                      pp. 231-286.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo:
+                      Companhia das Letras, 1996, pp. 97-185.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de
+                      saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no
+                      início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São
+                      Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do
+                      Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História
+                      Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993.
+                      238p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed.
+                      Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em> Febre amarela e a revolução pausteriana
+                      no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
+                  </ul>
                 </div>
               </div>
+            </div>
 
-              <!-- Accordion item 3 -->
-              <div id="headingThree" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 3</a
-                >
-              </div>
-              <div
-                id="collapseThree"
-                aria-labelledby="headingThree"
-                data-parent="#accordion-material-complementar"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 4 -->
-              <div id="headingFour" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 4</a
-                >
-              </div>
-              <div
-                id="collapseFour"
-                aria-labelledby="headingFour"
-                data-parent="#accordion-material-complementar"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
+            <!-- Accordion item 3 -->
+            <div id="headingThree-complementar" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseThree-complementar" aria-expanded="false" aria-controls="collapseThree-complementar" class="d-block position-relative collapsed collapsible-link py-2">Aula
+                3</a>
+            </div>
+            <div id="collapseThree-complementar" aria-labelledby="headingThree-complementar" data-parent="#accordion-material-complementar" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="button-primary" data-dismiss="modal">
-              Close
-            </button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal Créditos -->
-    <div
-      class="modal fade"
-      id="modal-creditos"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-creditos">Créditos</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="accordion-creditos" class="accordion mb-5">
-              <!-- Accordion item 1 -->
-              <div id="headingOne" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                  class="d-block position-relative collapsible-link py-2"
-                  >Aula 1</a
-                >
-              </div>
-              <div
-                id="collapseOne"
-                aria-labelledby="headingOne"
-                data-parent="#accordion-creditos"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
+  <!-- Modal Créditos -->
+  <div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-creditos">Créditos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="accordion-creditos" class="accordion mb-5">
+
+            <!-- Accordion item 1 -->
+            <div id="headingOne-creditos" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseOne-creditos" aria-expanded="false" aria-controls="collapseOne-creditos" class="d-block position-relative collapsible-link py-2">Aula 1</a>
+            </div>
+            <div id="collapseOne-creditos" aria-labelledby="headingOne-creditos" data-parent="#accordion-creditos" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
                 </div>
               </div>
+            </div>
 
-              <!-- Accordion item 2 -->
-              <div id="headingTwo" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 2</a
-                >
-              </div>
-              <div
-                id="collapseTwo"
-                aria-labelledby="headingTwo"
-                data-parent="#accordion-creditos"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina
-                        na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia
-                        de Almeida Neves. (org.). Brasil republicano. Economia e
-                        sociedade, poder e política, cultura e representações.
-                        Rio de Janeiro: Editora Civilização Brasileira, 2003,
-                        v.1, pp. 231-286.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e
-                        epidemias na Corte imperial. São Paulo: Companhia das
-                        Letras, 1996, pp. 97-185.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as
-                        epidemias e a formação dos serviços de saúde em São
-                        Paulo. São Paulo: Unesp, 1986.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CASTRO-SANTOS, Luiz Antônio de.
-                        <em>A reforma sanitária pelo alto:</em> o pioneirismo
-                        paulista no início do século XX. Dados, v. 36, n.3,
-                        1993, pp. 361-92.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio; EDLER, F. C.
-                        <em>História e Cultura da Medicina no Brasil.</em> 1.
-                        ed. São Paulo: Aori Produções Culturais, 2012. v.1.
-                        2081p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio.
-                        <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A
-                        Trajetória do Instituto Pasteur de São Paulo 1903-1915.
-                        1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. e Teixeira, Luiz A.
-                        <em>Cobras, Lagartos e Outros Bichos:</em> uma História
-                        Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed.
-                        Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. (org.)
-                        <em>Manguinhos do sonho à vida:</em> a ciência na Belle
-                        Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020.
-                        v.1. 320p.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L.
-                        <em>Dos micróbios aos mosquitos.</em> Febre amarela e a
-                        revolução pausteriana no Brasil. Rio de Janeiro: Editora
-                        Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​
-                      </li>
-                    </ul>
-                  </div>
+            <!-- Accordion item 2 -->
+            <div id="headingTwo-creditos" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseTwo-creditos" aria-expanded="false" aria-controls="collapseTwo-creditos" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
+            </div>
+            <div id="collapseTwo-creditos" aria-labelledby="headingTwo-creditos" data-parent="#accordion-creditos" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge
+                      Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e
+                      política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1,
+                      pp. 231-286.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo:
+                      Companhia das Letras, 1996, pp. 97-185.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de
+                      saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no
+                      início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São
+                      Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do
+                      Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História
+                      Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993.
+                      238p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed.
+                      Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em> Febre amarela e a revolução pausteriana
+                      no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
+                  </ul>
                 </div>
               </div>
+            </div>
 
-              <!-- Accordion item 3 -->
-              <div id="headingThree" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 3</a
-                >
-              </div>
-              <div
-                id="collapseThree"
-                aria-labelledby="headingThree"
-                data-parent="#accordion-creditos"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 4 -->
-              <div id="headingFour" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 4</a
-                >
-              </div>
-              <div
-                id="collapseFour"
-                aria-labelledby="headingFour"
-                data-parent="#accordion-creditos"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
+            <!-- Accordion item 3 -->
+            <div id="headingThree-creditos" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseThree-creditos" aria-expanded="false" aria-controls="collapseThree-creditos" class="d-block position-relative collapsed collapsible-link py-2">Aula
+                3</a>
+            </div>
+            <div id="collapseThree-creditos" aria-labelledby="headingThree-creditos" data-parent="#accordion-creditos" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="button-primary" data-dismiss="modal">
-              Close
-            </button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

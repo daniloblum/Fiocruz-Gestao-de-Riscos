@@ -1,911 +1,1032 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Fiocruz: Escola Nacional de Saúde Pública Sérgio Arouca - ENSP" />
-	<meta name="robots" content="noindex" />
-	<meta name="keywords" content="Saúde Pública, Brasil, Fiocruz, Casa Oswaldo Cruz, Curso">
-	<meta name="description" content="Disciplina sobre a Gestão de Risco de emergência em saúde pública para Covid-19.">
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Fiocruz: Escola Nacional de Saúde Pública Sérgio Arouca - ENSP" />
+  <meta name="robots" content="noindex" />
+  <meta name="keywords" content="Saúde Pública, Brasil, Fiocruz, Casa Oswaldo Cruz, Curso" />
+  <meta name="description" content="Disciplina sobre a Gestão de Risco de emergência em saúde pública para Covid-19." />
 
-    <!-- Favicons and Touch Icons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="../../images/icons//apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../../images/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../../images/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../../images/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../../images/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../../images/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../../images/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../../images/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../images/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../../images/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../../images/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../images/icons/favicon-16x16.png">
-    <link rel="manifest" href="../../images/icons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../../images/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+  <!-- Favicons and Touch Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../images/icons//apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="../../images/icons/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../../images/icons/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../../images/icons/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../../images/icons/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../../images/icons/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../../images/icons/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../../images/icons/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/icons/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="../../images/icons/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="../../images/icons/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../../images/icons/favicon-16x16.png" />
+  <link rel="manifest" href="../../images/icons/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="../../images/icons/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <title>Gestão de Risco de emergência em saúde pública para Covid-19 - Módulo 1 - Aula 2</title>
+  <title>
+    Gestão de Risco de emergência em saúde pública para Covid-19 - Módulo 1 -
+    Aula 2
+  </title>
 
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap" rel="stylesheet" />
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
 
-    <!-- Bootstrap Icons CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="../../css/animate.min.css" />
 
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="../../css/animate.min.css">
-
-    <!-- Project CSS -->
-    <link rel="stylesheet" href="../../css/style.css">
+  <!-- Project CSS -->
+  <link rel="stylesheet" href="../../css/style.css" />
 </head>
 
 <body>
-
-    <div class="main">
-      <div class="sidebar">
-        <div class="sidebar__inner">
-          <section class="sidebar__header">
-            <h4 class="m-0">
-              Gestão de Risco de emergência em saúde pública para Covid-19
-            </h4>
-          </section>
-          <hr />
-          <section class="sidebar__section py-2">
-            <a href="../../index.html" class="sidebar__btn">
-              <i class="bi-house mr-2"></i>Voltar para o início
-            </a>
-          </section>
-          <hr />
-          <nav class="sidebar__section">
-            <h6 class="">Aula 2</h6>
-            <h5>
-              Conceitos básicos e terminologias em Emergência em Saúde Pública
-            </h5>
-            <div class="sidebar__topic-list">
-              <div>
-                <a
-                  href="inicio.html"
-                  class="
-                    sidebar__btn sidebar__list-item sidebar__list-item--selected
-                  "
-                  ><i class="bi-check-circle-fill"></i
-                  ><span>Início da aula</span></a
-                >
-
-                <a
-                  href="topico1.html"
-                  class="
-                    sidebar__btn sidebar__list-item sidebar__list-item--selected
-                  "
-                  ><i class="bi-check-circle-fill"></i
-                  ><span>Introdução</span></a
-                >
-
-                <a
-                  href="topico2.html"
-                  class="
-                    sidebar__btn sidebar__list-item sidebar__list-item--selected
-                  "
-                  ><i class="bi-check-circle-fill"></i
-                  ><span>Conceito de Emergência em Saúde Pública</span></a
-                >
-
-                <a href="topico3.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"
-                  ><i class="bi-circle-fill"></i
-                  ><span
-                    >Conceitos básicos e terminologias importantes para
-                    Emergência em Saúde Pública</span
-                  ></a
-                >
-
-                <a href="topico4.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i
-                  ><span
-                    >Fatores de risco para Emergências em Saúde Pública</span
-                  ></a
-                >
-
-                <a href="topico5.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i
-                  ><span
-                    >Setor Saúde e o processo de Gestão de Risco de Emergências
-                    em Saúde Pública</span
-                  ></a
-                >
-
-                <a href="topico6.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i
-                  ><span>Sindemia e COVID-19</span></a
-                >
-
-                <a href="topico7.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i><span>Resumo</span></a
-                >
-
-                <a href="topico8.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i><span>Fim da aula</span></a
-                >
-              </div>
-            </div>
+  <div class="main">
+    <div class="sidebar">
+      <div class="sidebar__inner">
+        <section class="sidebar__header">
+          <h4 class="m-0">
+            Gestão de Risco de emergência em saúde pública para Covid-19
+          </h4>
+        </section>
+        <hr />
+        <section class="sidebar__section py-2">
+          <a href="../../index.html" class="sidebar__btn">
+            <i class="bi-house mr-2"></i>Voltar para o início
+          </a>
+        </section>
+        <hr />
+        <nav class="sidebar__section">
+          <h6 class="">Aula 2</h6>
+          <h5>
+            Conceitos básicos e terminologias em Emergência em Saúde Pública
+          </h5>
+          <div class="sidebar__topic-list">
             <div>
-              <a
-                href=""
-                class="sidebar__btn"
-                data-toggle="modal"
-                data-target="#resumo-video"
-              >
-                <i class="bi bi-camera-video mr-2"></i> Resumo da aula
-              </a>
+              <a href="inicio.html" class="
+                    sidebar__btn sidebar__list-item sidebar__list-item--selected
+                  "><i class="bi-check-circle-fill"></i><span>Início da aula</span></a>
+
+              <a href="topico1.html" class="
+                    sidebar__btn sidebar__list-item sidebar__list-item--selected
+                  "><i class="bi-check-circle-fill"></i><span>Introdução</span></a>
+
+              <a href="topico2.html" class="
+                    sidebar__btn sidebar__list-item sidebar__list-item--selected
+                  "><i class="bi-check-circle-fill"></i><span>Conceito de Emergência em Saúde Pública</span></a>
+
+              <a href="topico3.html" class="
+                    sidebar__btn sidebar__list-item sidebar__list-item--selected
+                  "><i class="bi-circle-fill"></i><span>Conceitos básicos e terminologias importantes para
+                  Emergência em Saúde Pública</span></a>
+
+              <a href="topico4.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Fatores de risco para Emergências em Saúde Pública</span></a>
+
+              <a href="topico5.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Setor Saúde e o processo de Gestão de Risco de Emergências
+                  em Saúde Pública</span></a>
+
+              <a href="topico6.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Sindemia e COVID-19</span></a>
+
+              <a href="topico7.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Resumo</span></a>
+
+              <a href="topico8.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Fim da aula</span></a>
             </div>
-          </nav>
-          <hr />
-          <section class="sidebar__section">
-            <h6 class="">Aulas</h6>
-            <a href="../aula2/inicio.html" class="sidebar__btn">
-              <i></i>2. Saúde, microbiologia e reformas urbanas
+          </div>
+          <div>
+            <a href="" class="sidebar__btn" data-toggle="modal" data-target="#resumo-video">
+              <i class="bi bi-camera-video mr-2"></i> Resumo da aula
             </a>
-            <a href="../aula3/inicio.html" class="sidebar__btn">
-              <i></i>3. Oswaldo Cruz e o saneamento do Rio de Janeiro
-            </a>
-            <a href="../aula4/inicio.html" class="sidebar__btn">
-              <i></i>4. Das cidades aos sertões
-            </a>
-          </section>
-          <hr />
-          <section class="sidebar__section py-2">
-            <a
-              href=""
-              class="sidebar__btn"
-              data-toggle="modal"
-              data-target="#modal-bibliografia"
-            >
-              <i class="bi-book mr-2"></i> Bibliografia
-            </a>
-          </section>
+          </div>
+        </nav>
+        <hr />
+        <section class="sidebar__section">
+          <h6 class="">Aulas</h6>
+          <a href="../aula1/inicio.html" class="sidebar__btn pr-lg-5">
+            <i></i>1. Contexto das Emergências em Saúde Pública com foco na COVID-19
+          </a>
+          <a href="../aula3/inicio.html" class="sidebar__btn pr-lg-5">
+            <i></i>3. Premissas básicas e princípios do SUS</a>
+        </section>
+        <hr />
+        <section class="sidebar__section py-2">
+          <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-bibliografia">
+            <i class="bi-book mr-2"></i> Bibliografia
+          </a>
+        </section>
 
-          <section class="sidebar__section py-0">
-            <a
-              href=""
-              class="sidebar__btn"
-              data-toggle="modal"
-              data-target="#modal-material-complementar"
-            >
-              <i class="bi bi-journals mr-2"></i> Material Complementar
-            </a>
-          </section>
+        <section class="sidebar__section py-0">
+          <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-material-complementar">
+            <i class="bi bi-journals mr-2"></i> Material Complementar
+          </a>
+        </section>
 
-          <section class="sidebar__section py-2">
-            <a
-              href=""
-              class="sidebar__btn"
-              data-toggle="modal"
-              data-target="#modal-creditos"
-            >
-              <i class="bi bi-list-ul mr-2"></i> Créditos
-            </a>
-          </section>
-          <hr />
-          <section class="sidebar__section py-4">
-            <img
-              src="../../images/logo.svg"
-              alt="Observatório História & Saúde"
-              width="60%"
-            />
-          </section>
-        </div>
+        <section class="sidebar__section py-2">
+          <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-creditos">
+            <i class="bi bi-list-ul mr-2"></i> Créditos
+          </a>
+        </section>
+        <hr />
+        <section class="sidebar__section py-4">
+          <img src="../../images/logo.svg" alt="Observatório História & Saúde" width="60%" />
+        </section>
       </div>
-        <div class="content">
-            <header class="header py-5" style="background-image: url(../../images/modulo1/header-tarja.jpg);">
-                <div class="container">
-                  <div class="header__inner">
-                      <!-- <img src="../../images/modulo1/header-tarja.jpg" alt=""> -->
-                      <div class="header__title">
-                        <div class="row justify-content-center">
-                          <div class="col-12 col-md-10 col-lg-8 text-left">
-                              <h3>Módulo 1</h3>
-                              <h1 class="m-0">Introdução​</h1>
-                          </div>
-                          <!-- <div class="col-lg-4 position-relative">
+    </div>
+    <div class="content">
+      <header class="header py-5" style="background-image: url(../../images/modulo1/header-tarja.jpg)">
+        <div class="container">
+          <div class="header__inner">
+            <!-- <img src="../../images/modulo1/header-tarja.jpg" alt=""> -->
+            <div class="header__title">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-left">
+                  <h3>Módulo 1</h3>
+                  <h1 class="m-0">Introdução​</h1>
+                </div>
+                <!-- <div class="col-lg-4 position-relative">
                               <img class="image1 d-none d-lg-block p-xl-3" src="../../images/modulo1/header-foto.png" alt="">
                               <span class="image3"></span>
                           </div> -->
-                        </div>
-                      </div>
-                  </div>
-                </div>
-            </header>
-        
-            <div id="page-content" class="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
-                <!-- Inserir o conteúdo aqui -->
-                <section>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-8">
-                                <!-- Heading Block (Título h2 ou h3  + Lead (se houver)) -->
-                                <div class="heading__block">
-                                    <span class="heading__before">Aula 2</span>
-                                    <h2 class="heading__title">Conceitos básicos e terminologias importantes para Emergência em Saúde Pública</h2>
-                                    <!-- <p class="heading__lead">A idéia deste modelo é reunir os principais recursos visuais
+      <div id="page-content" class="">
+        <!-- Inserir o conteúdo aqui -->
+        <section>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8">
+                <!-- Heading Block (Título h2 ou h3  + Lead (se houver)) -->
+                <div class="heading__block">
+                  <span class="heading__before">Aula 2</span>
+                  <h2 class="heading__title">
+                    Conceitos básicos e terminologias importantes para
+                    Emergência em Saúde Pública
+                  </h2>
+                  <!-- <p class="heading__lead">A idéia deste modelo é reunir os principais recursos visuais
                                     utilizados
                                     para as aulas.</p> -->
-                                </div>
-                                <!-- Fim do Heading Block -->
-
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center mb-5">
-                            <div class="col-12 col-md-10 col-lg-8">
-                                <div class="row justify-content-center d-lg-block px-3">
-                                    <!-- Imagem -->
-                                    <div class="col-12 col-md-10 col-lg-6 float-lg-right ml-lg-4 px-0 order-1 order-lg-2">
-                                        <figure>
-                                            <img class="img-fluid rounded mx-auto d-block mb-3" src="../../images/modulo1/aula2/topico3/img1-estalagem.jpg" alt="Estalagem da rua do Senado, fotografada por Augusto Malta.​" title="Fonte: ENTLER, Ronaldo; OLIVEIRA JR., Antônio Ribeiro de. Augusto Malta e Marc Ferrez / www.dezenovevinte.net">
-                                            <figcaption class="figure-caption">Estalagem da rua do Senado, fotografada por Augusto Malta.​</figcaption>
-                                            <figcaption class="figure-caption fonte">Fonte: <a href='http://www.dezenovevinte.net/arte%20decorativa/am_mf.htm' target='_blank'>ENTLER, Ronaldo; OLIVEIRA JR., Antônio Ribeiro de. Augusto Malta e Marc Ferrez: Olhares sobre a construção de uma metrópole. 19&20, Rio de Janeiro, v. III, n. 4, out. 2008.</a></figcaption>
-                                        </figure>
-                                    </div>
-
-                                    <!-- Texto -->
-                                    <div class="order-2 order-lg-1">
-                                        <p>No Rio de Janeiro, então capital do Império e, posteriormente da República, o desenvolvimento vindo da ampliação do comércio transformara a cidade em um centro urbano mais populoso, mas totalmente desordenado.</p>
-
-                                        <p>Nele, a cada ano surgiam epidemias que devastavam grande parte da população e dificultavam a economia, se transformando num estorvo para os governantes e num desafio para os médicos.​</p>
-                                        <p>Durante grande parte do século XIX, a medicina teve pouca capacidade de proteger a população contra doenças transmissíveis. Apesar dos  conhecimentos que os médicos possuíam sobre diversas doenças, suas práticas para controlar as epidemias eram muito restritas.</p>
-                                        <p>Os médicos do período acreditavam que o surgimento das doenças transmissíveis se relacionava a elementos invisíveis denominados de miasmas.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center mb-5">
-                            <div class="col-12 col-md-10 col-lg-8">
-        
-                                <!-- Box de Saiba Mais -->
-                                <div class="card-box card border-0 shadow">
-                                    <div class="box-quote">
-                                        <h5>
-                                            <i class="box-quote__icone bi bi-question-lg" data-fa-transform="grow-25" aria-hidden="true"></i>Saiba
-                                            Mais
-                                        </h5>
-                                        <div class="boxes-content">
-        
-                                            <div class="row justify-content-center d-lg-block px-3">
-                                                <!-- Imagem -->
-                                                <div class="col-12 col-md-10 col-lg-6 float-lg-right ml-lg-4 px-0 order-1 order-lg-2">
-                                                    <figure>
-                                                        <img class="img-fluid rounded mx-auto d-block mb-3" src="../../images/modulo1/aula2/topico3/img2-a-india.jpg" alt="A índia, simbolizando a cidade do Rio de Janeiro, entrega ao imigrante o fruto proibido (miasmas) fornecido pela serpente (febre amarela)." title="Fonte: Revista Ilustrada, 18-3-1876.">
-                                                        <figcaption class="figure-caption">A índia, simbolizando a cidade do Rio de Janeiro, entrega ao imigrante o fruto proibido (miasmas) fornecido pela serpente (febre amarela).​</figcaption>
-                                                        <figcaption class="figure-caption fonte">Fonte: Revista Ilustrada, 18-3-1876.​</figcaption>
-                                                    </figure>
-                                                </div>
-            
-                                                <!-- Texto -->
-                                                <div class="order-2 order-lg-1">
-                                                    <p>Essas emanações envenenariam o ar de uma determinada região, tornando-a pestilenta, ou seja, provocando o adoecimento dos ocupantes de determinado território. Apesar de um grande conjunto de medidas para tentar evitar a degradação dos ares pelos intrigantes miasmas, as epidemias permanentemente voltavam a cada ano.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Fim do Box de Saiba Mais -->
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center mb-5">
-                            <div class="col-12 col-md-10 col-lg-8">
-                                
-                                <!--Slider-->
-                                <div id="carousel2" class="carousel slide " data-ride="false" data-interval="false" data-touch="true" data-keyboard="true" aria-labelledby="carouselheading">
-                                    <div class="card shadow border-0 p-2 pb-4">
-                                        <div class="row justify-content-center">
-                                            <div class="col-12 col-md-12 col-lg-12 justify-content-center d-flex flex-column carousel-texto">
-                                                <ol class="carousel-indicators">
-                                                    <li data-target="#carousel2" data-slide-to="0" class="active"></li>
-                                                    <li data-target="#carousel2" data-slide-to="1"></li>
-                                                    <li data-target="#carousel2" data-slide-to="2"></li>
-                                                    <li data-target="#carousel2" data-slide-to="3"></li>
-                                                </ol>
-            
-                                                <div class="carousel-inner p-4">
-                                                    <!-- Ítem 1 -->
-                                                    <article class="carousel-item active">
-                                                        <div class="row justify-content-center m-0">
-                                                            <div class="col-12 col-md-10">
-                                                                <p>Nas últimas décadas do século XIX essa situação iria se transformar, tendo como aspecto central o desenvolvimento dos conhecimentos sobre o papel dos microrganismos na transmissão das doenças. A ideia de que doenças pudessem ser transmitidas por elementos invisíveis é antiga e se relaciona a crença da geração espontânea de seres microscópicos, surgida a partir da observação do aparecimento de vermes e insetos em restos de comida em decomposição.</p>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-            
-                                                    <!-- Ítem 2 -->
-                                                    <article class="carousel-item">
-                                                        <div class="row justify-content-center m-0">
-                                                            <div class="col-12 col-md-10">
-                                                                <p>Nos anos 1870, essa concepção se transformou a partir das descobertas do químico francês Louis Pasteur e de um grande grupo de médicos cientistas, que a partir de estudos laboratoriais mostraram que as doenças transmissíveis eram causadas por microrganismos específicos, possíveis de serem combatidos por isolamento dos doentes, exames biológicos, vacinas e soros.</p>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-            
-                                                    <!-- Ítem 3 -->
-                                                    <article class="carousel-item">
-                                                        <div class="row justify-content-center m-0">
-                                                            <div class="col-12 col-md-10">
-                                                                <p>No Brasil, os estudos relacionados a doenças e micróbios se iniciaram nas duas últimas décadas do século XIX. Os trabalhos pioneiros viriam dos laboratórios da Faculdade de Medicina do Rio de Janeiro e do Museu Nacional, onde pesquisadores buscaram descobrir as causas das epidemias que atacavam o país.</p>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-
-                                                    <!-- Ítem 4 -->
-                                                    <article class="carousel-item">
-                                                        <div class="row justify-content-center m-0">
-                                                            <div class="col-12 col-md-10">
-                                                                <p>Em relação às políticas públicas, a microbiologia permitiria intervenções muito mais eficazes contra as doenças epidêmicas a partir do isolamento dos doentes, destruição de vetores, exames dos casos suspeitos e uso de vacinas e soros. Num momento em que as epidemias de febre amarela, varíola e cólera preocupavam os governantes, em especial por atrapalhar a economia, começava a surgir uma alternativa ao atraso do país.</p>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </div>
-            
-                                                <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
-                                                    <span class="carousel-control-prev-icon dark-arrow" aria-hidden="true"></span>
-                                                    <span class="sr-only">Anterior</span>
-                                                </a>
-                                                <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
-                                                    <span class="carousel-control-next-icon dark-arrow" aria-hidden="true"></span>
-            
-                                                    <span class="sr-only">Próximo</span>
-                                                </a>
-                                            </div>
-                                            <!--Fim do caroussel inner-->
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Fim do Slider-->
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-8">
-        
-                                <!-- Box de Para Escutar -->
-                                <div class="card-box card border-0 shadow">
-                                    <div class="box-quote">
-                                        <h5>
-                                            <i class="box-quote__icone bi bi-headphones" data-fa-transform="grow-25" aria-hidden="true"></i>Para
-                                            Escutar
-                                        </h5>
-                                        <div class="boxes-content">
-        
-                                            <p>Ouça abaixo o audio selecionado:</p>
-                                            <h6>As velhas noções higienistas​</h6>
-        
-                                            <div class="player-with-download green-audio-player">
-                                                <div class="holder">
-                                                    <div class="loading" style="visibility: hidden;">
-                                                        <div class="loading__spinner"></div>
-                                                    </div>
-        
-                                                    <div class="play-pause-btn" aria-label="Play" role="button" style="visibility: visible;">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24" tabindex="0" focusable="true">
-                                                            <path fill="#3c7d1b" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-btn__icon">
-                                                            </path>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-        
-                                                <div class="controls">
-                                                    <span class="controls__current-time" aria-live="off" role="timer">00:00</span>
-                                                    <div class="controls__slider slider" data-direction="horizontal" tabindex="0">
-                                                        <div class="controls__progress gap-progress" aria-label="Time Slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" role="slider">
-                                                            <div class="pin progress__pin" data-method="rewind"></div>
-                                                        </div>
-                                                    </div>
-                                                    <span class="controls__total-time">03:37</span>
-                                                </div>
-        
-                                                <div class="volume">
-                                                    <div class="volume__button" aria-label="Open Volume Controls" role="button">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" tabindex="0" focusable="true">
-                                                            <path class="volume__speaker" fill="#3c7d1b" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z">
-                                                            </path>
-                                                        </svg>
-                                                        <span class="message__offscreen">Press Enter or Space to show volume
-                                                            slider.</span>
-                                                    </div>
-                                                    <div class="volume__controls hidden top">
-                                                        <div class="volume__slider slider" data-direction="vertical" tabindex="0">
-                                                            <div class="volume__progress gap-progress" aria-label="Volume Slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="81" role="slider" style="height: 81%;">
-                                                                <div class="pin volume__pin" data-method="changeVolume"></div>
-                                                            </div>
-                                                            <span class="message__offscreen">Use Up/Down Arrow keys to increase
-                                                                or decrease volume.</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-        
-                                                <div class="download" tabindex="-1" style="display: block;">
-                                                    <a class="download__link" href="" download="" aria-label="Download" role="button" tabindex="-1">
-                                                        <svg width="24" height="24" fill="#3c7d1b" enable-background="new 0 0 29.978 29.978" version="1.1" viewBox="0 0 29.978 29.978" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" tabindex="0" focusable="true">
-                                                            <path d="m25.462 19.105v6.848h-20.947v-6.848h-4.026v8.861c0 1.111 0.9 2.012 2.016 2.012h24.967c1.115 0 2.016-0.9 2.016-2.012v-8.861h-4.026z">
-                                                            </path>
-                                                            <path d="m14.62 18.426l-5.764-6.965s-0.877-0.828 0.074-0.828 3.248 0 3.248 0 0-0.557 0-1.416v-8.723s-0.129-0.494 0.615-0.494h4.572c0.536 0 0.524 0.416 0.524 0.416v8.742 1.266s1.842 0 2.998 0c1.154 0 0.285 0.867 0.285 0.867s-4.904 6.51-5.588 7.193c-0.492 0.495-0.964-0.058-0.964-0.058z">
-                                                            </path>
-                                                        </svg>
-                                                    </a>
-                                                </div>
-        
-                                                <audio crossorigin="">
-                                                    <source src="audio/example-2.mp3" type="audio/mpeg">
-                                                </audio>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Fim do Box de Para Escutar -->
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- Navegação da aula -->
-                <section>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-8">
-                                <div class="page-nav d-flex justify-content-around">
-                                    <a class="button-primary mb-5 mb-md-0" href="topico2.html" rel="prev">Tópico anterior</a>
-                                    <a class="button-primary" href="topico4.html" rel="next">Próximo tópico</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <footer>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-10 col-lg-8">
-                            <ul class="logos">
-                                <li><img src="../../images/COC.svg" alt="Logo da Casa Oswaldo Cruz" height="80px"></li>
-                                <li><img src="../../images/fiocruz.svg" alt="Logo da Fiocruz" height="80px"></li>
-                                <li><img src="../../images/sus.svg" alt="Logo do Sistema Único de Saúde" height="60px"></li>
-                                <li><img src="../../images/ministerio-da-saude-e-governo-federal.svg" alt="Logo do Ministério da Saúde e Governo Federal" height="50px"></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
+                <!-- Fim do Heading Block -->
+              </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Sidebar Toggle only on mobile -->
-    <div id="sidebar-toggle">
-        <div class="box">
-            <div class="btn not-active">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <p class="mb-5">
+                  Outros conceitos, combinados, são fundamentais para entender
+                  as Emergências em Saúde Pública no que diz respeito a
+                  ocorrência e impactos, são eles: ameaça, exposição,
+                  vulnerabilidade e capacidade de redução de risco, danos e
+                  agravos do setor saúde (Freitas et al, 2018; Rocha e Alpino
+                  et al, 2016).
+                </p>
+                <!--Tabs-->
+                <div class="abas mb-5">
+                  <ul id="abas1" class="nav nav-tabs boot-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#aba1" data-toggle="tab">Ameaças e perigos</a>
+                    </li>
+                    <!-- A partir do 2º ítem, podemos escolher quem aparece -->
+                    <li class="nav-item d-none d-md-block">
+                      <a class="nav-link" href="#aba2" data-toggle="tab">Exposição</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                      <a class="nav-link" href="#aba3" data-toggle="tab">Vulnerabilidade</a>
+                    </li>
+
+                    <!-- Ítens em Dropdown - aparecem no mobile -->
+                    <li class="nav-item dropdown d-block d-md-none">
+                      <a class="nav-link dropdown-toggle" href="#" id="tabdrop1" data-toggle="dropdown" aria-expanded="true">Ver mais</a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="tapdrop1">
+                        <a class="dropdown-item" href="#aba2" tabindex="-1" data-toggle="tab">Exposição</a>
+                        <a class="dropdown-item" href="#aba3" tabindex="-1" data-toggle="tab">Vulnerabilidade</a>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div id="tabcontent1" class="tab-content">
+                    <!-- Aba 1 -->
+                    <div class="tab-pane fade show active" id="aba1">
+                      <p>
+                        As <strong>ameaças/perigos</strong> envolvem os
+                        eventos ou processos detonadores, os quais podem ser
+                        gerados pela dinâmica da natureza (meteorológicos,
+                        hidrológicos, climatológicos, biológicos,
+                        geofísicos/geológicos e extraterrestres) e/ou da
+                        sociedade (degradação ambiental, mudanças climáticas
+                        ou ameaças tecnológicas como os acidentes químicos e
+                        radio nucleares). Podem ser individuais, combinados ou
+                        sequenciais em suas origens e efeitos (Freitas
+                        <em>et al</em>, 2012; Freitas <em>et al</em>, 2018;
+                        Rocha e Alpino <em>et al</em>, 2016).
+                      </p>
+                      <p>
+                        No caso das Emergências em Saúde Pública podemos citar
+                        as degradações ambientais e as mudanças climáticas,
+                        que se materializam nos desastres, e alterações nos
+                        ciclos de vetores e hospedeiros, como Chikungunya;
+                        Microcefalia/síndrome congênita do zika e COVID-19.
+                      </p>
+                      <p>
+                        Vale ressaltar que ameaça sozinha dificilmente se
+                        transforma em Emergências em Saúde Pública, pois para
+                        que determinados eventos físicos se convertam em
+                        ameaças é necessário que haja a exposição de
+                        populações (Freitas <em>et al</em>, 2018).
+                      </p>
+                    </div>
+
+                    <!-- Aba 2 -->
+                    <div class="tab-pane fade" id="aba2">
+                      <p>
+                        As <strong>exposição</strong>A exposição é outro
+                        conceito-chave envolvendo eventos ou processos em que
+                        diferentes indivíduos e populações podem ser atingidos
+                        por eventos ou processos ambientais, a transmissão e
+                        infecção por agentes biológicos ou contaminação por
+                        agentes químicos ou radio-nucleares. A exposição
+                        ocorre em contextos espaciais (país, estado,
+                        município, bairro, setor censitário, assentamento
+                        rural, distrito sanitário etc.) e temporais (dias,
+                        semanas, meses, anos) específicos (Freitas
+                        <em>et al</em>, 2012; Freitas <em>et al</em>, 2018;
+                        Rocha e Alpino <em>et al</em>, 2016).
+                      </p>
+                    </div>
+
+                    <!-- Aba 3 -->
+                    <div class="tab-pane fade" id="aba3">
+                      <p>
+                        Porém, a intensidade e gravidade dos impactos das
+                        Emergências em Saúde Pública dependem do evento
+                        (ameaça/ perigo) e estes serão mais ou menos graves a
+                        depender das condições de
+                        <strong>vulnerabilidade</strong> (Freitas
+                        <em>et al</em>, 2018; Rocha e Alpino <em>et al</em>,
+                        2016).
+                      </p>
+                      <p>
+                        Os autores ainda afirmam que as condições de
+                        vulnerabilidade correspondem a expressões particulares
+                        de processos sociais, políticos, econômicos, como
+                        falta de trabalho, renda, educação, saneamento, água,
+                        biológicos (idosos, mulheres, gestantes, crianças) e
+                        ambientais (mudanças ambientais e climáticas
+                        resultantes da degradação ambiental – uso e tipo de
+                        solo, poluição de ar, solo, água, desmatamento) mais
+                        gerais da sociedade que podem produzir
+                        <strong>desigualdades</strong> e
+                        <strong>iniquidades</strong> nas condições de vida.
+                      </p>
+                      <p>
+                        Para as Emergências em Saúde Pública as condições de
+                        vulnerabilidade social assim como o aumento das
+                        desigualdades sociais influenciam no impacto nos
+                        grupos populacionais vulneráveis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim de Tabs -->
+
+                <p>Ainda dentro deste contexto, outros dois conceitos devem ser incorporados nesta discussão e definidos, são eles: desigualdade, equidade e iniquidade (Barata, 2001; Barreto 2017). </p>
+              </div>
             </div>
+
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-12 col-lg-12">
+
+                <!--Flip Cards 2.0 CSS -->
+                <div class="row justify-content-center">
+
+                  <!--FlipCard 1-->
+                  <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+
+                    <div class="flip-card">
+                      <input type="checkbox" id="flipcard1" class="more" aria-hidden="true">
+                      <div class="flip-card-inner">
+
+                        <!-- FRENTE -->
+                        <div class="card shadow flip-card-front fundo1 item1 text-white card--in">
+                          <div class="card h-100 bg-transparent border-0 text-center">
+                            <div class="card-body justify-content-center d-flex flex-column m-0">
+                              <img src="../../images/modulo1/aula2/topico3/img1-icone.svg" alt="">
+                              <h4 class="card-title text-white">Desigualdade</h4>
+
+                            </div>
+
+                            <div class="card-footer text-white">
+                              <div class="card-btn">
+                                <label for="flipcard1" class="btn btn-outline-light" aria-hidden="true">
+                                  <svg class="ic-virar" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                                    <g>
+                                      <g>
+                                        <path d="M29.8,32.1c-0.4,0-0.9-0.3-1-0.7c-0.2-0.6,0.1-1.1,0.7-1.3c4.5-1.3,7.3-3.5,7.3-5.7c0-1.4-1.1-2.6-2.1-3.3
+                                                c-0.5-0.3-0.6-1-0.2-1.5c0.3-0.5,1-0.6,1.5-0.2c1.9,1.4,2.9,3.1,2.9,4.9c0,3.2-3.2,6-8.7,7.7C30,32.1,29.9,32.1,29.8,32.1z">
+                                        </path>
+                                      </g>
+                                      <path d="M21.8,31l-4.5-3.4c-0.5-0.3-1.1-0.3-1.5,0.2c-0.3,0.5-0.3,1.1,0.2,1.5l2.7,2c-4.2-0.1-8-0.9-11-2.2c-2.9-1.3-4.6-3-4.6-4.7
+                                            c0-1.6,1.5-2.9,2.7-3.7c0.5-0.3,0.6-1,0.3-1.4c-0.3-0.5-1-0.6-1.4-0.3c-2.4,1.5-3.7,3.4-3.7,5.5c0,2.6,2.1,4.9,5.8,6.6
+                                            c2.8,1.3,6.4,2.1,10.2,2.3l-1,0.7c-0.5,0.3-0.6,1-0.3,1.5c0.2,0.3,0.5,0.5,0.9,0.5c0.2,0,0.4-0.1,0.6-0.2l4.5-3.1
+                                            c0.3-0.2,0.4-0.5,0.5-0.8C22.3,31.5,22.1,31.2,21.8,31z"></path>
+                                    </g>
+                                    <g>
+                                      <path d="M29.5,38.5h-18c-2.2,0-4-1.8-4-4v-27c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4v27C33.5,36.7,31.7,38.5,29.5,38.5z M11.5,5.5
+                                            c-1.1,0-2,0.9-2,2v27c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2v-27c0-1.1-0.9-2-2-2H11.5z">
+                                      </path>
+                                    </g>
+                                  </svg>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- VERSO -->
+                        <div class="flip-card-back">
+                          <div class="card h-100 bg-transparent border-0 text-center">
+                            <div class="card-body justify-content-center d-flex flex-column m-0 p-0">
+                              <div class="card-text">
+                                <p>
+                                <p>É a falta de equilíbrio no padrão de vida das pessoas, ou seja, é a repartição desigual produzida pelo próprio processo social. As desigualdades sociais em saúde se referem à percepção de que as condições de saúde de diferentes grupos populacionais, assim como os riscos à saúde e o acesso a bens e serviços de um sistema de saúde estão fortemente determinados pela posição que os indivíduos ocupam na organização social. Ou seja, as características sociais postas para alguns grupos resultam em injustiças e desvantagens quanto à oportunidade de estes serem e se manterem sadios. </p>
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="card-footer">
+                              <div class="card-btn">
+                                <label for="flipcard1" class="btn btn-outline-light return" aria-hidden="true">
+                                  <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--Fim Flipcard 1-->
+
+                  <!--FlipCard 2-->
+                  <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="flip-card">
+                      <input type="checkbox" id="flipcard2" class="more" aria-hidden="true">
+                      <div class="flip-card-inner">
+
+                        <!-- FRENTE -->
+                        <div class="card shadow flip-card-front fundo1 item1 text-white card--in">
+                          <div class="card h-100 bg-transparent border-0 text-center">
+                            <div class="card-body justify-content-center d-flex flex-column m-0">
+                              <img src="../../images/modulo1/aula2/topico3/img2-icone.svg" alt="">
+                              <h4 class="card-title text-white">Equidade</h4>
+                            </div>
+
+                            <div class="card-footer text-white">
+                              <div class="card-btn">
+                                <label for="flipcard2" class="btn btn-outline-light" aria-hidden="true">
+                                  <svg class="ic-virar" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                                    <g>
+                                      <g>
+                                        <path d="M29.8,32.1c-0.4,0-0.9-0.3-1-0.7c-0.2-0.6,0.1-1.1,0.7-1.3c4.5-1.3,7.3-3.5,7.3-5.7c0-1.4-1.1-2.6-2.1-3.3
+                                            c-0.5-0.3-0.6-1-0.2-1.5c0.3-0.5,1-0.6,1.5-0.2c1.9,1.4,2.9,3.1,2.9,4.9c0,3.2-3.2,6-8.7,7.7C30,32.1,29.9,32.1,29.8,32.1z">
+                                        </path>
+                                      </g>
+                                      <path d="M21.8,31l-4.5-3.4c-0.5-0.3-1.1-0.3-1.5,0.2c-0.3,0.5-0.3,1.1,0.2,1.5l2.7,2c-4.2-0.1-8-0.9-11-2.2c-2.9-1.3-4.6-3-4.6-4.7
+                                        c0-1.6,1.5-2.9,2.7-3.7c0.5-0.3,0.6-1,0.3-1.4c-0.3-0.5-1-0.6-1.4-0.3c-2.4,1.5-3.7,3.4-3.7,5.5c0,2.6,2.1,4.9,5.8,6.6
+                                        c2.8,1.3,6.4,2.1,10.2,2.3l-1,0.7c-0.5,0.3-0.6,1-0.3,1.5c0.2,0.3,0.5,0.5,0.9,0.5c0.2,0,0.4-0.1,0.6-0.2l4.5-3.1
+                                        c0.3-0.2,0.4-0.5,0.5-0.8C22.3,31.5,22.1,31.2,21.8,31z"></path>
+                                    </g>
+                                    <g>
+                                      <path d="M29.5,38.5h-18c-2.2,0-4-1.8-4-4v-27c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4v27C33.5,36.7,31.7,38.5,29.5,38.5z M11.5,5.5
+                                        c-1.1,0-2,0.9-2,2v27c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2v-27c0-1.1-0.9-2-2-2H11.5z">
+                                      </path>
+                                    </g>
+                                  </svg>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- VERSO -->
+                        <div class="flip-card-back">
+                          <div class="card h-100 bg-transparent border-0 text-center">
+                            <div class="card-body justify-content-center d-flex flex-column m-0 p-0">
+                              <div class="card-text">
+                                <p>É a ideia de atender às diferentes necessidades de grupos de pessoas dentro de cada país ou comunidade e entre países. Portanto, a simples partilha igualitária dos recursos não atenderia, obrigatoriamente, a essas necessidades. A OMS define equidade em saúde como a <em>“ausência de diferenças injustas e evitáveis entre grupos de pessoas considerando os aspectos social, econômico, demográfico ou geográfico”</em>.</p>
+                              </div>
+                            </div>
+
+                            <div class="card-footer">
+                              <div class="card-btn">
+                                <label for="flipcard2" class="btn btn-outline-light return" aria-hidden="true">
+                                  <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!--Fim Flipcard 2-->
+
+                  <!--FlipCard 3-->
+                  <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="flip-card">
+                      <input type="checkbox" id="flipcard3" class="more" aria-hidden="true">
+                      <div class="flip-card-inner">
+
+                        <!-- FRENTE -->
+                        <div class="card shadow flip-card-front fundo1 item1 text-white card--in">
+                          <div class="card h-100 bg-transparent border-0 text-center">
+                            <div class="card-body justify-content-center d-flex flex-column m-0">
+                              <img src="../../images/modulo1/aula2/topico3/img3-icone.svg" alt="">
+                              <h4 class="card-title text-white">Iniquidade</h4>
+                            </div>
+
+                            <div class="card-footer text-white">
+                              <div class="card-btn">
+                                <label for="flipcard3" class="btn btn-outline-light" aria-hidden="true">
+                                  <svg class="ic-virar" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                                    <g>
+                                      <g>
+                                        <path d="M29.8,32.1c-0.4,0-0.9-0.3-1-0.7c-0.2-0.6,0.1-1.1,0.7-1.3c4.5-1.3,7.3-3.5,7.3-5.7c0-1.4-1.1-2.6-2.1-3.3
+                                          c-0.5-0.3-0.6-1-0.2-1.5c0.3-0.5,1-0.6,1.5-0.2c1.9,1.4,2.9,3.1,2.9,4.9c0,3.2-3.2,6-8.7,7.7C30,32.1,29.9,32.1,29.8,32.1z">
+                                        </path>
+                                      </g>
+                                      <path d="M21.8,31l-4.5-3.4c-0.5-0.3-1.1-0.3-1.5,0.2c-0.3,0.5-0.3,1.1,0.2,1.5l2.7,2c-4.2-0.1-8-0.9-11-2.2c-2.9-1.3-4.6-3-4.6-4.7
+                                      c0-1.6,1.5-2.9,2.7-3.7c0.5-0.3,0.6-1,0.3-1.4c-0.3-0.5-1-0.6-1.4-0.3c-2.4,1.5-3.7,3.4-3.7,5.5c0,2.6,2.1,4.9,5.8,6.6
+                                      c2.8,1.3,6.4,2.1,10.2,2.3l-1,0.7c-0.5,0.3-0.6,1-0.3,1.5c0.2,0.3,0.5,0.5,0.9,0.5c0.2,0,0.4-0.1,0.6-0.2l4.5-3.1
+                                      c0.3-0.2,0.4-0.5,0.5-0.8C22.3,31.5,22.1,31.2,21.8,31z"></path>
+                                    </g>
+                                    <g>
+                                      <path d="M29.5,38.5h-18c-2.2,0-4-1.8-4-4v-27c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4v27C33.5,36.7,31.7,38.5,29.5,38.5z M11.5,5.5
+                                      c-1.1,0-2,0.9-2,2v27c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2v-27c0-1.1-0.9-2-2-2H11.5z">
+                                      </path>
+                                    </g>
+                                  </svg>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- VERSO -->
+                        <div class="flip-card-back">
+                          <div class="card h-100 bg-transparent border-0 text-center">
+                            <div class="card-body justify-content-center d-flex flex-column m-0 p-0">
+                              <div class="card-text">
+                                <p>É a impossibilidade de realizar as diferentes necessidades que os indivíduos possuem, ou seja, um conceito oposto da equidade. Portanto, a simples partilha igualitária dos recursos não atenderia, obrigatoriamente, a essas necessidades. É uma “desigualdade evitável entre grupos populacionais.</p>
+                              </div>
+                            </div>
+
+                            <div class="card-footer">
+                              <div class="card-btn">
+                                <label for="flipcard3" class="btn btn-outline-light return" aria-hidden="true">
+                                  <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!--Fim Flipcard 3-->
+                </div>
+                <!--Flip Cards 2.0 CSS -->
+
+              </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <!-- Box de Atenção -->
+                <div class="card-box card border-0 shadow">
+                  <div class="box-quote">
+                    <h5>
+                      <i class="box-quote__icone bi bi-exclamation-lg" data-fa-transform="grow-25" aria-hidden="true"></i>Atenção
+                    </h5>
+                    <div class="boxes-content">
+
+                      <p>No contexto da COVID-19, as situações de desigualdade social apresentadas por meio da precarização das condições de vida de uma parte significativa da população brasileira, associada com a ausência de políticas públicas com foco no acesso a trabalho, renda e nos serviços e cuidados em saúde, impedem que estes grupos seguiam determinadas medidas sanitárias, como o isolamento e distanciamento social, para diminuir a transmissão e contaminação pelo vírus. Aumentando assim a frequência e os danos e impactos sanitários, sociais e econômicos da COVID-19, especialmente em grupos vulnerabilizados. A forma como a pandemia da COVID-19 se expressa amplia as desigualdades sociais já existentes para significativa parte da população brasileira, além de agravar as iniquidades (contaminação, morte, fome e violência) (Sposati, 2020).</p>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim do Box de Atenção -->
+              </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <!-- Olho de texto -->
+                <div class="olho-de-texto">
+                  <p>Tendo como referência o cenário atual, a pandemia da COVID-19 é uma Emergência em Saúde Pública que causa também impactos sociais e econômicos para a população, estes por sua vez são potencializados pelas condições de vulnerabilidade e desigualdade social, de renda, étnico-racial, de gênero e de acesso a serviços de saúde.</p>
+                </div>
+                <!--Fim de Olho de texto -->
+              </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+
+                <!-- Box de Para Refletir -->
+                <div class="card-box card border-0 shadow">
+                  <div class="box-quote">
+                    <h5>
+                      <i class="box-quote__icone bi bi-chat-dots" data-fa-transform="grow-25" aria-hidden="true"></i>Para
+                      Refletir
+                    </h5>
+                    <div class="boxes-content">
+
+                      <p>Para entendermos melhor esses conceitos vamos refletir sobre este cenário. A pandemia como um evento, tem como <strong>ameaça/perigo</strong> um agente biológico pela dinâmica da natureza, o vírus Sars-COV-2, transmissor da COVID-19. Além de ameaças antropogênicas, como as mudanças climáticas, degradações ambientais, desmatamento, que são gerados pela sociedade e que potencializam a ocorrência desta doença infecciosa.</p>
+                      <p>Estas ameaças se combinam a <strong>exposição</strong> de indivíduos e populações, gerando o potencial de danos e agravos à saúde, como por exemplo, indivíduos e populações que não podem fazer o isolamento social, que necessitam utilizar os transportes públicos, trabalhadores informais e essenciais, moradores de rua, além dos que não tem acesso a máscaras de qualidade estão mais expostos ao vírus.</p>
+                      <p>E estes, por sua vez, se combinam com as condições de <strong>vulnerabilidade</strong>, a ausência e/ou insuficiência de recursos, estratégias de prevenção e/ou tratamento da doença em seus cotidianos, associados às dificuldades de realizar o isolamento social, manutenção do emprego e renda, bem como menor acesso à saúde e saneamento básico. Sendo assim, as populações em condições de vulnerabilidade social são as mais impactadas pela COVID-19. Por fim, todos estes fatores influenciam na ocorrência e nos impactos da pandemia, como uma Emergência em Saúde Pública (Cestari <em>et al</em>, 2021; Rocha e Londe, 2021).</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fim do Box de Para Refletir -->
+              </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+              <div class="col-12 col-md-10 col-lg-8">
+                <p>Reduzir os riscos e impactos das Emergências em Saúde Pública necessariamente implica também em reduzir ou eliminar as condições de vulnerabilidade por meio de ações que melhorem as condições de vida e infraestrutura. Além disso, são necessárias ações de preparação e resposta capazes de reduzir os fatores de riscos para as Emergências em Saúde Pública (Rocha e Alpino <em>et al</em>, 2016).</p>
+                <!-- Olho de texto -->
+                <div class="olho-de-texto mb-5">
+                  <p>Desta maneira, é necessário a priorização de recursos públicos e o reforço de ações de promoção da saúde e medidas preventivas em locais de maior vulnerabilidade social para favorecer a formulação de novas políticas e programas sociais e econômicos para os grupos vulneráveis, diminuindo desigualdades sociais e os impactos da pandemia da COVID-19.</p>
+                </div>
+                <!--Fim de Olho de texto -->
+                <p>Ao entendermos que as situações de vulnerabilidade estão diretamente relacionadas à intensidade e aos impactos das Emergências em Saúde Pública e do processo de Gestão de Risco nas condições de vida e saúde das populações, o conhecimento e a compreensão <a class="link" tabindex="0" data-placement="top" role="button" data-toggle="popover" data-trigger="focus" title="" data-content="Estes são lócus com distintas dinâmicas e permanente construção, que apresenta perfil demográfico, epidemiológico, administrativo, tecnológico, político, social e cultural, onde ocorrem relações e as redes sociais dos indivíduos, não se restringindo apenas a uma extensão geográfica (Sales et al, 2020; Monken e Barcellos, 2005)." data-original-title="">dos territórios</a> tornam-se essenciais para a orientação do trabalho preventivo e auxiliam nas tomadas de decisões diante da ocorrência de Emergências em Saúde Pública.</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8">
+                <!-- Citação -->
+                <div class="card border-0 shadow quote mb-5">
+                  <blockquote>
+                    <i class="bi bi-chat-right-quote mx-auto my-auto"></i>
+                    <div>
+                      <p>Desta maneira, conhecer e compreender os territórios, ameaças e situações de vulnerabilidades dos indivíduos e populações e fatores de riscos irá influenciar diretamente na capacidade de resposta do setor saúde as Emergências em Saúde Pública para a redução dos riscos, agravos e danos.</p>
+                      <span class="text-right quote-autor">Freitas <em>et al</em>, 2018</span>
+                    </div>
+                  </blockquote>
+                </div>
+                <!-- Fim de citação -->
+                <p>A <strong>capacidade de resposta do setor saúde</strong> envolve desde as ações da atenção em saúde (atenção básica, urgência e emergência, atenção hospitalar, leitos clínicos e de UTI) e de vigilância em saúde de curto a longo prazo para a redução dos riscos, agravos e danos. Por isso, quando o setor saúde de um território tem insuficiente capacidade de resposta para atender a população afetada durante uma Emergência em Saúde Pública, isso resulta em maior vulnerabilidade, desigualdade e iniquidade dos indivíduos e populações. Além deste ser um elemento central que se conecta com todas as etapas do processo de Gestão de Risco, desde a redução, prevenção, preparação, resposta e reconstrução (Silva, 2019).</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Navegação da aula -->
+        <section>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8">
+                <div class="page-nav d-flex justify-content-around">
+                  <a class="button-primary mb-5 mb-md-0" href="topico2.html" rel="prev">Tópico anterior</a>
+                  <a class="button-primary" href="topico4.html" rel="next">Próximo tópico</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <ul class="logos">
+                <li><img src="../../images/ensp.svg" alt="Logo da Escola Nacional de Saúde Pública Sério Arouca (ENSP)" height="80px"></li>
+                <li><img src="../../images/fiocruz.svg" alt="Logo da Fiocruz" height="80px"></li>
+                <li><img src="../../images/sus.svg" alt="Logo do Sistema Único de Saúde" height="60px"></li>
+                <li><img src="../../images/ministerio-da-saude-e-governo-federal.svg" alt="Logo do Ministério da Saúde e Governo Federal" height="50px"></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </footer>
     </div>
+  </div>
 
+  <!-- Sidebar Toggle only on mobile -->
+  <div id="sidebar-toggle">
+    <div class="box">
+      <div class="btn not-active">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
-    <!-- Sticky Sidebar -->
+  <!-- Sticky Sidebar -->
 
-    <script type="text/javascript" src="../../js/ResizeSensor.js"></script>
-    <script type="text/javascript" src="../../js/sticky-sidebar.js"></script>
-    <script type="text/javascript" src="../../js/sidebar.js"></script>
+  <script type="text/javascript" src="../../js/ResizeSensor.js"></script>
+  <script type="text/javascript" src="../../js/sticky-sidebar.js"></script>
+  <script type="text/javascript" src="../../js/sidebar.js"></script>
 
-    <script type="text/javascript">
-        var sidebar = new StickySidebar('.sidebar', {
-            topSpacing: 0,
-            bottomSpacing: 0,
-            containerSelector: '.main',
-            innerWrapperSelector: '.sidebar__inner',
-            minWidth: 991
-        });
-    </script>
-    
-    <script type="text/javascript" src="../../js/scripts.js"></script>
-    <script type="text/javascript" src="../../js/anime.min.js"></script>
-    <script type="text/javascript" src="../../js/custom-anime.js"></script>
+  <script type="text/javascript">
+    var sidebar = new StickySidebar('.sidebar', {
+      topSpacing: 0,
+      bottomSpacing: 0,
+      containerSelector: '.main',
+      innerWrapperSelector: '.sidebar__inner',
+      minWidth: 991,
+    });
+  </script>
 
-    <!-- Modal Video resumo da aula -->
-    <div class="modal modal-video fade p-0" id="resumo-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    });
+  </script>
+
+  <script type="text/javascript" src="../../js/scripts.js"></script>
+  <script type="text/javascript" src="../../js/anime.min.js"></script>
+  <script type="text/javascript" src="../../js/custom-anime.js"></script>
+
+  <!-- Modal Video resumo da aula -->
+  <div class="modal modal-video fade p-0" id="resumo-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+        </button>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/9_V-1mM1j1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Bibliografia -->
+  <div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-bibliografia">Bibliografia</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+            <span aria-hidden="true">&times;</span>
           </button>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/9_V-1mM1j1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-body">
+          <div id="accordion-bibliografia" class="accordion mb-5">
+
+            <!-- Accordion item 1 -->
+            <div id="headingOne-bibliografia" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseOne-bibliografia" aria-expanded="false" aria-controls="collapseOne-bibliografia" class="d-block position-relative collapsible-link py-2">Aula 1</a>
+            </div>
+            <div id="collapseOne-bibliografia" aria-labelledby="headingOne-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion item 2 -->
+            <div id="headingTwo-bibliografia" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseTwo-bibliografia" aria-expanded="false" aria-controls="collapseTwo-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
+            </div>
+            <div id="collapseTwo-bibliografia" aria-labelledby="headingTwo-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CARMO, E. H; TEIXEIRA, M. G. Desastres tecnológicos e emergências de saúde pública: o caso do derramamento de óleo no litoral do Brasil. <strong>Cadernos de Saúde Pública</strong>, 36, e00234419, 2020.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      LIMA, E; SILVA, R. M. D. S. R; FRUTUOSO, R. L; BAHIA, A; BEZERRA, B. B. S; ROHLFS, D. B. Emergência em Saúde Pública por inundações: a atuação do Ministério da Saúde em ocorrências no Brasil de 2004. <strong>Revista Saúde em Debate</strong>, Rio de janeiro, v. 44, n. Especial 2, p. 9-19, julho 2020.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      NARVÁEZ, L.; LAVELL, A. N.; ORTEGA, G. P. <strong>La gestión del riesgo de desastres: un enfoque baseado en processos</strong>. Lima: Secretaria General de La Comunidad Andina, 2009.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      ROCHA, V; LONDE, L.R. <strong>Desastres: velhos e novos desafios para a saúde coletiva</strong>. Rio de Janeiro: Editora Fiocruz, 2021.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      SOUZA, L.D.P. A pandemia da COVID-19 e os reflexos na relação meio ambiente e sociedade. <strong>Revista Brasileira de Meio Ambiente</strong>, 8(4), 2020.
+                      ​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      UNITED NATIONS OFFICE FOR DISASTER RISK REDUCTION. <strong>Sendai framework for disaster risk reduction</strong>: 2015-2030. Geneva: United Nations Office for Disaster Risk Reduction; 2015.
+                    <strong></li></strong>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion item 3 -->
+            <div id="headingThree-bibliografia" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseThree-bibliografia" aria-expanded="false" aria-controls="collapseThree-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula
+                3</a>
+            </div>
+            <div id="collapseThree-bibliografia" aria-labelledby="headingThree-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      ARKEMAN, M. <strong>SUS: a propaganda é a alma do negócio?</strong> Publicado em 02 de Junho de 2021. Disponível <a href="https://www.abrasco.org.br/site/noticias/sus-a-propaganda-e-a-alma-do-negocio-artigo-de-marco-akerman/59873/" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BRASIL. Ministério da Saúde. Portaria nº 104/GM, de 25 de janeiro de 2011. <strong>Define as terminologias adotadas em legislação nacional, conforme o disposto no Regulamento Sanitário Internacional 2005 (RSI 2005), a relação de doenças, agravos e eventos em saúde pública de notificação compulsória em todo o território nacional e estabelece fluxo, critérios, responsabilidades e atribuições aos profissionais e serviços de saúde</strong>. Diário Oficial da República Federativa do Brasil: seção 1, Brasília, DF, 11 jan. 2011b.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CERUTTI, D. F; OLIVEIRA, L. A aplicação da gestão de risco em desastres no Sistema Único de Saúde (SUS). <strong>Caderno Saúde Coletiva</strong>. Rio de Janeiro, 19(4), 417-24, 2011.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      GUIMARÃES, C. <strong>A importância de um sistema de saúde público e universal no enfrentamento à epidemia</strong>. Publicado em 25 de Março de 2020. Acessado em 15 de Junho de 2021. Disponível <a href="https://www.epsjv.fiocruz.br/noticias/reportagem/a-importancia-de-um-sistema-de-saude-publico-e-universal-no-enfrentamento-a" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      PAIM, J.S; SILVA, L.M.V. Universalidade, integralidade, equidade e SUS. <strong>BIS, Bol. Inst. Saúde</strong>, São Paulo, v. 12, n. 2, ago.  2010.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      ROCHA, V; LONDE, L.R. <strong>Desastres: velhos e novos desafios para a saúde coletiva</strong>. Rio de Janeiro: Editora Fiocruz, 2021.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      TRIPARTITE, G.T.D.C.I. <strong>Diretrizes para Organização das Redes de Atenção à Saúde do SUS</strong>. Brasília. Grupo Intergestores da Comissão Intergestores Tripartide, pp 1-16, 2010.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      VENTURA, D. <strong>Coronavírus: não existe segurança sem acesso universal à saúde</strong>. Jornal da USP. Publicado em 31 de Março de 2020. Link disponível <a href="https://jornal.usp.br/artigos/coronavirus-nao-existe-seguranca-sem-acesso-universal-a-saude/" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      VÍDEO. <strong>O princípio da equidade e a pandemia de Coronavírus - vídeo 1</strong>. Disponível <a href="https://www.youtube.com/watch?v=Re8ktjMuRy0&t=203s" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      VÍDEO. <strong>Os princípios do SUS</strong>. Disponível <a href="https://www.youtube.com/watch?v=PzVxQkNyqLs&t=223s" target="_blank" rel="noopener noreferrer">aqui</a>. 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
 
-    <!-- Modal Bibliografia -->
-    <div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modal-bibliografia">Bibliografia</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+
+  </div>
+
+  <!-- Modal Material Complementar -->
+  <div class="modal fade" id="modal-material-complementar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-material-complementar">Material Complementar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="accordion-material-complementar" class="accordion mb-5">
+
+            <!-- Accordion item 1 -->
+            <div id="headingOne-complementar" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseOne-complementar" aria-expanded="false" aria-controls="collapseOne-complementar" class="d-block position-relative collapsible-link py-2">Aula 1</a>
             </div>
-            <div class="modal-body">
-                <div id="accordion-bibliografia" class="accordion mb-5">
-
-                    <!-- Accordion item 1 -->
-                    <div id="headingOne" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative collapsible-link py-2">Aula 1</a>
-                    </div>
-                    <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion-bibliografia" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 2 -->
-                    <div id="headingTwo" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
-                    </div>
-                    <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion-bibliografia" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1, pp. 231-286.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo: Companhia das Letras, 1996, pp. 97-185.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em>  Febre amarela e a revolução pausteriana no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 3 -->
-                    <div id="headingThree" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed collapsible-link py-2">Aula 3</a>
-                    </div>
-                    <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion-bibliografia" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 4 -->
-                    <div id="headingFour" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed collapsible-link py-2">Aula 4</a>
-                    </div>
-                    <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion-bibliografia" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div id="collapseOne-complementar" aria-labelledby="headingOne-complementar" data-parent="#accordion-material-complementar" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
                 </div>
+              </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+
+            <!-- Accordion item 2 -->
+            <div id="headingTwo-complementar" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseTwo-complementar" aria-expanded="false" aria-controls="collapseTwo-complementar" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
+            </div>
+            <div id="collapseTwo-complementar" aria-labelledby="headingTwo-complementar" data-parent="#accordion-material-complementar" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge
+                      Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e
+                      política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1,
+                      pp. 231-286.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo:
+                      Companhia das Letras, 1996, pp. 97-185.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de
+                      saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no
+                      início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São
+                      Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do
+                      Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História
+                      Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993.
+                      238p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed.
+                      Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em> Febre amarela e a revolução pausteriana
+                      no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion item 3 -->
+            <div id="headingThree-complementar" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseThree-complementar" aria-expanded="false" aria-controls="collapseThree-complementar" class="d-block position-relative collapsed collapsible-link py-2">Aula
+                3</a>
+            </div>
+            <div id="collapseThree-complementar" aria-labelledby="headingThree-complementar" data-parent="#accordion-material-complementar" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Modal Material Complementar -->
-    <div class="modal fade" id="modal-material-complementar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="modal-material-complementar">Material Complementar</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+  <!-- Modal Créditos -->
+  <div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-creditos">Créditos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="accordion-creditos" class="accordion mb-5">
+
+            <!-- Accordion item 1 -->
+            <div id="headingOne-creditos" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseOne-creditos" aria-expanded="false" aria-controls="collapseOne-creditos" class="d-block position-relative collapsible-link py-2">Aula 1</a>
             </div>
-            <div class="modal-body">
-                <div id="accordion-material-complementar" class="accordion mb-5">
-
-                    <!-- Accordion item 1 -->
-                    <div id="headingOne" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative collapsible-link py-2">Aula 1</a>
-                    </div>
-                    <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion-material-complementar" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 2 -->
-                    <div id="headingTwo" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
-                    </div>
-                    <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion-material-complementar" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1, pp. 231-286.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo: Companhia das Letras, 1996, pp. 97-185.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em>  Febre amarela e a revolução pausteriana no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 3 -->
-                    <div id="headingThree" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed collapsible-link py-2">Aula 3</a>
-                    </div>
-                    <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion-material-complementar" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 4 -->
-                    <div id="headingFour" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed collapsible-link py-2">Aula 4</a>
-                    </div>
-                    <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion-material-complementar" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div id="collapseOne-creditos" aria-labelledby="headingOne-creditos" data-parent="#accordion-creditos" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
                 </div>
+              </div>
             </div>
-            <div class="modal-footer">
-            <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+
+            <!-- Accordion item 2 -->
+            <div id="headingTwo-creditos" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseTwo-creditos" aria-expanded="false" aria-controls="collapseTwo-creditos" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
             </div>
-        </div>
-        </div>
-    </div>
-
-    <!-- Modal Créditos -->
-    <div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="modal-creditos">Créditos</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body">
-                <div id="accordion-creditos" class="accordion mb-5">
-
-                    <!-- Accordion item 1 -->
-                    <div id="headingOne" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative collapsible-link py-2">Aula 1</a>
-                    </div>
-                    <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion-creditos" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 2 -->
-                    <div id="headingTwo" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
-                    </div>
-                    <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion-creditos" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1, pp. 231-286.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo: Companhia das Letras, 1996, pp. 97-185.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em>  Febre amarela e a revolução pausteriana no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 3 -->
-                    <div id="headingThree" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed collapsible-link py-2">Aula 3</a>
-                    </div>
-                    <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion-creditos" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 4 -->
-                    <div id="headingFour" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed collapsible-link py-2">Aula 4</a>
-                    </div>
-                    <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion-creditos" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div id="collapseTwo-creditos" aria-labelledby="headingTwo-creditos" data-parent="#accordion-creditos" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge
+                      Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e
+                      política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1,
+                      pp. 231-286.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo:
+                      Companhia das Letras, 1996, pp. 97-185.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de
+                      saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no
+                      início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São
+                      Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do
+                      Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História
+                      Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993.
+                      238p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed.
+                      Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em> Febre amarela e a revolução pausteriana
+                      no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
+                  </ul>
                 </div>
+              </div>
             </div>
-            <div class="modal-footer">
-            <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+
+            <!-- Accordion item 3 -->
+            <div id="headingThree-creditos" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseThree-creditos" aria-expanded="false" aria-controls="collapseThree-creditos" class="d-block position-relative collapsed collapsible-link py-2">Aula
+                3</a>
             </div>
+            <div id="collapseThree-creditos" aria-labelledby="headingThree-creditos" data-parent="#accordion-creditos" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
         </div>
+      </div>
     </div>
+  </div>
 </body>
 
 </html>

@@ -107,7 +107,7 @@
                     <h6 class="">Aulas</h6>
                     <a href="../aula2/inicio.html" class="sidebar__btn">
                         <i></i>2. Conceitos básicos e terminologias em Emergência em Saúde Pública</a>
-                    <a href="../aula3/inicio.html" class="sidebar__btn">
+                    <a href="../aula3/inicio.html" class="sidebar__btn pr-lg-5">
                         <i></i>3. Premissas básicas e princípios do SUS</a>
                 </section>
                 <hr>
@@ -256,7 +256,7 @@
                                         <i class="bi bi-chat-right-quote mx-auto my-auto"></i>
                                         <div>
                                             <p>“Em que pese uma série de questões que ainda merecem resposta, é possível constatar que o mundo ainda não aprendeu suficientemente sobre as lições de outras emergências de saúde pública. Mas, é necessário termos clara a absoluta necessidade de aprender e melhorar não somente as capacidades para responder à futuras emergências, como também melhorar a situação de saúde global, por meio da redução das desigualdades, garantia do direito à saúde com equidade e fortalecer os mecanismos de cooperação internacional e multilateral” </p>
-                                            <span class="text-right quote-autor">(Lima et al, 2020)</span>
+                                            <span class="text-right quote-autor">(Lima <em>et al</em>, 2020)</span>
                                         </div>
                                     </blockquote>
                                 </div>
@@ -268,7 +268,7 @@
                                         <i class="bi bi-chat-right-quote mx-auto my-auto"></i>
                                         <div>
                                             <p>“Por fim, é necessário adotar um novo olhar sobre os riscos associados à produção e disseminação de emergências e considerar fatores como: o aumento na densidade populacional de áreas urbanas; a intensa conectividade entre as pessoas, bens, mercadorias e os fluxos de informações (muitas delas que prejudicam a adesão às medidas de controle preconizadas); as novas tecnologias disponíveis para gerenciamento das emergências (recursos diagnósticos, tecnologias de informação e comunicação); a degradação ambiental, as mudanças climáticas e suas consequências na relação do homem com o ambiente e na produção de epidemias” </p>
-                                            <span class="text-right quote-autor">(Lee et al, 2020)</span>
+                                            <span class="text-right quote-autor">(Lee <em>et al</em>, 2020)</span>
                                         </div>
                                     </blockquote>
                                 </div>
@@ -355,371 +355,357 @@
     <script type="text/javascript" src="../../js/anime.min.js"></script>
     <script type="text/javascript" src="../../js/custom-anime.js"></script>
 
-    <!-- Modal Video resumo da aula -->
-    <div class="modal modal-video fade p-0" id="resumo-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+  <!-- Modal Video resumo da aula -->
+  <div class="modal modal-video fade p-0" id="resumo-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+        </button>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/9_V-1mM1j1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Bibliografia -->
+  <div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-bibliografia">Bibliografia</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+            <span aria-hidden="true">&times;</span>
           </button>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/9_V-1mM1j1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="modal-body">
+          <div id="accordion-bibliografia" class="accordion mb-5">
+
+            <!-- Accordion item 1 -->
+            <div id="headingOne-bibliografia" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseOne-bibliografia" aria-expanded="false" aria-controls="collapseOne-bibliografia" class="d-block position-relative collapsible-link py-2">Aula 1</a>
+            </div>
+            <div id="collapseOne-bibliografia" aria-labelledby="headingOne-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion item 2 -->
+            <div id="headingTwo-bibliografia" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseTwo-bibliografia" aria-expanded="false" aria-controls="collapseTwo-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
+            </div>
+            <div id="collapseTwo-bibliografia" aria-labelledby="headingTwo-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CARMO, E. H; TEIXEIRA, M. G. Desastres tecnológicos e emergências de saúde pública: o caso do derramamento de óleo no litoral do Brasil. <strong>Cadernos de Saúde Pública</strong>, 36, e00234419, 2020.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      LIMA, E; SILVA, R. M. D. S. R; FRUTUOSO, R. L; BAHIA, A; BEZERRA, B. B. S; ROHLFS, D. B. Emergência em Saúde Pública por inundações: a atuação do Ministério da Saúde em ocorrências no Brasil de 2004. <strong>Revista Saúde em Debate</strong>, Rio de janeiro, v. 44, n. Especial 2, p. 9-19, julho 2020.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      NARVÁEZ, L.; LAVELL, A. N.; ORTEGA, G. P. <strong>La gestión del riesgo de desastres: un enfoque baseado en processos</strong>. Lima: Secretaria General de La Comunidad Andina, 2009.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      ROCHA, V; LONDE, L.R. <strong>Desastres: velhos e novos desafios para a saúde coletiva</strong>. Rio de Janeiro: Editora Fiocruz, 2021.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      SOUZA, L.D.P. A pandemia da COVID-19 e os reflexos na relação meio ambiente e sociedade. <strong>Revista Brasileira de Meio Ambiente</strong>, 8(4), 2020.
+                      ​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      UNITED NATIONS OFFICE FOR DISASTER RISK REDUCTION. <strong>Sendai framework for disaster risk reduction</strong>: 2015-2030. Geneva: United Nations Office for Disaster Risk Reduction; 2015.
+                    <strong></li></strong>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion item 3 -->
+            <div id="headingThree-bibliografia" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseThree-bibliografia" aria-expanded="false" aria-controls="collapseThree-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula
+                3</a>
+            </div>
+            <div id="collapseThree-bibliografia" aria-labelledby="headingThree-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      ARKEMAN, M. <strong>SUS: a propaganda é a alma do negócio?</strong> Publicado em 02 de Junho de 2021. Disponível <a href="https://www.abrasco.org.br/site/noticias/sus-a-propaganda-e-a-alma-do-negocio-artigo-de-marco-akerman/59873/" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BRASIL. Ministério da Saúde. Portaria nº 104/GM, de 25 de janeiro de 2011. <strong>Define as terminologias adotadas em legislação nacional, conforme o disposto no Regulamento Sanitário Internacional 2005 (RSI 2005), a relação de doenças, agravos e eventos em saúde pública de notificação compulsória em todo o território nacional e estabelece fluxo, critérios, responsabilidades e atribuições aos profissionais e serviços de saúde</strong>. Diário Oficial da República Federativa do Brasil: seção 1, Brasília, DF, 11 jan. 2011b.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CERUTTI, D. F; OLIVEIRA, L. A aplicação da gestão de risco em desastres no Sistema Único de Saúde (SUS). <strong>Caderno Saúde Coletiva</strong>. Rio de Janeiro, 19(4), 417-24, 2011.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      GUIMARÃES, C. <strong>A importância de um sistema de saúde público e universal no enfrentamento à epidemia</strong>. Publicado em 25 de Março de 2020. Acessado em 15 de Junho de 2021. Disponível <a href="https://www.epsjv.fiocruz.br/noticias/reportagem/a-importancia-de-um-sistema-de-saude-publico-e-universal-no-enfrentamento-a" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      PAIM, J.S; SILVA, L.M.V. Universalidade, integralidade, equidade e SUS. <strong>BIS, Bol. Inst. Saúde</strong>, São Paulo, v. 12, n. 2, ago.  2010.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      ROCHA, V; LONDE, L.R. <strong>Desastres: velhos e novos desafios para a saúde coletiva</strong>. Rio de Janeiro: Editora Fiocruz, 2021.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      TRIPARTITE, G.T.D.C.I. <strong>Diretrizes para Organização das Redes de Atenção à Saúde do SUS</strong>. Brasília. Grupo Intergestores da Comissão Intergestores Tripartide, pp 1-16, 2010.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      VENTURA, D. <strong>Coronavírus: não existe segurança sem acesso universal à saúde</strong>. Jornal da USP. Publicado em 31 de Março de 2020. Link disponível <a href="https://jornal.usp.br/artigos/coronavirus-nao-existe-seguranca-sem-acesso-universal-a-saude/" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      VÍDEO. <strong>O princípio da equidade e a pandemia de Coronavírus - vídeo 1</strong>. Disponível <a href="https://www.youtube.com/watch?v=Re8ktjMuRy0&t=203s" target="_blank" rel="noopener noreferrer">aqui</a>.
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                      VÍDEO. <strong>Os princípios do SUS</strong>. Disponível <a href="https://www.youtube.com/watch?v=PzVxQkNyqLs&t=223s" target="_blank" rel="noopener noreferrer">aqui</a>. 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
 
-    <!-- Modal Bibliografia -->
-    <div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="modal-bibliografia">Bibliografia</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+
+  </div>
+
+  <!-- Modal Material Complementar -->
+  <div class="modal fade" id="modal-material-complementar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-material-complementar">Material Complementar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="accordion-material-complementar" class="accordion mb-5">
+
+            <!-- Accordion item 1 -->
+            <div id="headingOne-complementar" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseOne-complementar" aria-expanded="false" aria-controls="collapseOne-complementar" class="d-block position-relative collapsible-link py-2">Aula 1</a>
             </div>
-            <div class="modal-body">
-                <div id="accordion-bibliografia" class="accordion mb-5">
-
-                    <!-- Accordion item 1 -->
-                    <div id="headingOne" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative collapsible-link py-2">Aula 1</a>
-                    </div>
-                    <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion-bibliografia" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 2 -->
-                    <div id="headingTwo" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
-                    </div>
-                    <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion-bibliografia" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1, pp. 231-286.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo: Companhia das Letras, 1996, pp. 97-185.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em>  Febre amarela e a revolução pausteriana no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 3 -->
-                    <div id="headingThree" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed collapsible-link py-2">Aula 3</a>
-                    </div>
-                    <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion-bibliografia" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 4 -->
-                    <div id="headingFour" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed collapsible-link py-2">Aula 4</a>
-                    </div>
-                    <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion-bibliografia" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div id="collapseOne-complementar" aria-labelledby="headingOne-complementar" data-parent="#accordion-material-complementar" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
                 </div>
+              </div>
             </div>
-            <div class="modal-footer">
-            <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+
+            <!-- Accordion item 2 -->
+            <div id="headingTwo-complementar" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseTwo-complementar" aria-expanded="false" aria-controls="collapseTwo-complementar" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
             </div>
-        </div>
-        </div>
-    </div>
-
-    <!-- Modal Material Complementar -->
-    <div class="modal fade" id="modal-material-complementar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="modal-material-complementar">Material Complementar</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body">
-                <div id="accordion-material-complementar" class="accordion mb-5">
-
-                    <!-- Accordion item 1 -->
-                    <div id="headingOne" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative collapsible-link py-2">Aula 1</a>
-                    </div>
-                    <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion-material-complementar" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 2 -->
-                    <div id="headingTwo" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
-                    </div>
-                    <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion-material-complementar" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1, pp. 231-286.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo: Companhia das Letras, 1996, pp. 97-185.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em>  Febre amarela e a revolução pausteriana no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 3 -->
-                    <div id="headingThree" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed collapsible-link py-2">Aula 3</a>
-                    </div>
-                    <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion-material-complementar" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 4 -->
-                    <div id="headingFour" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed collapsible-link py-2">Aula 4</a>
-                    </div>
-                    <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion-material-complementar" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div id="collapseTwo-complementar" aria-labelledby="headingTwo-complementar" data-parent="#accordion-material-complementar" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge
+                      Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e
+                      política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1,
+                      pp. 231-286.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo:
+                      Companhia das Letras, 1996, pp. 97-185.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de
+                      saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no
+                      início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São
+                      Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do
+                      Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História
+                      Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993.
+                      238p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed.
+                      Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em> Febre amarela e a revolução pausteriana
+                      no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
+                  </ul>
                 </div>
+              </div>
             </div>
-            <div class="modal-footer">
-            <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+
+            <!-- Accordion item 3 -->
+            <div id="headingThree-complementar" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseThree-complementar" aria-expanded="false" aria-controls="collapseThree-complementar" class="d-block position-relative collapsed collapsible-link py-2">Aula
+                3</a>
             </div>
-        </div>
-        </div>
-    </div>
-
-    <!-- Modal Créditos -->
-    <div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="modal-creditos">Créditos</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body">
-                <div id="accordion-creditos" class="accordion mb-5">
-
-                    <!-- Accordion item 1 -->
-                    <div id="headingOne" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative collapsible-link py-2">Aula 1</a>
-                    </div>
-                    <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion-creditos" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 2 -->
-                    <div id="headingTwo" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
-                    </div>
-                    <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion-creditos" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1, pp. 231-286.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo: Companhia das Letras, 1996, pp. 97-185.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
-                                        BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em>  Febre amarela e a revolução pausteriana no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 3 -->
-                    <div id="headingThree" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed collapsible-link py-2">Aula 3</a>
-                    </div>
-                    <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion-creditos" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Accordion item 4 -->
-                    <div id="headingFour" class="accordion__header">
-                        <a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed collapsible-link py-2">Aula 4</a>
-                    </div>
-                    <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion-creditos" class="collapse">
-                        <div class="card-body p-4">
-                            <div class="obj-lista">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
-                                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div id="collapseThree-complementar" aria-labelledby="headingThree-complementar" data-parent="#accordion-material-complementar" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
                 </div>
+              </div>
             </div>
-            <div class="modal-footer">
-            <button type="button" class="button-primary" data-dismiss="modal">Close</button>
-            </div>
+          </div>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
         </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Modal Créditos -->
+  <div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-creditos">Créditos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="accordion-creditos" class="accordion mb-5">
+
+            <!-- Accordion item 1 -->
+            <div id="headingOne-creditos" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseOne-creditos" aria-expanded="false" aria-controls="collapseOne-creditos" class="d-block position-relative collapsible-link py-2">Aula 1</a>
+            </div>
+            <div id="collapseOne-creditos" aria-labelledby="headingOne-creditos" data-parent="#accordion-creditos" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion item 2 -->
+            <div id="headingTwo-creditos" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseTwo-creditos" aria-expanded="false" aria-controls="collapseTwo-creditos" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
+            </div>
+            <div id="collapseTwo-creditos" aria-labelledby="headingTwo-creditos" data-parent="#accordion-creditos" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge
+                      Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e
+                      política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1,
+                      pp. 231-286.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo:
+                      Companhia das Letras, 1996, pp. 97-185.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de
+                      saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no
+                      início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São
+                      Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do
+                      Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
+                    </li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História
+                      Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993.
+                      238p.​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed.
+                      Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                      BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em> Febre amarela e a revolução pausteriana
+                      no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion item 3 -->
+            <div id="headingThree-creditos" class="accordion__header">
+              <a href="#" data-toggle="collapse" data-target="#collapseThree-creditos" aria-expanded="false" aria-controls="collapseThree-creditos" class="d-block position-relative collapsed collapsible-link py-2">Aula
+                3</a>
+            </div>
+            <div id="collapseThree-creditos" aria-labelledby="headingThree-creditos" data-parent="#accordion-creditos" class="collapse">
+              <div class="card-body p-4">
+                <div class="obj-lista">
+                  <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
