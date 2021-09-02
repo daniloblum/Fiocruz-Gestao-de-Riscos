@@ -8,7 +8,7 @@ footer .logos {
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
-    justify-content:space-around;
+    justify-content:space-between;
     list-style: none;
     margin: 0;
     align-items: center;
