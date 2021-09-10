@@ -8,7 +8,7 @@
 
 .figure-caption {
   font-size: 75%;
-  color: #6c757d;
+  /* color: #6c757d; */
   text-align: center;
 }
 
@@ -16,7 +16,7 @@
 .fonte,
 .video-subtitle {
   font-size: 75%;
-  color: #6c757d;
+  /* color: #6c757d; */
   text-align: center;
 }
 
@@ -25,7 +25,7 @@
 .video-subtitle,
 .video-subtitle a,
 .video-subtitle a:visited {
-  color: #6c757d;
+  /* color: #6c757d; */
   font-weight: 500;
   text-decoration: none;
 }
