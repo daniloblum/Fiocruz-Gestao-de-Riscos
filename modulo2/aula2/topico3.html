@@ -100,6 +100,11 @@
                       <i class="bi bi-camera-video mr-2"></i> Resumo da aula
                   </a>
                   </div>
+                  <div>
+                    <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-perfil">
+                      <i class="bi bi-person-lines-fill mr-2"></i> Sobre o autor
+                  </a>
+                  </div>
                 </nav>
                 <hr>
                 <section class="sidebar__section">
@@ -338,6 +343,49 @@
     </div>
   </div>
 
+  <!-- Modal Perfil  -->
+  <div class="modal fade" id="modal-perfil" tabindex="-1" aria-labelledby="perfil-perfil" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-bibliografia">Sobre o autor</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="accordion-perfil" class="accordion mb-5">
+
+            <!-- Texto com Imagem à esquerda -->
+            <div class="row justify-content-center d-lg-block px-3 my-5">
+              <!-- Imagem -->
+              <div class="col-md-8 col-lg-4 float-lg-left mr-lg-4 px-0 order-1 order-lg-2">
+                  <figure>
+                      <img class="img-fluid rounded mx-auto d-block mb-3"
+                          src="../../images/modulo2/aula2/conteudista.jpg" alt="Eduardo Hage Carmo, autor desta aula."
+                          title="">
+                  </figure>
+              </div>
+
+              <!-- Texto -->
+              <div class="order-2 order-lg-1">
+                  <h5 class="mb-3">Eduardo Hage Carmo</h5>
+                  <p>Médico, Sanitarista (Residência em Medicina Social), Mestre em Saúde Coletiva e Doutor em Saúde Pública pela Universidade Federal da Bahia. Atualmente é pesquisador do Cidacs/Fiocruz/BA, médico sanitarista da Secretaria de Saúde do Estado da Bahia (licenciado) e da Secretaria de Saúde do Distrito Federal, membro do Painel de Especialistas e consultor ad hoc da Organização Mundial da Saúde.</p>
+              </div>
+          </div>
+          <!-- Fim de texto e imagem à esquerda-->
+          
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
   <!-- Modal Bibliografia -->
   <div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -450,7 +498,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
@@ -562,7 +610,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
@@ -672,7 +720,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>

@@ -98,6 +98,12 @@
               <i class="bi bi-camera-video mr-2"></i> Resumo da aula
             </a>
           </div>
+
+          <div>
+            <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-perfil">
+              <i class="bi bi-person-lines-fill mr-2"></i> Sobre os autores
+          </a>
+          </div>
         </nav>
         <hr>
         <section class="sidebar__section">
@@ -293,7 +299,6 @@
     </div>
   </div>
 
-
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -330,6 +335,67 @@
       </div>
     </div>
   </div>
+
+<!-- Modal Perfil  -->
+<div class="modal fade" id="modal-perfil" tabindex="-1" aria-labelledby="perfil-perfil" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-bibliografia">Sobre os autores</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="accordion-perfil" class="accordion mb-5">
+
+        <!-- Texto com Imagem à esquerda -->
+        <div class="row justify-content-center d-lg-block px-3 my-5 clearfix">
+            <!-- Imagem -->
+            <div class="col-md-8 col-lg-4 float-lg-left mr-lg-4 px-0 order-1 order-lg-2">
+                <figure>
+                    <img class="img-fluid rounded mx-auto d-block mb-3"
+                        src="../../images/modulo2/aula3/conteudista.jpg" alt="Victor Grabois, autor desta aula."
+                        title="">
+                </figure>
+            </div>
+
+            <!-- Texto -->
+            <div class="order-2 order-lg-1">
+                <h5 class="mb-3">Victor Grabois</h5>
+                <p>Médico sanitarista doutor em saúde pública pela Ensp Fiocruz coordenador executivo do Proqualis/Icict/Fiocruz e presidente da SOBRASP. Autor de livros, capítulos de livros, artigos científicos e material didáticos sobre Gestão da Clínica, Gestão Hospitalar; Qualidade do Cuidado e Segurança do Paciente.</p>
+            </div>
+        </div>
+        <!-- Fim de texto e imagem à esquerda-->
+
+        <!-- Texto com Imagem à esquerda -->
+        <div class="row justify-content-center d-lg-block px-3 my-5">
+          <!-- Imagem -->
+          <div class="col-md-8 col-lg-4 float-lg-left mr-lg-4 px-0 order-1 order-lg-2">
+              <figure>
+                  <img class="img-fluid rounded mx-auto d-block mb-3"
+                      src="../../images/modulo2/aula3/conteudista2.jpg" alt="Margareth Crisóstomo Portela, autora desta aula." title="">
+              </figure>
+          </div>
+
+          <!-- Texto -->
+          <div class="order-2 order-lg-1">
+              <h5 class="mb-3">Margareth Crisóstomo Portela</h5>
+              <p>Engenheira Eletricista pela UFBA, mestre (MSc) em Engenharia Biomédica pela UFRJ, PhD em Health Policy and Administration pela University of North Carolina at Chapel Hill e Pós-doutorado na Medical University of South Carolina, EUA. Realizou Estágio Sênior (Programa Ciências sem Fronteiras – CAPES), na University of Leicester, Inglaterra. É pesquisadora da Fundação Oswaldo Cruz (Fiocruz), lotada na Escola Nacional de Saúde Pública Sergio Arouca (ENSP), onde faz parte do corpo permanente do Programa de Pós-graduação em Saúde Pública.</p>
+          </div>
+        </div>
+        <!-- Fim de texto e imagem à esquerda-->
+         
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+
+</div>
 
   <!-- Modal Bibliografia -->
   <div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -461,7 +527,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
@@ -597,7 +663,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
@@ -733,7 +799,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="button-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>
