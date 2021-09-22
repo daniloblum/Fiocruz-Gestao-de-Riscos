@@ -98,6 +98,12 @@
               <i class="bi bi-camera-video mr-2"></i> Resumo da aula
             </a>
           </div>
+
+          <div>
+            <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-perfil">
+              <i class="bi bi-person-lines-fill mr-2"></i> Sobre a autora
+          </a>
+          </div>
         </nav>
         <hr>
         <section class="sidebar__section">
@@ -239,7 +245,6 @@
     </div>
   </div>
 
-
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -266,7 +271,7 @@
   <script type="text/javascript" src="../../js/custom-anime.js"></script>
 
   
-</body><!-- Modal Video resumo da aula -->
+<!-- Modal Video resumo da aula -->
   <div class="modal modal-video fade p-0" id="resumo-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -277,6 +282,49 @@
       </div>
     </div>
   </div>
+
+<!-- Modal Perfil  -->
+<div class="modal fade" id="modal-perfil" tabindex="-1" aria-labelledby="perfil-perfil" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-bibliografia">Sobre a autora</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="accordion-perfil" class="accordion mb-5">
+
+          <!-- Texto com Imagem à esquerda -->
+          <div class="row justify-content-center d-lg-block px-3 my-5">
+            <!-- Imagem -->
+            <div class="col-md-8 col-lg-4 float-lg-left mr-lg-4 px-0 order-1 order-lg-2">
+                <figure>
+                    <img class="img-fluid rounded mx-auto d-block mb-3"
+                        src="../../images/modulo1/aula2/conteudista.jpg" alt="Taís de Moura Ariza Alpino, autora desta aula."
+                        title="">
+                </figure>
+            </div>
+
+            <!-- Texto -->
+            <div class="order-2 order-lg-1">
+                <h5 class="mb-3">Taís de Moura Ariza Alpino</h5>
+                <p>Nutricionista, doutora em saúde pública pela Escola Nacional de Saúde Pública Sérgio Arouca (ENSP/ Fiocruz) e especialista em segurança alimentar e nutricional pela Universidade Federal do Estado do Rio de Janeiro (UNIRIO). Tanto o mestrado quanto o doutorado tiveram como objeto de estudo a seca no semiárido do Brasil como um desastre natural e social. Atualmente atuo como pesquisadora colaboradora no Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz (Cepedes/Fiocruz), atuando em vários projetos de pesquisa e na elaboração de artigos, documentos e materiais voltados para a qualificação e aprimoramento das ações de preparação e resposta do setor saúde a emergências e desastres.</p>
+            </div>
+        </div>
+        <!-- Fim de texto e imagem à esquerda-->
+        
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+
+</div>
 
   <!-- Modal Bibliografia -->
   <div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
