@@ -105,6 +105,7 @@ Abas
 .abas .nav-link {
   text-decoration: none !important;
   padding: 0.5rem;
+  color: var(--primary-color)
 }
 
 .abas .nav-tabs .nav-link.active,
@@ -136,12 +137,15 @@ Abas
 }
 
 .abas .tab-content {
-  border-bottom: 1px solid #e9ecef;
+  border: 2px solid var(--primary-color);
+  padding: 30px;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
 
-.boot-tabs {
+/* .boot-tabs {
   margin-bottom: 20px !important;
-}
+} */
 
 @media (min-width: 992px) {
   .abas .nav-link {
@@ -1141,6 +1145,10 @@ Modal
   padding-bottom: 1rem;
   color: #fff;
   opacity: 1;
+}
+
+.modal-body {
+  padding: 1rem 2rem;
 }
 
 /* -------------------------------- 
