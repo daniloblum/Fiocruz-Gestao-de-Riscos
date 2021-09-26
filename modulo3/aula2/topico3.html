@@ -1,1382 +1,479 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta
-      name="author"
-      content="Fiocruz: Escola Nacional de Saúde Pública Sérgio Arouca - ENSP"
-    />
-    <meta name="robots" content="noindex" />
-    <meta
-      name="keywords"
-      content="Saúde Pública, Brasil, Fiocruz, Casa Oswaldo Cruz, Curso"
-    />
-    <meta
-      name="description"
-      content="Disciplina sobre a Gestão de Riscos de Emergência em Saúde Pública para COVID-19."
-    />
+	<meta name="author" content="Fiocruz: Escola Nacional de Saúde Pública Sérgio Arouca - ENSP" />
+	<meta name="robots" content="noindex" />
+	<meta name="keywords" content="Saúde Pública, Brasil, Fiocruz, Casa Oswaldo Cruz, Curso">
+	<meta name="description" content="Disciplina sobre a Gestão de Riscos de Emergência em Saúde Pública para COVID-19.">
 
     <!-- Favicons and Touch Icons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="../../images/icons//apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="../../images/icons/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="../../images/icons/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="../../images/icons/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="../../images/icons/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="../../images/icons/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="../../images/icons/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="../../images/icons/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../../images/icons/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="../../images/icons/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../../images/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="../../images/icons/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../../images/icons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../../images/icons/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="../../images/icons/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/icons//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/icons/favicon-16x16.png">
+    <link rel="manifest" href="../../images/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-    <title>
-      Gestão de Riscos de Emergência em Saúde Pública para COVID-19 - Módulo 3 -
-      Aula 2
-    </title>
+    <title>Gestão de Riscos de Emergência em Saúde Pública para COVID-19 - Módulo 3 - Aula 2</title>
+
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- Bootstrap Icons CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
 
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="../../css/animate.min.css" />
+    <link rel="stylesheet" href="../../css/animate.min.css">
 
     <!-- Project CSS -->
-    <link rel="stylesheet" href="../../css/style.css" />
-  </head>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
 
-  <body>
+<body>
+
     <div class="main">
-      <div class="sidebar">
-        <div class="sidebar__inner">
-          <section class="sidebar__header">
-            <h3 class="m-0">
-              História da Saúde Pública<br class="d-md-none" />
-              no Brasil
-            </h3>
-          </section>
-          <hr />
-          <section class="sidebar__section py-2">
-            <a href="../../index.html" class="sidebar__btn">
-              <i class="bi-house mr-2"></i>Voltar para o início
-            </a>
-          </section>
-          <hr />
-          <nav class="sidebar__section">
-            <h6 class="">Aula 2</h6>
-            <h5>O Movimento pela Reforma Sanitária brasileira</h5>
-            <div class="sidebar__topic-list">
-              <div>
-                <a
-                  href="inicio.html"
-                  class="
-                    sidebar__btn sidebar__list-item sidebar__list-item--selected
-                  "
-                  ><i class="bi-check-circle-fill"></i
-                  ><span>Início da aula</span></a
-                >
+        <div class="sidebar">
+            <div class="sidebar__inner">
+                <section class="sidebar__header">
+                    <h4 class="m-0">Gestão de Riscos de Emergência em Saúde Pública para COVID-19<br class="d-md-none"> no Brasil</h4>
+                </section>
+                <hr>
+                <section class="sidebar__section py-2">
+                    <a href="../../index.html" class="sidebar__btn">
+                        <i class="bi-house mr-2"></i>Voltar para o início
+                    </a>
+                </section>
+                <hr>
+                <nav class="sidebar__section">
+                  <h6 class="">Aula 2</h6>
+                  <h5>Gestão do conhecimento e comunicação de risco em saúde</h5>
+                  <div class="sidebar__topic-list">
+                    <div>
+                      <a href="inicio.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Início da aula</span></a>
 
-                <a
-                  href="topico1.html"
-                  class="
-                    sidebar__btn sidebar__list-item sidebar__list-item--selected
-                  "
-                  ><i class="bi-check-circle-fill"></i
-                  ><span>Do que vamos tratar?</span></a
-                >
+                      <a href="topico1.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>A importância da Gestão do Conhecimento em situações de ESP – o caso da pandemia da COVID-19</span></a>
 
-                <a
-                  href="topico2.html"
-                  class="
-                    sidebar__btn sidebar__list-item sidebar__list-item--selected
-                  "
-                  ><i class="bi-check-circle-fill"></i
-                  ><span>A saúde no contexto do regime autoritário</span></a
-                >
+                      <a href="topico2.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Diferença entre dados, informação e conhecimento</span></a>
 
-                <a
-                  href="topico3.html"
-                  class="
-                    sidebar__btn sidebar__list-item sidebar__list-item--selected
-                  "
-                  ><i class="bi-circle-fill"></i
-                  ><span>A agenda da saúde</span></a
-                >
+                      <a href="topico3.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-circle-fill"></i><span>Os desafios da tradução do conhecimento em saúde para a comunicação de risco</span></a>
 
-                <a href="topico4.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i
-                  ><span>Debates, agenda e horizontes...</span></a
-                >
+                      <a href="topico4.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>O que comunicar, e para qual público?</span></a>
 
-                <a href="topico5.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i><span>Mãos à massa...</span></a
-                >
+                      <a href="topico5.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Princípios básicos da comunicação de risco</span></a>
 
-                <a href="topico6.html" class="sidebar__btn sidebar__list-item"
-                  ><i class="bi-circle-fill"></i><span>Fim da aula</span></a
-                >
-              </div>
+                      <a href="topico6.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Comunicação rápida e segura para ESP (plano e estratégias) – COVID-19</span></a>
+
+                      <a href="topico7.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Fake news: problemas frente à COVID-19</span></a>
+
+                      <a href="topico8.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Resumo</span></a>
+
+                      <a href="topico9.html" class="sidebar__btn sidebar__list-item"><i class="bi-circle-fill"></i><span>Fim da aula</span></a>
+
+
+                    </div>
+                  </div>
+                  <div>
+                    <a href="" class="sidebar__btn" data-toggle="modal" data-target="#resumo-video">
+                      <i class="bi bi-camera-video mr-2"></i> Resumo da aula
+                  </a>
+                  </div>
+                  <div>
+                    <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-perfil">
+                      <i class="bi bi-person-lines-fill mr-2"></i> Sobre o autor
+                  </a>
+                  </div>
+                </nav>
+                <hr>
+                <section class="sidebar__section">
+                    <h6 class="">Aulas</h6>
+                    <a href="../aula1/inicio.html" class="sidebar__btn">
+                        1. Gestão da informação e sistemas de alerta em emergências em saúde pública para COVID-19</a>
+                    <a href="../aula3/inicio.html" class="sidebar__btn pr-lg-5">
+                        3. Preparação para a resposta a Emergências em Saúde Pública para COVID-19</a>
+                </section>
+                <hr>
+                <section class="sidebar__section py-2">
+                    <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-bibliografia">
+                        <i class="bi-book mr-2"></i> Bibliografia
+                    </a>
+                </section>
+                
+                <section class="sidebar__section py-0">
+                    <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-material-complementar">
+                        <i class="bi bi-journals mr-2"></i> Material Complementar
+                    </a>
+                </section>
+                
+                <section class="sidebar__section py-2">
+                    <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-creditos">
+                        <i class="bi bi-list-ul mr-2"></i> Créditos
+                    </a>
+                </section>
+                <hr>
+                
             </div>
-          </nav>
-          <hr />
-          <section class="sidebar__section">
-            <h6 class="">Aulas</h6>
-            <a href="../aula1/inicio.html" class="sidebar__btn">
-              <i></i>1. O fortalecimento do sistema previdenciário e da rede
-              hospitalar no Brasil
-            </a>
-            <a href="../aula3/inicio.html" class="sidebar__btn">
-              <i></i>3. O processo institucional da reforma sanitária
-            </a>
-            <a href="../aula4/inicio.html" class="sidebar__btn">
-              <i></i>4. A emergência do Sistema Único de Saúde (SUS)​
-            </a>
-          </section>
-          <hr />
-          <section class="sidebar__section py-2">
-            <a
-              href=""
-              class="sidebar__btn"
-              data-toggle="modal"
-              data-target="#modal-bibliografia"
-            >
-              <i class="bi-book mr-2"></i> Bibliografia
-            </a>
-          </section>
-          <hr />
-          <section class="sidebar__section py-2">
-            <a
-              href=""
-              class="sidebar__btn"
-              data-toggle="modal"
-              data-target="#modal-material-complementar"
-            >
-              <i class="bi bi-journals mr-2"></i> Material Complementar
-            </a>
-          </section>
-          <hr />
-          <section class="sidebar__section py-2">
-            <a
-              href=""
-              class="sidebar__btn"
-              data-toggle="modal"
-              data-target="#modal-creditos"
-            >
-              <i class="bi bi-list-ul mr-2"></i> Créditos
-            </a>
-          </section>
-          <hr />
-          <section class="sidebar__section py-4">
-            <img
-              src="../../images/logo.svg"
-              alt="Observatório História & Saúde"
-              width="60%"
-            />
-          </section>
         </div>
-      </div>
-      <div class="content">
-        <header
-          class="header py-5"
-          style="background-image: url(../../images/modulo1/header-tarja.jpg)"
-        >
+        <div class="content">
+      <header class="header py-5" style="background-image: url(../../images/modulo1/header-tarja.jpg)">
+        <div class="container">
           <div class="header__inner">
             <!-- <img src="../../images/modulo1/header-tarja.jpg" alt=""> -->
-
             <div class="header__title">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div
-                    class="
-                      col-12 col-md-10 col-lg-7 col-xl-6
-                      offset-xl-2
-                      text-left
-                    "
-                  >
-                    <h3>Módulo 3</h3>
-                    <h1 class="m-0">
-                      Da Ditadura Civil Militar à regulamentação do SUS
-                    </h1>
-                  </div>
-                  <div class="col-lg-4 position-relative">
-                    <img
-                      class="image1 d-none d-lg-block p-xl-3"
-                      src="../../images/modulo2/header-foto.png"
-                      alt=""
-                    />
-                    <span class="image3"></span>
-                  </div>
+              <div class="row justify-content-start">
+                <div class="col-12 col-md-10 col-lg-8 offset-lg-1 text-left">
+                  <h3>Módulo 3</h3>
+                  <h1 class="m-0">Preparação e resposta às Emergências em Saúde pública para COVID-19</h1>
                 </div>
               </div>
             </div>
           </div>
-        </header>
+        </div>
+      </header>
+        
+            <div id="page-content" class="">
 
-        <div id="page-content" class="">
-          <!-- Inserir o conteúdo aqui -->
-          <section>
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Heading Block (Título h2 ou h3  + Lead (se houver)) -->
-                  <div class="heading__block">
-                    <span class="heading__before">Aula 2</span>
-                    <h2 class="heading__title">A agenda da saúde​</h2>
-                    <!-- <p class="heading__lead">A idéia deste modelo é reunir os principais recursos visuais
+                <!-- Inserir o conteúdo aqui -->
+                <section>
+                    <div class="container">
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <!-- Heading Block (Título h2 ou h3  + Lead (se houver)) -->
+                                <div class="heading__block">
+                                    <span class="heading__before">Aula 2</span>
+                                    <h2 class="heading__title">Os desafios da tradução do conhecimento em saúde para a comunicação de risco</h2>
+                                    <!-- <p class="heading__lead">A idéia deste modelo é reunir os principais recursos visuais
                                     utilizados
                                     para as aulas.</p> -->
-                  </div>
-                  <!-- Fim do Heading Block -->
-                </div>
-              </div>
+                                </div>
+                                <!-- Fim do Heading Block -->
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Texto com Imagem à direita -->
-                  <div class="row justify-content-center d-lg-block px-3">
-                    <!-- Imagem -->
-                    <div
-                      class="
-                        col-md-8 col-lg-6
-                        float-lg-right
-                        ml-lg-4
-                        px-0
-                        order-1 order-lg-2
-                      "
-                    >
-                      <figure>
-                        <img
-                          class="img-fluid rounded mx-auto d-block mb-3"
-                          src="../../images/modulo3/aula2/topico3/img1-foto.jpg"
-                          alt="Organização Pan-Americana da Saúde (OPAS)"
-                          title="Fonte: Nome do autor / Nome do Banco de Imagens"
-                        />
-                        <figcaption class="figure-caption">
-                          A Organização Pan-Americana da Saúde (OPAS) trabalha
-                          com os países das Américas para melhorar a saúde e a
-                          qualidade de vida de suas populações.​
-                        </figcaption>
-                        <figcaption class="figure-caption fonte">
-                          Fonte:
-                          <a
-                            href="https://www.paho.org/pt/brasil/sobre-opasoms-brasil"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >Site institucional da organização.</a
-                          >
-                        </figcaption>
-                      </figure>
-                    </div>
+                              
+                              <p>No processo de produção e Gestão do Conhecimento, o conteúdo a ser comunicado deve passar por um "tratamento" até chegar ao público final. É aí que entra o papel da <a href='#' data-toggle="modal" data-target="#modal1">Comunicação de Risco.</a> </p>
 
-                    <!-- Texto -->
-                    <div class="order-2 order-lg-1">
-                      <p>
-                        A partir do final dos anos 1950, com importante destaque
-                        nas duas décadas seguintes, organismos internacionais,
-                        como a
-                        <strong
-                          >Organização Pan-americana da Saúde (OPAS)</strong
-                        >, passariam a ter protagonismo na produção de
-                        diagnósticos sobre as diferentes situações sanitárias
-                        nacionais e também na organização de ideias e pautas
-                        institucionais.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                              <!-- Modal 1 -->
+                        <div class="modal fade show" id="modal1" tabindex="-1" aria-labelledby="modal1-titulo"
+                            aria-modal="true" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal1">Comunicação de Risco</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-lg-8">
-                  <!-- Box de Saiba Mais -->
-                  <div class="card-box card border-0 shadow">
-                    <div class="box-quote">
-                      <h5>
-                        <i
-                          class="box-quote__icone bi bi-question-lg"
-                          data-fa-transform="grow-25"
-                          aria-hidden="true"
-                        ></i
-                        >Saiba Mais
-                      </h5>
-                      <div class="boxes-content">
-                        <p>
-                          A OPAS, por exemplo, apontava para um
-                          <strong>quadro sanitário preocupante</strong> que
-                          combinava baixa cobertura assistencial e disseminação
-                          de doenças marcadamente da pobreza, como as verminoses
-                          e aquelas de veiculação hídrica no Brasil e em boa
-                          parte dos países do continente.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Fim do Box de Saiba Mais -->
-                </div>
-              </div>
+                                        <p class="mt-4"><em>Comunicação de Risco(s) refere-se ao tempo real de troca de informação, aconselhamento e pareceres entre peritos ou funcionários e pessoas que enfrentam uma ameaça (perigo) para sua sobrevivência, a saúde ou o bem-estar econômico ou social. (OPAS, 2018).</em>
+                                        </p>
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Olho de texto -->
-                  <div class="olho-de-texto">
-                    <p>
-                      As ações e estratégias para um necessário enfrentamento da
-                      realidade sanitária deveria passar, segundo apontavam os
-                      técnicos da OPAS, pelo fortalecimento dos aparatos e ações
-                      estatais.
-                    </p>
-                  </div>
-                  <!--Fim de Olho de texto -->
-                </div>
-              </div>
+                                       
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-lg-8">
-                  <!-- Box de Saiba Mais -->
-                  <div class="card-box card border-0 shadow">
-                    <div class="box-quote">
-                      <h5>
-                        <i
-                          class="box-quote__icone bi bi-question-lg"
-                          data-fa-transform="grow-25"
-                          aria-hidden="true"
-                        ></i
-                        >Saiba Mais
-                      </h5>
-                      <div class="boxes-content">
-                        <p>
-                          Para tal, imaginava-se que as diferentes estruturas
-                          estatais deveriam se organizar em torno do
-                          <strong>Planejamento e da Avaliação de ações</strong>,
-                          o que implicava:​
-                        </p>
-                        <!-- Lista Simples -->
-                        <div class="obj-lista">
-                          <ul class="list-group">
-                            <li class="list-group-item">
-                              <i
-                                class="bi bi-record-circle text-secondary mr-2"
-                              ></i>
-                              A instituição de unidades especializadas nos
-                              ministérios e a gestão adequada de estatísticas
-                              vitais e sanitárias;
-                            </li>
-                            <li class="list-group-item">
-                              <i
-                                class="bi bi-record-circle text-secondary mr-2"
-                              ></i>
-                              A administração coordenada dos serviços de saúde,
-                              com a articulação dos âmbitos nacional e local,
-                              assim como a integração da prevenção com a
-                              assistência curativa; e
-                            </li>
-                            <li class="list-group-item">
-                              <i
-                                class="bi bi-record-circle text-secondary mr-2"
-                              ></i>
-                              A ênfase na formação e capacitação dos recursos
-                              humanos.​
-                            </li>
-                          </ul>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button href="#" data-dismiss="modal" class="button-primary"><span>Fechar</span></button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Fim do Box de Saiba Mais -->
-                </div>
-              </div>
+                        <!-- Fim do Modal 1 -->
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Texto com Imagem à esquerda -->
-                  <div class="row justify-content-center d-lg-block px-3">
-                    <!-- Imagem -->
-                    <div
-                      class="
-                        col-md-8 col-lg-6
-                        float-lg-left
-                        mr-lg-4
-                        px-0
-                        order-1 order-lg-2
-                      "
-                    >
-                      <figure>
-                        <img
-                          class="img-fluid rounded mx-auto d-block mb-3"
-                          src="../../images/modulo3/aula2/topico3/img2-foto.jpg  "
-                          alt="Profissional em atividade no laboratório de toxicologia do INCQS."
-                          title="Fonte: Nome do autor / Nome do Banco de Imagens"
-                        />
-                        <figcaption class="figure-caption">
-                          Profissional em atividade no laboratório de
-                          toxicologia do INCQS.
-                        </figcaption>
-                        <figcaption class="figure-caption fonte">
-                          Foto:
-                          <a
-                            href="http://observatoriohistoria.coc.fiocruz.br/local/File/na-corda-bamba-cap_6.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >Peter Ilicciev. Acervo Coordenadoria de Comunicação
-                            Social/Fiocruz.
-                          </a>
-                        </figcaption>
-                      </figure>
-                    </div>
 
-                    <!-- Texto -->
-                    <div class="order-2 order-lg-1">
-                      <p>
-                        A ideia de planejamento, como forma de proceder a uma
-                        mobilização programada dos recursos disponíveis, com o
-                        intuito do alcance de objetivos e metas definidos
-                        segundo determinados diagnósticos, afirmava no terreno
-                        da saúde a necessidade da
-                        <strong
-                          >pesquisa epidemiológica e da informação
-                          estatística</strong
-                        >
-                        como requisitos para a fixação de prioridades.​
-                      </p>
-                      <p>
-                        Da mesma forma, prescrevia o desenvolvimento de
-                        metodologias para o que deveria ser um “planejamento
-                        integral do desenvolvimento econômico e do bem-estar”
-                        (OPAS, 1963).
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                                <!--Flip Cards 2.0 CSS -->
+                        <div class="row justify-content-center my-5">
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Box de Atenção -->
-                  <div class="card-box card border-0 shadow">
-                    <div class="box-quote">
-                      <h5>
-                        <i
-                          class="box-quote__icone bi bi-exclamation-lg"
-                          data-fa-transform="grow-25"
-                          aria-hidden="true"
-                        ></i
-                        >Atenção
-                      </h5>
-                      <div class="boxes-content">
-                        <p>
-                          A rigor, o planejamento e o foco na administração
-                          pública não se configuravam como objetivos em si
-                          mesmos. A vigência de ideias que poderíamos
-                          identificar como racionalizadoras era parte
-                          inseparável da meta do aumento da cobertura dos
-                          serviços de saúde. Aliás, “aumento de cobertura”
-                          talvez seja uma das expressões mais mobilizadas nos
-                          documentos técnicos do período.
-                        </p>
-                        <p>
-                          Como ideia-força foi capaz de organizar as pautas
-                          institucionais, ao mesmo tempo em que foi uma forma de
-                          se organizar contundente crítica às intervenções de
-                          saúde pública conhecidas como verticais, isto é,
-                          aquelas orientadas por doenças específicas, muito
-                          comuns no contexto dos anos 1950, como vimos.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Fim do Box de Atenção -->
-                </div>
-              </div>
+                            <!--FlipCard 1-->
+                            <div class="col-12 col-md-8 col-lg- 10b-5 mb-lg-0">
+                                
+                                    <div class="flip-card">
+                                        <input type="checkbox" id="flipcard1" class="more" aria-hidden="true">
+                                        <div class="flip-card-inner">
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!--Slider-->
-                  <div
-                    id="carousel2"
-                    class="carousel slide"
-                    data-ride="false"
-                    data-interval="false"
-                    data-touch="true"
-                    data-keyboard="true"
-                    aria-labelledby="carouselheading"
-                  >
-                    <div class="card shadow border-0 p-2 pb-4">
-                      <div class="row justify-content-center">
-                        <div
-                          class="
-                            col-12 col-md-12 col-lg-12
-                            justify-content-center
-                            d-flex
-                            flex-column
-                            carousel-texto
-                          "
-                        >
-                          <ol class="carousel-indicators">
-                            <li
-                              data-target="#carousel2"
-                              data-slide-to="0"
-                              class="active"
-                            ></li>
-                            <li data-target="#carousel2" data-slide-to="1"></li>
-                            <li data-target="#carousel2" data-slide-to="2"></li>
-                          </ol>
+                                            <!-- FRENTE -->
+                                            <div class="card shadow flip-card-front fundo1 item1 text-white">
+                                                <div class="card h-100 bg-transparent border-0 text-center">
+                                                    <div class="card-body justify-content-center d-flex flex-column m-0">
+                                                        <h2 class="card-title text-white">Por que se <br>comunicar em ESP?</h2>
+                                                        
+                                                    </div>
 
-                          <div class="carousel-inner p-4">
-                            <!-- Ítem 1 -->
-                            <article class="carousel-item active">
-                              <div class="row justify-content-center m-0">
-                                <div class="col-11 col-md-10">
-                                  <p>
-                                    Somavam-se às críticas aos modelos
-                                    verticais, julgamentos negativos com relação
-                                    a uma medicina curativa centrada na
-                                    instituição hospitalar e no uso crescente de
-                                    tecnologias complexas e custosas.
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
+                                                    <div class="card-footer text-white">
+                                                        <div class="card-btn">
+                                                            <label for="flipcard1" class="btn btn-outline-light"
+                                                                aria-hidden="true">
+                                                                <svg class="ic-virar"
+                                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                    y="0px" viewBox="0 0 40 40"
+                                                                    style="enable-background:new 0 0 40 40;"
+                                                                    xml:space="preserve">
+                                                                    <g>
+                                                                        <g>
+                                                                            <path
+                                                                                d="M29.8,32.1c-0.4,0-0.9-0.3-1-0.7c-0.2-0.6,0.1-1.1,0.7-1.3c4.5-1.3,7.3-3.5,7.3-5.7c0-1.4-1.1-2.6-2.1-3.3
+                                                    c-0.5-0.3-0.6-1-0.2-1.5c0.3-0.5,1-0.6,1.5-0.2c1.9,1.4,2.9,3.1,2.9,4.9c0,3.2-3.2,6-8.7,7.7C30,32.1,29.9,32.1,29.8,32.1z">
+                                                                            </path>
+                                                                        </g>
+                                                                        <path d="M21.8,31l-4.5-3.4c-0.5-0.3-1.1-0.3-1.5,0.2c-0.3,0.5-0.3,1.1,0.2,1.5l2.7,2c-4.2-0.1-8-0.9-11-2.2c-2.9-1.3-4.6-3-4.6-4.7
+                                                c0-1.6,1.5-2.9,2.7-3.7c0.5-0.3,0.6-1,0.3-1.4c-0.3-0.5-1-0.6-1.4-0.3c-2.4,1.5-3.7,3.4-3.7,5.5c0,2.6,2.1,4.9,5.8,6.6
+                                                c2.8,1.3,6.4,2.1,10.2,2.3l-1,0.7c-0.5,0.3-0.6,1-0.3,1.5c0.2,0.3,0.5,0.5,0.9,0.5c0.2,0,0.4-0.1,0.6-0.2l4.5-3.1
+                                                c0.3-0.2,0.4-0.5,0.5-0.8C22.3,31.5,22.1,31.2,21.8,31z"></path>
+                                                                    </g>
+                                                                    <g>
+                                                                        <path
+                                                                            d="M29.5,38.5h-18c-2.2,0-4-1.8-4-4v-27c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4v27C33.5,36.7,31.7,38.5,29.5,38.5z M11.5,5.5
+                                                c-1.1,0-2,0.9-2,2v27c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2v-27c0-1.1-0.9-2-2-2H11.5z">
+                                                                        </path>
+                                                                    </g>
+                                                                </svg>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                            <!-- Ítem 2 -->
-                            <article class="carousel-item">
-                              <div class="row justify-content-center m-0">
-                                <div class="col-11 col-md-10">
-                                  <p>
-                                    Esse ambiente de críticas, do qual o
-                                    movimento sanitário brasileiro seria
-                                    expressão viva, corresponderia, por outro
-                                    lado, à crescente popularidade das
-                                    abordagens ditas integrais e das
-                                    experiências de medicina simplificada
-                                    empreendidas em países em desenvolvimento,
-                                    entre as quais aquela que envolveu a
-                                    utilização dos Médicos de Pés Descalços na
-                                    República Popular da China.​
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
+                                            <!-- VERSO -->
+                                            <div class="flip-card-back">
+                                                <div class="card h-100 bg-transparent border-0 text-center">
+                                                    <div class="card-body justify-content-center d-flex flex-column m-0 p-0">
+                                                        <h4 class="card-title my-0">Por que se comunicar em ESP?</h4>
+                                                        <div class="card-text">
 
-                            <!-- Ítem 3 -->
-                            <article class="carousel-item">
-                              <div class="row justify-content-center m-0">
-                                <div class="col-11 col-md-10">
-                                  <p>
-                                    No final dos anos 1970, todos esses
-                                    movimentos culminaram, em termos
-                                    internacionais, no estabelecimento, em 1977,
-                                    da meta de “Saúde para todos no ano 2000”.
-                                    Outra iniciativa ocorreu no ano seguinte,
-                                    durante a Conferência Internacional sobre
-                                    Cuidados Primários de Saúde, conhecida
-                                    simplesmente como Conferência de Alma-Ata,
-                                    com a Atenção Primária à Saúde como a
-                                    estratégia principal para alcançá-la.
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-                          </div>
+                                                             <!-- Texto com Imagem à direita -->
+                                                                    <div class="row justify-content-center d-lg-block px-3 my-5">
+                                                                        <!-- Imagem -->
+                                                                        <div class="col-md-8 col-lg-4 float-lg-right ml-lg-4 px-0 order-1 order-lg-2">
+                                                                            <figure>
+                                                                                <img class="img-fluid rounded mx-auto d-block mb-3" src="../../images/modulo3/aula2/topico2/img5.svg" alt="Fonte: http://thenounproject.com/"  title="">                    
+                                                                            </figure>
+                                                                        </div>
 
-                          <a
-                            class="carousel-control-prev"
-                            href="#carousel2"
-                            role="button"
-                            data-slide="prev"
-                          >
-                            <span
-                              class="carousel-control-prev-icon dark-arrow"
-                              aria-hidden="true"
-                            ></span>
-                            <span class="sr-only">Anterior</span>
-                          </a>
-                          <a
-                            class="carousel-control-next"
-                            href="#carousel2"
-                            role="button"
-                            data-slide="next"
-                          >
-                            <span
-                              class="carousel-control-next-icon dark-arrow"
-                              aria-hidden="true"
-                            ></span>
+                                                                        <!-- Texto -->
+                                                                        <div class="order-2 order-lg-1">
+                                                                            <p>É importante compreender que a Comunicação de Risco é parte integrante da resposta em saúde pública a qualquer situação de emergência e, portanto, está prevista no Regulamento Sanitário Internacional (RSI), pois as pessoas têm o direito de ser informadas sobre os riscos e como se proteger.</p>
+                                                                         </div>
+                                                                        </div>
+                                                                    </div>
+                                                                     <!-- Fim de texto e imagem à direita-->
+                                                           
+                                                    </div>
 
-                            <span class="sr-only">Próximo</span>
-                          </a>
+                                                    <div class="card-footer">
+                                                        <div class="card-btn">
+                                                            <label for="flipcard1" class="btn btn-outline-light return"
+                                                                aria-hidden="true">
+                                                                <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <!--Fim Flipcard 1-->
+
+                           
                         </div>
-                        <!--Fim do caroussel inner-->
-                      </div>
-                    </div>
-                  </div>
-                  <!--Fim do Slider-->
-                </div>
-              </div>
+                        <!--Flip Cards 2.0 CSS -->
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Olho de texto -->
-                  <div class="olho-de-texto">
-                    <p>
-                      No contexto brasileiro, esses debates em torno da saúde
-                      ocorreram, como vimos, em um cenário de grandes
-                      transformações políticas e sociais. No campo político,
-                      ainda que sob imensas incertezas, observamos as primeiras
-                      iniciativas de distensão e de um movimento rumo à abertura
-                      democrática.
-                    </p>
-                  </div>
-                  <!--Fim de Olho de texto -->
-                </div>
-              </div>
+                       <p>É importante compreender que a Comunicação de Risco é parte integrante da resposta em saúde pública a qualquer situação de emergência e, portanto, está prevista no Regulamento Sanitário Internacional (RSI), pois as pessoas têm o direito de ser informadas sobre os riscos e como se proteger.</p>
 
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <h4>No campo político...​</h4>
-                </div>
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Cards de Texto Lado a Lado -->
-                  <div class="row justify-content-center">
-                    <div class="col-10 col-md-4 mb-5">
-                      <div
-                        class="
-                          card-destaque card
-                          border-0
-                          shadow
-                          px-3
-                          py-3
-                          h-100
-                          justify-content-start
-                          d-flex
-                          flex-column
-                        "
-                      >
-                        <img
-                          src="../../images/modulo3/aula2/topico3/img3-icone.svg"
-                          width="auto"
-                          height="100px"
-                          class="mb-3"
-                          alt="Ícone de eleições."
-                        />
-                        <p class="m-0 text-center">
-                          <strong>Eleições para o ​Senado</strong><br />(1974,
-                          1976 e 1978)
-                        </p>
-                      </div>
-                    </div>
+                       <p>A Comunicação de Risco ajuda a influenciar a mudança de comportamento, entretanto, vale ressaltar que pessoas e grupos populacionais têm diferentes percepções de um mesmo tipo de risco. </p>
 
-                    <div class="col-10 col-md-4 mb-5">
-                      <div
-                        class="
-                          card-destaque card
-                          border-0
-                          shadow
-                          px-3
-                          py-3
-                          h-100
-                          justify-content-start
-                          d-flex
-                          flex-column
-                        "
-                      >
-                        <img
-                          src="../../images/modulo3/aula2/topico3/img4-icone.svg"
-                          width="auto"
-                          height="100px"
-                          class="mb-3"
-                          alt="Ícone de censura."
-                        />
-                        <p class="m-0 text-center">
-                          O <strong>abrandamento da censura</strong><br />(1975
-                          e 1979)
-                        </p>
-                      </div>
-                    </div>
+                       <p> Alguns fatores influenciam esta percepção e, neste caso, os comunicadores devem estar atentos a essas diferenças. Quando não há informação segura disponível, as pessoas vão buscá-la por conta própria, gerando desinformação e rumores, que devem ser identificados e esclarecidos o mais rápido possível. É importante ressaltar ainda que a comunicação de forma frequente e franca, além de oferecer apoio para a resposta à emergência, ajuda a criar e manter confiança nas autoridades sanitárias. </p>
 
-                    <div class="col-10 col-md-4 mb-5">
-                      <div
-                        class="
-                          card-destaque card
-                          border-0
-                          shadow
-                          px-3
-                          py-3
-                          h-100
-                          justify-content-start
-                          d-flex
-                          flex-column
-                        "
-                      >
-                        <img
-                          src="../../images/modulo3/aula2/topico3/img5-icone.svg"
-                          width="auto"
-                          height="100px"
-                          class="mb-3"
-                          alt="Ícone de algemas quebradas."
-                        />
-                        <p class="m-0 text-center">
-                          A <strong>lei da anistia</strong><br />(1979)
-                        </p>
-                      </div>
-                    </div>
+                       <!-- Box de Saiba Mais -->
+                        <div class="card-box card border-0 shadow my-5">
+                            <div class="box-quote">
+                                <h5>
+                                    <i class="box-quote__icone bi bi-question-lg" data-fa-transform="grow-25"
+                                        aria-hidden="true"></i>Saiba
+                                    Mais
+                                </h5>
+                                <div class="boxes-content">
 
-                    <div class="col-10 col-md-4 mb-5">
-                      <div
-                        class="
-                          card-destaque card
-                          border-0
-                          shadow
-                          px-3
-                          py-3
-                          h-100
-                          justify-content-start
-                          d-flex
-                          flex-column
-                        "
-                      >
-                        <img
-                          src="../../images/modulo3/aula2/topico3/img6-icone.svg"
-                          width="auto"
-                          height="100px"
-                          class="mb-3"
-                          alt="Ícone de debate."
-                        />
-                        <p class="m-0 text-center">
-                          A <strong>volta ao pluripartidarismo</strong>
-                        </p>
-                      </div>
-                    </div>
+                                    <p>Criada em abril de 2020 a campanha <a href="https://portal.fiocruz.br/se-liga-no-corona" target="_blank">“Se liga no Corona!”</a> é uma inciativa da Fiocruz em parceria com instituições representantes da sociedade organizada que produz e divulga conteúdo por meio de radionovelas, spots para carros de som, peças e vídeos para mídias sociais e cartazes digitais. </p>
 
-                    <div class="col-10 col-md-4 mb-5">
-                      <div
-                        class="
-                          card-destaque card
-                          border-0
-                          shadow
-                          px-3
-                          py-3
-                          h-100
-                          justify-content-start
-                          d-flex
-                          flex-column
-                        "
-                      >
-                        <img
-                          src="../../images/modulo3/aula2/topico3/img7-icone.svg"
-                          width="auto"
-                          height="100px"
-                          class="mb-3"
-                          alt="Ícone de agressão policial."
-                        />
-                        <p class="m-0 text-center">
-                          O <strong>fim do AI-5​</strong><br />(1979)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!--Fim do Cards de Texto Lado a Lado-->
-                  <p>
-                    Estas questões dariam o tom às transformações do regime no
-                    que se convencionou chamar de abertura lenta e gradual. Na
-                    concepção de uma estudiosa deste período, os ideólogos do
-                    regime autoritário pretendiam restaurar as abaladas bases de
-                    legitimidade social do regime. Nesse quadro, ter capacidade
-                    de se produzir respostas para o dramático quadro social
-                    brasileiro se apresentava como importante questão política.
-                  </p>
-                </div>
-              </div>
+                                    <p>Essa campanha tornou-se uma ferramenta de comunicação eficiente que utiliza linguagem adequada para a disseminação de informações precisas junto a populações vulnerabilizadas, bem como para estabelecer a interlocução entre saberes necessários à prevenção da COVID-19. </p>
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <p>
-                    Um importante marco desse processo foi o lançamento do
-                    <strong>Segundo Plano Nacional de Desenvolvimento</strong>,
-                    o II PND, no final de 1974. Em termos econômicos, ele
-                    mantinha-se ligado ao desenvolvimentismo e à ideia de um
-                    país-potência em construção.
-                  </p>
-                  <p>
-                    Na prática, previa o aprofundamento da política de
-                    substituição de importações, concentrando sua atenção sobre
-                    a produção de insumos básicos e de bens de capital, em
-                    contraposição à mera substituição de bens de consumo.
-                  </p>
-                  <!-- Box de Saiba Mais -->
-                  <div class="card-box card border-0 shadow mt-5">
-                    <div class="box-quote">
-                      <h5>
-                        <i
-                          class="box-quote__icone bi bi-question-lg"
-                          data-fa-transform="grow-25"
-                          aria-hidden="true"
-                        ></i
-                        >Saiba Mais
-                      </h5>
-                      <div class="boxes-content">
-                        <!-- Texto com Imagem à direita -->
-                        <div class="row justify-content-center d-lg-block px-3">
-                          <!-- Imagem -->
-                          <div
-                            class="
-                              col-md-8 col-lg-6
-                              float-lg-left
-                              mr-lg-4
-                              px-0
-                              order-1 order-lg-2
-                            "
-                          >
-                            <figure>
-                              <img
-                                class="img-fluid rounded mx-auto d-block mb-3"
-                                src="../../images/modulo3/aula2/topico3/img8-foto.jpg"
-                                alt="Ernesto Geisel assume a Presidência da República."
-                                title="Fonte: Blog PGDDEROLLE Internacionalista."
-                              />
-                              <figcaption class="figure-caption">
-                                Ernesto Geisel assume a Presidência da República
-                                e anuncia o II Plano Nacional de Desenvolvimento
-                                – II PND, em 1974.
-                              </figcaption>
-                              <figcaption class="figure-caption fonte">
-                                Fonte:
-                                <a
-                                  href="https://pgderolle.wordpress.com/2015/07/13/geisel-e-o-ii-plano-nacional-de-desenvolvimento/"
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  >Blog PGDDEROLLE Internacionalista.</a
-                                >
-                              </figcaption>
-                            </figure>
-                          </div>
 
-                          <!-- Texto -->
-                          <div class="order-2 order-lg-1">
-                            <p>
-                              Em termos sociais, Ernesto Geisel teve o mérito de
-                              ter levado para a agenda do planejamento estatal
-                              prioridades sociais como educação, saúde e
-                              infraestrutura de serviços urbanos.
-                            </p>
-                          </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- Fim do Box de Saiba Mais -->
+
+                        <p>No caso da pandemia da COVID-19, a mais grave crise de saúde pública da história recente, os tomadores de decisão enfrentam desafios de várias origens, como as incertezas científicas que são intrínsecas a própria produção do conhecimento, mas quando se trata de cenários em constante mudança, tornam-se mais preocupantes. A escassez de conhecimento, sobretudo no início da pandemia, é outro fator que prejudicou a resposta. </p>
+
+                        <p>A orientação inicial do Ministério da Saúde era: “em caso de suspeita, fique em casa por 14 dias e só procure um hospital se o problema se agravar”. Informações sobre a necessidades de respeitar um distanciamento de pelo menos 1 metro entre o paciente e os demais residentes, além de limpeza de maçanetas, vaso sanitário e móveis com álcool 70% ou água sanitária e os cuidados com os alimentos também eram reforçadas periodicamente neste período. Alguns meses depois a orientação mudou para: “Não espere: procure atendimento imediatamente aos primeiros sintomas de COVID-19”, pois já se sabia, através de evidências, que o diagnóstico rápido e preciso reduz a necessidade de internação e de tratamentos intensivos. Além disso, permite ao médico adotar a melhor conduta, acompanhar o paciente e o orientar sobre as formas de transmissão do coronavírus para outras pessoas. </p>
+
+
+
                       </div>
-                    </div>
-                  </div>
-                  <!-- Fim do Box de Saiba Mais -->
-                </div>
-              </div>
-
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!-- Box de Material Complementar -->
-                  <div class="card-box card border-0 shadow">
-                    <div class="box-quote">
-                      <h5>
-                        <i
-                          class="box-quote__icone bi bi-book"
-                          data-fa-transform="grow-25"
-                          aria-hidden="true"
-                        ></i
-                        >Material Complementar
-                      </h5>
-                      <div class="boxes-content">
-                        <h4 class="">Sergio Arouca e o SUS do Brasil</h4>
-                        <p>
-                          Conheça um pouco mais sobre o contexto e as ideias
-                          que, na perspectiva de alguns dos principais atores,
-                          definiram o movimento pela reforma sanitária.
-                        </p>
-                        <h6 class="mb-3">Sinopse:</h6>
-                        <p>
-                          Este filme faz parte do Projeto Memória Sérgio Arouca
-                          coordenado pelos professores doutores Regina Abreu e
-                          Guilherme Franco Netto. O filme conta a história da
-                          construção do SUS no Brasil - um sistema de saúde
-                          público e universal - com especial ênfase na
-                          participação de Sergio Arouca neste processo. Montagem
-                          de Helena Rego Monteiro.
-                        </p>
-                        ​
-
-                        <!--Video (embed Youtube ou Vimeo) -->
-                        <div class="embed-responsive embed-responsive-16by9">
-                          <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/LvcS2Y_V54w"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                          ></iframe>
                         </div>
-                        <!-- <div class="video-subtitle">
-                                                <p class="legenda text-center">Vídeo 1 - Rainforests 101 | National Geographic
-                                                    <br>
-                                                    Fonte: <a href="https://www.youtube.com/watch?v=3vijLre760w" target="_blank">National
-                                                        Geographic (2019)</a>
-                                                </p>
-                                            </div> -->
-                      </div>
                     </div>
-                  </div>
-                  <!-- Fim do Box de Material Complementar -->
-                </div>
-              </div>
+                </section>
 
-              <div class="row justify-content-center mb-5">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <p>
-                    No que se refere especificamente à saúde, o período registra
-                    algumas iniciativas importantes.
-                  </p>
+                   <section style="padding:0">
 
-                  <!-- Accordion -->
-                  <div id="accordionExample" class="accordion my-5">
-                    <!-- Accordion item 1 -->
-                    <div id="headingOne" class="accordion__header">
-                      <a
-                        href="#"
-                        data-toggle="collapse"
-                        data-target="#collapseOne"
-                        aria-expanded="false"
-                        aria-controls="collapseOne"
-                        class="d-block position-relative collapsible-link py-2"
-                        >Sistema Nacional da Saúde (SNS)​</a
-                      >
-                    </div>
-                    <div
-                      id="collapseOne"
-                      aria-labelledby="headingOne"
-                      data-parent="#accordionExample"
-                      class="collapse"
-                    >
-                      <div class="card-body p-4">
-                        <p class="font-weight-light m-0">
-                          Em primeiro lugar, como parte das ações do II PND, o
-                          regime instituía, por meio da lei n. 6.229/75, o
-                          <strong>Sistema Nacional de Saúde</strong>. Em termos
-                          formais, o SNS foi concebido como um esforço para
-                          tentar atribuir maior racionalidade técnica e
-                          administrativa para um imenso aparato de saúde que,
-                          àquela altura, registrava baixos níveis de articulação
-                          institucional.
-                        </p>
-                      </div>
-                    </div>
+                    <!-- Destaque -->
+                     <div class="container-fluid destaque-full bg-color-light secondary-color">
+                        <div class="container">
+                            <div class="row justify-content-center m-0 py-3">
+                                <div class="col-12 col-md-10 col-lg-8">
+                                    <div class="justify-content-center d-flex flex-column">
+                                       
 
-                    <!-- Accordion item 2 -->
-                    <div id="headingTwo" class="accordion__header">
-                      <a
-                        href="#"
-                        data-toggle="collapse"
-                        data-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                        class="
-                          d-block
-                          position-relative
-                          collapsed
-                          collapsible-link
-                          py-2
-                        "
-                        >Ministério da Saúde (MS)</a
-                      >
-                    </div>
-                    <div
-                      id="collapseTwo"
-                      aria-labelledby="headingTwo"
-                      data-parent="#accordionExample"
-                      class="collapse"
-                    >
-                      <div class="card-body p-4">
-                        <p class="font-weight-light m-0">
-                          Em que pesem tais esforços, a iniciativa terminaria
-                          por consolidar no
-                          <strong
-                            >Ministério da Saúde e no Ministério da Previdência
-                            e Assistência Social</strong
-                          >, a separação institucional dos campos de atuação da
-                          saúde pública e da assistência médica previdenciária.
-                          Segundo o texto da lei,
-                          <strong>caberiam à pasta da Saúde</strong>
-                          <u
-                            >ações de coordenação da vigilância epidemiológica
-                            em todo o território nacional, fiscalização e
-                            controle sanitários e outras medidas e ações de
-                            corte coletivo</u
-                          >.
-                        </p>
-                      </div>
-                    </div>
+                                        <p><strong> Por se tratar de uma nova doença, sem medicamento específico e com vacinas produzidas em tempo recorde, há muitas especulações e interesses em jogo. A proliferação de notícias falsas tem sido um dos problemas mais sérios enfrentados, abordaremos o tema com detalhes mais adiante. A corrida contra o tempo, a falta de capacidade técnica e de insumos para certos procedimentos, associados a uma série de erros e negligências das autoridades do país, foram outros fatores que impuseram limitações à resposta. Diante desses desafios, tanto a Gestão do Conhecimento como a Comunicação de Risco contam com o auxílio de plataformas do conhecimento.</strong></p>
 
-                    <!-- Accordion item 3 -->
-                    <div id="headingThree" class="accordion__header">
-                      <a
-                        href="#"
-                        data-toggle="collapse"
-                        data-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                        class="
-                          d-block
-                          position-relative
-                          collapsed
-                          collapsible-link
-                          py-2
-                        "
-                        >Ministério da Previdência e Assistência Social
-                        (MPAS)​</a
-                      >
-                    </div>
-                    <div
-                      id="collapseThree"
-                      aria-labelledby="headingThree"
-                      data-parent="#accordionExample"
-                      class="collapse"
-                    >
-                      <div class="card-body p-4">
-                        <p class="font-weight-light m-0">
-                          Sobre o <strong>MPAS</strong>, por sua vez,
-                          <u
-                            >recairiam responsabilidades de coordenação dos
-                            serviços assistenciais</u
-                          >, entre outras ações mais voltadas para a atenção da
-                          saúde individual.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <!--Slider-->
-                  <div
-                    id="carousel3"
-                    class="carousel slide"
-                    data-ride="false"
-                    data-interval="false"
-                    data-touch="true"
-                    data-keyboard="true"
-                    aria-labelledby="carouselheading"
-                  >
-                    <div class="card shadow border-0 p-2 pb-4">
-                      <div class="row justify-content-center">
-                        <div
-                          class="
-                            col-12 col-md-12 col-lg-12
-                            justify-content-center
-                            d-flex
-                            flex-column
-                            carousel-texto
-                          "
-                        >
-                          <ol class="carousel-indicators">
-                            <li
-                              data-target="#carousel3"
-                              data-slide-to="0"
-                              class="active"
-                            ></li>
-                            <li data-target="#carousel3" data-slide-to="1"></li>
-                            <li data-target="#carousel3" data-slide-to="2"></li>
-                            <li data-target="#carousel3" data-slide-to="3"></li>
-                          </ol>
-
-                          <div class="carousel-inner p-4">
-                            <!-- Ítem 1 -->
-                            <article class="carousel-item active">
-                              <div class="row justify-content-center m-0">
-                                <div class="col-11 col-md-10">
-                                  <p>
-                                    Adicionalmente, a mesma lei (n. 6.229/75)
-                                    deu base legal a uma questão central, por
-                                    assim dizer, ainda hoje não de todo
-                                    superada: a separação entre sistemas
-                                    formadores de recursos humanos e
-                                    necessidades do sistema de saúde.​
-                                  </p>
+                                       
+                                    </div>
                                 </div>
-                              </div>
-                            </article>
-
-                            <!-- Ítem 2 -->
-                            <article class="carousel-item">
-                              <div class="row justify-content-center m-0">
-                                <div class="col-11 col-md-10">
-                                  <p>
-                                    Ocorre que a nova legislação conferiu ao
-                                    <strong
-                                      >Ministério da Educação e Cultura</strong
-                                    >
-                                    as políticas de formação e habilitação de
-                                    profissionais de nível superior, técnico e
-                                    auxiliar para o sistema de saúde, a
-                                    manutenção dos hospitais universitários e de
-                                    ensino, bem como a produção de diretrizes
-                                    para a formação de pessoal de saúde.​
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-
-                            <!-- Ítem 3 -->
-                            <article class="carousel-item">
-                              <div class="row justify-content-center m-0">
-                                <div class="col-11 col-md-10">
-                                  <p>
-                                    Dessa forma, o diálogo entre as duas pastas,
-                                    ao longo do tempo, nem sempre se revelou à
-                                    altura das necessidades de articulação entre
-                                    elas.​
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-
-                            <!-- Ítem 4 -->
-                            <article class="carousel-item">
-                              <div class="row justify-content-center m-0">
-                                <div class="col-11 col-md-10">
-                                  <p>
-                                    A falta de coordenação e sintonia entre
-                                    sistema de formação de recursos humanos no
-                                    país e as necessidades epidemiológicas e de
-                                    atenção à população, sentida nos serviços de
-                                    saúde, constituir-se-á assim em
-                                    <u>uma das problemáticas mais urgentes</u> a
-                                    serem enfrentadas para o bom funcionamento
-                                    do sistema de saúde brasileiro
-                                    contemporâneo.​
-                                  </p>
-                                </div>
-                              </div>
-                            </article>
-                          </div>
-
-                          <a
-                            class="carousel-control-prev"
-                            href="#carousel3"
-                            role="button"
-                            data-slide="prev"
-                          >
-                            <span
-                              class="carousel-control-prev-icon dark-arrow"
-                              aria-hidden="true"
-                            ></span>
-                            <span class="sr-only">Anterior</span>
-                          </a>
-                          <a
-                            class="carousel-control-next"
-                            href="#carousel3"
-                            role="button"
-                            data-slide="next"
-                          >
-                            <span
-                              class="carousel-control-next-icon dark-arrow"
-                              aria-hidden="true"
-                            ></span>
-
-                            <span class="sr-only">Próximo</span>
-                          </a>
+                            </div>
                         </div>
-                        <!--Fim do caroussel inner-->
-                      </div>
                     </div>
-                  </div>
-                  <!--Fim do Slider-->
-                </div>
-              </div>
+                    <!-- Fim do Destaque -->
+
+                </section>
+
+                 <section>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+
+                                <!-- Citação -->
+                        <div class="card border-0 shadow quote mb-5">
+                            <blockquote>
+                                <i class="bi bi-chat-right-quote mx-auto my-auto"></i>
+                                <div>
+                                    <p>
+                                   As plataformas de tradução de conhecimento (KT), compostas por organizações, iniciativas e redes de apoio à formulação de políticas baseadas em evidências, podem desempenhar um papel importante no fornecimento de evidências relevantes e oportunas para informar as respostas à pandemia e preencher a lacuna entre ciência, política e prática (serviços) <span class="text-right quote-autor">(El-Jardal et al, 2020)</span> e contribuir para a Comunicação de Risco.</p>
+                                   
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Fim de citação -->
+
+                                
+                        <p> O <a href="https://portal.fiocruz.br/observatorio-covid-19" target="_blank">Observatório COVID-19 Fiocruz</a> é um exemplo de plataforma que produz informações para ação. Seu objetivo geral é o desenvolvimento de análises integradas, tecnologias, propostas e soluções para enfrentamento da pandemia por COVID-19 pelo SUS e pela sociedade brasileira. </p>
+
+                        <p>O <a href="https://www.ufpe.br/observatorio-covid-19" target="_blank">Observatório Covid-19 da Universidade Federal de Pernambuco</a> é um ambiente virtual de ações e pesquisas desenvolvidas pela universidade. Cabe ao Observatório o armazenamento, exposição, troca de conteúdos específicos, análise e evolução de dados técnicos, desempenhando a função de instrumento balizador no apoio social, estratégico e científico, assim como no compartilhamento de conhecimentos gerados através das atividades interdisciplinares. </p>
+
+                        <p>O <a href="https://covid19br.github.io/#explore" target="_blank">Observatório COVID-19 BR</a> é uma iniciativa independente, fruto da colaboração entre pesquisadores com o desejo de contribuir para a disseminação de informação de qualidade, baseada em dados atualizados. Participam desta inciativa 85 pesquisadores associados a 28 instituições. </p>
+
+                        <p>Em síntese, nas plataformas de conhecimento (KT) se realiza a interação entre pesquisadores, tomadores de decisão e técnicos dos serviços e saúde, acelerando a produção de conhecimentos baseados em evidências de diferentes naturezas, de acordo com as necessidades dos públicos específicos. As plataformas KT estão posicionadas de forma a servir como um centro confiável que fornece evidências que podem ser postas em prática por formuladores de políticas, partes interessadas, cidadãos e mídia em tempos de crise.</p>
+
+
+                                <!-- Box de Para Refletir -->
+                        <div class="card-box card border-0 shadow my-5">
+                            <div class="box-quote">
+                                <h5>
+                                    <i class="box-quote__icone bi bi-chat-dots" data-fa-transform="grow-25"
+                                        aria-hidden="true"></i>Para
+                                    Refletir
+                                </h5>
+                                <div class="boxes-content">
+
+                                    <p>As plataformas podem ainda contribuir para que as vozes das pessoas mais afetadas por uma ESP sejam incluídas de forma significativa no processo de tomada de decisão. Algumas possuem espaços de troca e interação com a comunidade, que pode colaborar com informações decisivas para o   monitoramento da eficácia das medidas de prevenção e mitigação durante uma crise e para a avaliação do impacto da resposta em diferentes grupos da população. Portanto, se tornam uma estratégia a mais no esforço de tornar a resposta inclusiva, equitativa e adequada às necessidades contextuais locais.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim do Box de Para Refletir -->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <!-- Navegação da aula -->
+                <section>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="page-nav d-flex justify-content-around">
+                                    <a class="button-primary mb-5 mb-md-0" href="topico2.html" rel="prev">Tópico
+                                        anterior</a>
+                                    <a class="button-primary" href="topico4.html" rel="next">Próximo tópico</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-          </section>
 
-          <!-- Navegação da aula -->
-          <section>
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <div class="page-nav d-flex justify-content-around">
-                    <a
-                      class="button-primary mb-5 mb-md-0"
-                      href="topico2.html"
-                      rel="prev"
-                      >Tópico anterior</a
-                    >
-                    <a class="button-primary" href="topico4.html" rel="next"
-                      >Próximo tópico</a
-                    >
-                  </div>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="logos">
+                                <li><img src="../../images/logo-observatorio-covid-19.png" alt="Logo do Observatório Covid-19: Informação para ação" height="30px"></li>
+                                <li><img src="../../images/logo-vigiar-sus-cinza.jpg" alt="Logo do Vigiar SUS" height="45px"></li>
+                                <li><img src="../../images/fiocruz.svg" alt="Logo da Fiocruz" height="80px"></li>
+                                <li><img src="../../images/sus.svg" alt="Logo do Sistema Único de Saúde" height="60px"></li>
+                                <li><img src="../../images/ministerio-da-saude-e-governo-federal.svg" alt="Logo do Ministério da Saúde e Governo Federal" height="50px"></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </section>
+            </footer>
         </div>
-
-        <footer>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-12 col-md-10 col-lg-8">
-                <ul class="logos">
-                  <li>
-                    <img
-                      src="../../images/COC.svg"
-                      alt="Logo da Casa Oswaldo Cruz"
-                      height="80px"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="../../images/fiocruz.svg"
-                      alt="Logo da Fiocruz"
-                      height="80px"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="../../images/sus.svg"
-                      alt="Logo do Sistema Único de Saúde"
-                      height="60px"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="../../images/ministerio-da-saude-e-governo-federal.svg"
-                      alt="Logo do Ministério da Saúde e Governo Federal"
-                      height="50px"
-                    />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
     </div>
 
     <!-- Sidebar Toggle only on mobile -->
     <div id="sidebar-toggle">
-      <div class="box">
-        <div class="btn not-active">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="box">
+            <div class="btn not-active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
     </div>
 
+
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
 
     <!-- Sticky Sidebar -->
 
@@ -1385,947 +482,413 @@
     <script type="text/javascript" src="../../js/sidebar.js"></script>
 
     <script type="text/javascript">
-      var sidebar = new StickySidebar('.sidebar', {
-        topSpacing: 0,
-        bottomSpacing: 0,
-        containerSelector: '.main',
-        innerWrapperSelector: '.sidebar__inner',
-        minWidth: 991,
-      });
+        var sidebar = new StickySidebar('.sidebar', {
+            topSpacing: 0,
+            bottomSpacing: 0,
+            containerSelector: '.main',
+            innerWrapperSelector: '.sidebar__inner',
+            minWidth: 991
+        });
     </script>
 
     <script type="text/javascript" src="../../js/scripts.js"></script>
     <script type="text/javascript" src="../../js/anime.min.js"></script>
     <script type="text/javascript" src="../../js/custom-anime.js"></script>
 
-    <!-- Modal Video resumo da aula -->
-    <div
-      class="modal modal-video fade p-0"
-      id="resumo-video"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
-          </button>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/9_V-1mM1j1c"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+<!-- Modal Video resumo da aula -->
+<div class="modal modal-video fade p-0" id="resumo-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+      </button>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/9_V-1mM1j1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Perfil  -->
+<div class="modal fade" id="modal-perfil" tabindex="-1" aria-labelledby="perfil-perfil" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-bibliografia">Sobre o autor</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="accordion-perfil" class="accordion mb-5">
+
+           <!-- Texto com Imagem à esquerda -->
+           <div class="row justify-content-center d-lg-block px-3 my-5">
+            <!-- Imagem -->
+            <div class="col-md-8 col-lg-4 float-lg-left mr-lg-4 px-0 order-1 order-lg-2">
+                <figure>
+                    <img class="img-fluid rounded mx-auto d-block mb-3"
+                        src="../../images/modulo3/aula1/conteudista.jpg" alt="Daniel Antunes Maciel Villela, autor desta aula."
+                        title="">
+                </figure>
+            </div>
+
+            <!-- Texto -->
+            <div class="order-2 order-lg-1">
+                <h5 class="mb-3">Daniel Antunes Maciel Villela</h5>
+                <p>Pesquisador da Fundação Oswaldo Cruz e atualmente coordenador do Programa de Computação Científica (PROCC/FIOCRUZ). Doutor pela Universidade de Columbia, tem experiência em modelagem matemática da dinâmica de transmissão de doenças infecciosas, com interesse em métodos quantitativos em Epidemiologia e Ecologia de vetores de importância para a Saúde Pública e atualmente realiza análises populacionais da dinâmica de Covid-19. Atua na pós graduação (mestrado e doutorado) na Fundação Oswaldo Cruz e atualmente é Coordenador Adjunto do Programa de Epidemiologia em Saúde Pública (ENSP/FIOCRUZ).</p>
+            </div>
+          </div>
+          <!-- Fim de texto e imagem à esquerda-->
+         
         </div>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
+      </div>
     </div>
+  </div>
 
-    <!-- Modal Bibliografia -->
-    <div
-      class="modal fade"
-      id="modal-bibliografia"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-bibliografia">Bibliografia</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
+
+</div>
+
+<!-- Modal Bibliografia -->
+<div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-bibliografia">Bibliografia</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="accordion-bibliografia" class="accordion mb-5">
+
+          <!-- Accordion item 1 -->
+          <div id="headingOne-bibliografia" class="accordion__header">
+            <a href="#" data-toggle="collapse" data-target="#collapseOne-bibliografia" aria-expanded="false" aria-controls="collapseOne-bibliografia" class="d-block position-relative collapsible-link py-2">Aula 1</a>
           </div>
-          <div class="modal-body">
-            <div id="accordion-bibliografia" class="accordion mb-5">
-              <!-- Accordion item 1 -->
-              <div id="headingOne" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                  class="d-block position-relative collapsible-link py-2"
-                  >Aula 1</a
-                >
-              </div>
-              <div
-                id="collapseOne"
-                aria-labelledby="headingOne"
-                data-parent="#accordion-bibliografia"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 2 -->
-              <div id="headingTwo" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 2</a
-                >
-              </div>
-              <div
-                id="collapseTwo"
-                aria-labelledby="headingTwo"
-                data-parent="#accordion-bibliografia"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina
-                        na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia
-                        de Almeida Neves. (org.). Brasil republicano. Economia e
-                        sociedade, poder e política, cultura e representações.
-                        Rio de Janeiro: Editora Civilização Brasileira, 2003,
-                        v.1, pp. 231-286.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e
-                        epidemias na Corte imperial. São Paulo: Companhia das
-                        Letras, 1996, pp. 97-185.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as
-                        epidemias e a formação dos serviços de saúde em São
-                        Paulo. São Paulo: Unesp, 1986.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CASTRO-SANTOS, Luiz Antônio de.
-                        <em>A reforma sanitária pelo alto:</em> o pioneirismo
-                        paulista no início do século XX. Dados, v. 36, n.3,
-                        1993, pp. 361-92.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio; EDLER, F. C.
-                        <em>História e Cultura da Medicina no Brasil.</em> 1.
-                        ed. São Paulo: Aori Produções Culturais, 2012. v.1.
-                        2081p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio.
-                        <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A
-                        Trajetória do Instituto Pasteur de São Paulo 1903-1915.
-                        1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. e Teixeira, Luiz A.
-                        <em>Cobras, Lagartos e Outros Bichos:</em> uma História
-                        Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed.
-                        Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. (org.)
-                        <em>Manguinhos do sonho à vida:</em> a ciência na Belle
-                        Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020.
-                        v.1. 320p.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L.
-                        <em>Dos micróbios aos mosquitos.</em> Febre amarela e a
-                        revolução pausteriana no Brasil. Rio de Janeiro: Editora
-                        Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 3 -->
-              <div id="headingThree" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 3</a
-                >
-              </div>
-              <div
-                id="collapseThree"
-                aria-labelledby="headingThree"
-                data-parent="#accordion-bibliografia"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 4 -->
-              <div id="headingFour" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 4</a
-                >
-              </div>
-              <div
-                id="collapseFour"
-                aria-labelledby="headingFour"
-                data-parent="#accordion-bibliografia"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+          <div id="collapseOne-bibliografia" aria-labelledby="headingOne-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+            <div class="card-body p-4">
+              <div class="obj-lista">
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="button-primary" data-dismiss="modal">
-              Close
-            </button>
+
+          <!-- Accordion item 2 -->
+          <div id="headingTwo-bibliografia" class="accordion__header">
+            <a href="#" data-toggle="collapse" data-target="#collapseTwo-bibliografia" aria-expanded="false" aria-controls="collapseTwo-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Material Complementar -->
-    <div
-      class="modal fade"
-      id="modal-material-complementar"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-material-complementar">
-              Material Complementar
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="accordion-material-complementar" class="accordion mb-5">
-              <!-- Accordion item 1 -->
-              <div id="headingOne" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                  class="d-block position-relative collapsible-link py-2"
-                  >Aula 1</a
-                >
-              </div>
-              <div
-                id="collapseOne"
-                aria-labelledby="headingOne"
-                data-parent="#accordion-material-complementar"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 2 -->
-              <div id="headingTwo" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 2</a
-                >
-              </div>
-              <div
-                id="collapseTwo"
-                aria-labelledby="headingTwo"
-                data-parent="#accordion-material-complementar"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina
-                        na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia
-                        de Almeida Neves. (org.). Brasil republicano. Economia e
-                        sociedade, poder e política, cultura e representações.
-                        Rio de Janeiro: Editora Civilização Brasileira, 2003,
-                        v.1, pp. 231-286.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e
-                        epidemias na Corte imperial. São Paulo: Companhia das
-                        Letras, 1996, pp. 97-185.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as
-                        epidemias e a formação dos serviços de saúde em São
-                        Paulo. São Paulo: Unesp, 1986.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CASTRO-SANTOS, Luiz Antônio de.
-                        <em>A reforma sanitária pelo alto:</em> o pioneirismo
-                        paulista no início do século XX. Dados, v. 36, n.3,
-                        1993, pp. 361-92.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio; EDLER, F. C.
-                        <em>História e Cultura da Medicina no Brasil.</em> 1.
-                        ed. São Paulo: Aori Produções Culturais, 2012. v.1.
-                        2081p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio.
-                        <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A
-                        Trajetória do Instituto Pasteur de São Paulo 1903-1915.
-                        1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. e Teixeira, Luiz A.
-                        <em>Cobras, Lagartos e Outros Bichos:</em> uma História
-                        Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed.
-                        Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. (org.)
-                        <em>Manguinhos do sonho à vida:</em> a ciência na Belle
-                        Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020.
-                        v.1. 320p.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L.
-                        <em>Dos micróbios aos mosquitos.</em> Febre amarela e a
-                        revolução pausteriana no Brasil. Rio de Janeiro: Editora
-                        Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 3 -->
-              <div id="headingThree" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 3</a
-                >
-              </div>
-              <div
-                id="collapseThree"
-                aria-labelledby="headingThree"
-                data-parent="#accordion-material-complementar"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 4 -->
-              <div id="headingFour" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 4</a
-                >
-              </div>
-              <div
-                id="collapseFour"
-                aria-labelledby="headingFour"
-                data-parent="#accordion-material-complementar"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+          <div id="collapseTwo-bibliografia" aria-labelledby="headingTwo-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+            <div class="card-body p-4">
+              <div class="obj-lista">
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    CARMO, E. H; TEIXEIRA, M. G. Desastres tecnológicos e emergências de saúde pública: o caso do derramamento de óleo no litoral do Brasil. <strong>Cadernos de Saúde Pública</strong>, 36, e00234419, 2020.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    LIMA, E; SILVA, R. M. D. S. R; FRUTUOSO, R. L; BAHIA, A; BEZERRA, B. B. S; ROHLFS, D. B. Emergência em Saúde Pública por inundações: a atuação do Ministério da Saúde em ocorrências no Brasil de 2004. <strong>Revista Saúde em Debate</strong>, Rio de janeiro, v. 44, n. Especial 2, p. 9-19, julho 2020.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    NARVÁEZ, L.; LAVELL, A. N.; ORTEGA, G. P. <strong>La gestión del riesgo de desastres: un enfoque baseado en processos</strong>. Lima: Secretaria General de La Comunidad Andina, 2009.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    ROCHA, V; LONDE, L.R. <strong>Desastres: velhos e novos desafios para a saúde coletiva</strong>. Rio de Janeiro: Editora Fiocruz, 2021.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    SOUZA, L.D.P. A pandemia da COVID-19 e os reflexos na relação meio ambiente e sociedade. <strong>Revista Brasileira de Meio Ambiente</strong>, 8(4), 2020.
+                    ​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    UNITED NATIONS OFFICE FOR DISASTER RISK REDUCTION. <strong>Sendai framework for disaster risk reduction</strong>: 2015-2030. Geneva: United Nations Office for Disaster Risk Reduction; 2015.
+                  <strong></li></strong>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="button-primary" data-dismiss="modal">
-              Close
-            </button>
+
+          <!-- Accordion item 3 -->
+          <div id="headingThree-bibliografia" class="accordion__header">
+            <a href="#" data-toggle="collapse" data-target="#collapseThree-bibliografia" aria-expanded="false" aria-controls="collapseThree-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula
+              3</a>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Créditos -->
-    <div
-      class="modal fade"
-      id="modal-creditos"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-creditos">Créditos</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div id="accordion-creditos" class="accordion mb-5">
-              <!-- Accordion item 1 -->
-              <div id="headingOne" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                  class="d-block position-relative collapsible-link py-2"
-                  >Aula 1</a
-                >
-              </div>
-              <div
-                id="collapseOne"
-                aria-labelledby="headingOne"
-                data-parent="#accordion-creditos"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 2 -->
-              <div id="headingTwo" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 2</a
-                >
-              </div>
-              <div
-                id="collapseTwo"
-                aria-labelledby="headingTwo"
-                data-parent="#accordion-creditos"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina
-                        na cidade do Rio de Janeiro. In: Jorge Ferreira; Lucilia
-                        de Almeida Neves. (org.). Brasil republicano. Economia e
-                        sociedade, poder e política, cultura e representações.
-                        Rio de Janeiro: Editora Civilização Brasileira, 2003,
-                        v.1, pp. 231-286.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e
-                        epidemias na Corte imperial. São Paulo: Companhia das
-                        Letras, 1996, pp. 97-185.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as
-                        epidemias e a formação dos serviços de saúde em São
-                        Paulo. São Paulo: Unesp, 1986.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        CASTRO-SANTOS, Luiz Antônio de.
-                        <em>A reforma sanitária pelo alto:</em> o pioneirismo
-                        paulista no início do século XX. Dados, v. 36, n.3,
-                        1993, pp. 361-92.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio; EDLER, F. C.
-                        <em>História e Cultura da Medicina no Brasil.</em> 1.
-                        ed. São Paulo: Aori Produções Culturais, 2012. v.1.
-                        2081p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        TEIXEIRA, Luiz Antônio.
-                        <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A
-                        Trajetória do Instituto Pasteur de São Paulo 1903-1915.
-                        1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. e Teixeira, Luiz A.
-                        <em>Cobras, Lagartos e Outros Bichos:</em> uma História
-                        Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed.
-                        Rio de Janeiro: UFRJ/FIOCRUZ, 1993. 238p.​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L. (org.)
-                        <em>Manguinhos do sonho à vida:</em> a ciência na Belle
-                        Époque. 2a. ed. Rio de Janeiro: Editora Fiocruz, 2020.
-                        v.1. 320p.
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                        BENCHIMOL, Jaime L.
-                        <em>Dos micróbios aos mosquitos.</em> Febre amarela e a
-                        revolução pausteriana no Brasil. Rio de Janeiro: Editora
-                        Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 3 -->
-              <div id="headingThree" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 3</a
-                >
-              </div>
-              <div
-                id="collapseThree"
-                aria-labelledby="headingThree"
-                data-parent="#accordion-creditos"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Accordion item 4 -->
-              <div id="headingFour" class="accordion__header">
-                <a
-                  href="#"
-                  data-toggle="collapse"
-                  data-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                  class="
-                    d-block
-                    position-relative
-                    collapsed
-                    collapsible-link
-                    py-2
-                  "
-                  >Aula 4</a
-                >
-              </div>
-              <div
-                id="collapseFour"
-                aria-labelledby="headingFour"
-                data-parent="#accordion-creditos"
-                class="collapse"
-              >
-                <div class="card-body p-4">
-                  <div class="obj-lista">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>
-                      </li>
-                      <li class="list-group-item">
-                        <i class="bi bi-record-circle text-secondary mr-2"></i>​
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+          <div id="collapseThree-bibliografia" aria-labelledby="headingThree-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+            <div class="card-body p-4">
+              <div class="obj-lista">
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    ARKEMAN, M. <strong>SUS: a propaganda é a alma do negócio?</strong> Publicado em 02 de Junho de 2021. Disponível <a href="https://www.abrasco.org.br/site/noticias/sus-a-propaganda-e-a-alma-do-negocio-artigo-de-marco-akerman/59873/" target="_blank" rel="noopener noreferrer">aqui</a>.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    BRASIL. Ministério da Saúde. Portaria nº 104/GM, de 25 de janeiro de 2011. <strong>Define as terminologias adotadas em legislação nacional, conforme o disposto no Regulamento Sanitário Internacional 2005 (RSI 2005), a relação de doenças, agravos e eventos em saúde pública de notificação compulsória em todo o território nacional e estabelece fluxo, critérios, responsabilidades e atribuições aos profissionais e serviços de saúde</strong>. Diário Oficial da República Federativa do Brasil: seção 1, Brasília, DF, 11 jan. 2011b.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    CERUTTI, D. F; OLIVEIRA, L. A aplicação da gestão de risco em desastres no Sistema Único de Saúde (SUS). <strong>Caderno Saúde Coletiva</strong>. Rio de Janeiro, 19(4), 417-24, 2011.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    GUIMARÃES, C. <strong>A importância de um sistema de saúde público e universal no enfrentamento à epidemia</strong>. Publicado em 25 de Março de 2020. Acessado em 15 de Junho de 2021. Disponível <a href="https://www.epsjv.fiocruz.br/noticias/reportagem/a-importancia-de-um-sistema-de-saude-publico-e-universal-no-enfrentamento-a" target="_blank" rel="noopener noreferrer">aqui</a>.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    PAIM, J.S; SILVA, L.M.V. Universalidade, integralidade, equidade e SUS. <strong>BIS, Bol. Inst. Saúde</strong>, São Paulo, v. 12, n. 2, ago.  2010.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                    ROCHA, V; LONDE, L.R. <strong>Desastres: velhos e novos desafios para a saúde coletiva</strong>. Rio de Janeiro: Editora Fiocruz, 2021.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                    TRIPARTITE, G.T.D.C.I. <strong>Diretrizes para Organização das Redes de Atenção à Saúde do SUS</strong>. Brasília. Grupo Intergestores da Comissão Intergestores Tripartide, pp 1-16, 2010.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    VENTURA, D. <strong>Coronavírus: não existe segurança sem acesso universal à saúde</strong>. Jornal da USP. Publicado em 31 de Março de 2020. Link disponível <a href="https://jornal.usp.br/artigos/coronavirus-nao-existe-seguranca-sem-acesso-universal-a-saude/" target="_blank" rel="noopener noreferrer">aqui</a>.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                    VÍDEO. <strong>O princípio da equidade e a pandemia de Coronavírus - vídeo 1</strong>. Disponível <a href="https://www.youtube.com/watch?v=Re8ktjMuRy0&t=203s" target="_blank" rel="noopener noreferrer">aqui</a>.
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​
+                    VÍDEO. <strong>Os princípios do SUS</strong>. Disponível <a href="https://www.youtube.com/watch?v=PzVxQkNyqLs&t=223s" target="_blank" rel="noopener noreferrer">aqui</a>. 
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="button-primary" data-dismiss="modal">
-              Close
-            </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<!-- Modal Material Complementar -->
+<div class="modal fade" id="modal-material-complementar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-material-complementar">Material Complementar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="accordion-material-complementar" class="accordion mb-5">
+
+          <!-- Accordion item 1 -->
+          <div id="headingOne-complementar" class="accordion__header">
+            <a href="#" data-toggle="collapse" data-target="#collapseOne-complementar" aria-expanded="false" aria-controls="collapseOne-complementar" class="d-block position-relative collapsible-link py-2">Aula 1</a>
+          </div>
+          <div id="collapseOne-complementar" aria-labelledby="headingOne-complementar" data-parent="#accordion-material-complementar" class="collapse">
+            <div class="card-body p-4">
+              <div class="obj-lista">
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion item 2 -->
+          <div id="headingTwo-complementar" class="accordion__header">
+            <a href="#" data-toggle="collapse" data-target="#collapseTwo-complementar" aria-expanded="false" aria-controls="collapseTwo-complementar" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
+          </div>
+          <div id="collapseTwo-complementar" aria-labelledby="headingTwo-complementar" data-parent="#accordion-material-complementar" class="collapse">
+            <div class="card-body p-4">
+              <div class="obj-lista">
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge
+                    Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e
+                    política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1,
+                    pp. 231-286.</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo:
+                    Companhia das Letras, 1996, pp. 97-185.</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de
+                    saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no
+                    início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São
+                    Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do
+                    Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História
+                    Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993.
+                    238p.​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed.
+                    Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em> Febre amarela e a revolução pausteriana
+                    no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion item 3 -->
+          <div id="headingThree-complementar" class="accordion__header">
+            <a href="#" data-toggle="collapse" data-target="#collapseThree-complementar" aria-expanded="false" aria-controls="collapseThree-complementar" class="d-block position-relative collapsed collapsible-link py-2">Aula
+              3</a>
+          </div>
+          <div id="collapseThree-complementar" aria-labelledby="headingThree-complementar" data-parent="#accordion-material-complementar" class="collapse">
+            <div class="card-body p-4">
+              <div class="obj-lista">
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
+      </div>
     </div>
-  </body>
+  </div>
+</div>
+
+<!-- Modal Créditos -->
+<div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-creditos">Créditos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="accordion-creditos" class="accordion mb-5">
+
+          <!-- Accordion item 1 -->
+          <div id="headingOne-creditos" class="accordion__header">
+            <a href="#" data-toggle="collapse" data-target="#collapseOne-creditos" aria-expanded="false" aria-controls="collapseOne-creditos" class="d-block position-relative collapsible-link py-2">Aula 1</a>
+          </div>
+          <div id="collapseOne-creditos" aria-labelledby="headingOne-creditos" data-parent="#accordion-creditos" class="collapse">
+            <div class="card-body p-4">
+              <div class="obj-lista">
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion item 2 -->
+          <div id="headingTwo-creditos" class="accordion__header">
+            <a href="#" data-toggle="collapse" data-target="#collapseTwo-creditos" aria-expanded="false" aria-controls="collapseTwo-creditos" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
+          </div>
+          <div id="collapseTwo-creditos" aria-labelledby="headingTwo-creditos" data-parent="#accordion-creditos" class="collapse">
+            <div class="card-body p-4">
+              <div class="obj-lista">
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    BENCHIMOL, Jaime L. Reforma urbana e revolta da vacina na cidade do Rio de Janeiro. In: Jorge
+                    Ferreira; Lucilia de Almeida Neves. (org.). Brasil republicano. Economia e sociedade, poder e
+                    política, cultura e representações. Rio de Janeiro: Editora Civilização Brasileira, 2003, v.1,
+                    pp. 231-286.</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    CHALHOUB, Sidney. <em>Cidade febril:</em> cortiços e epidemias na Corte imperial. São Paulo:
+                    Companhia das Letras, 1996, pp. 97-185.</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    TELAROLLI JÚNIOR, Rodolpho. <em>Poder e saúde:</em> as epidemias e a formação dos serviços de
+                    saúde em São Paulo. São Paulo: Unesp, 1986.​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    CASTRO-SANTOS, Luiz Antônio de. <em>A reforma sanitária pelo alto:</em> o pioneirismo paulista no
+                    início do século XX. Dados, v. 36, n.3, 1993, pp. 361-92.</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    TEIXEIRA, Luiz Antônio; EDLER, F. C. <em>História e Cultura da Medicina no Brasil.</em> 1. ed. São
+                    Paulo: Aori Produções Culturais, 2012. v.1. 2081p.​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    TEIXEIRA, Luiz Antônio. <em>Ciência e Saúde na Terra dos Bandeirantes:</em> A Trajetória do
+                    Instituto Pasteur de São Paulo 1903-1915. 1. ed. Rio de Janeiro: Editora da Fiocruz, 1995. 233p.​
+                  </li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    BENCHIMOL, Jaime L. e Teixeira, Luiz A. <em>Cobras, Lagartos e Outros Bichos:</em> uma História
+                    Comparada dos Institutos Oswaldo Cruz e Butantan. 1. ed. Rio de Janeiro: UFRJ/FIOCRUZ, 1993.
+                    238p.​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    BENCHIMOL, Jaime L. (org.) <em>Manguinhos do sonho à vida:</em> a ciência na Belle Époque. 2a. ed.
+                    Rio de Janeiro: Editora Fiocruz, 2020. v.1. 320p.</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>
+                    BENCHIMOL, Jaime L. <em>Dos micróbios aos mosquitos.</em> Febre amarela e a revolução pausteriana
+                    no Brasil. Rio de Janeiro: Editora Fiocruz/Editora da UFRJ, 1999. v.1. 498p.​</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion item 3 -->
+          <div id="headingThree-creditos" class="accordion__header">
+            <a href="#" data-toggle="collapse" data-target="#collapseThree-creditos" aria-expanded="false" aria-controls="collapseThree-creditos" class="d-block position-relative collapsed collapsible-link py-2">Aula
+              3</a>
+          </div>
+          <div id="collapseThree-creditos" aria-labelledby="headingThree-creditos" data-parent="#accordion-creditos" class="collapse">
+            <div class="card-body p-4">
+              <div class="obj-lista">
+                <ul class="list-group">
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i></li>
+                  <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
 </html>
