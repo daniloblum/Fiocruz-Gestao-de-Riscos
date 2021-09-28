@@ -263,12 +263,19 @@
 
   <!-- Modal Video resumo da aula -->
   <div class="modal modal-video fade p-0" id="resumo-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
         </button>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/9_V-1mM1j1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+        <!--Video (embed Educare) -->
+        <div class="embed-responsive embed-responsive-16by9 my-5">
+          <video controls="" name="media" controls poster="../../images/modulo3/aula3/video-resumo-aula.jpg">
+              <source src="https://educare.fiocruz.br/file-storage/iZVwd6IU" type="video/mp4">
+          </video>
+        </div>
+  
       </div>
     </div>
   </div>
