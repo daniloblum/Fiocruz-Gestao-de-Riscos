@@ -1127,10 +1127,6 @@ Modal
   cursor: zoom-in;
 }
 
-.modal-video .modal-dialog {
-  max-width: 560px;
-}
-
 .modal-video .modal-content,
 .modal-image .modal-content {
   background-color: transparent;
