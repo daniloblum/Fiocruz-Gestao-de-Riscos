@@ -9,7 +9,7 @@ header {
   background-image: url(../images/home/tarja_capa.png);
   background-size: cover;
   background-position: bottom center;
-  height: 140vw;
+  height: 150vw;
 }
 .main {
   background: url(../images/home/section-bg.png);
@@ -49,10 +49,10 @@ header {
 }
 
 .header__title h1 {
-  font-size: 12vw;
+  font-size: 10vw;
   font-family: 'Archivo', sans-serif;
   color: #fff;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   letter-spacing: 1px;
   line-height: 1;
 }
@@ -71,13 +71,13 @@ header {
 
 @media (min-width: 992px) {
   header {
-    height: 33vw;
+    height: 35vw;
   }
   .header__title .logo {
     margin: 0 auto 3vw;
   }
   .header__title h1 {
-    font-size: 3.25vw;
+    font-size: 3vw;
   }
 }
 

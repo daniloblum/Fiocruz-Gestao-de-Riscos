@@ -6,6 +6,10 @@
 @import 'footer.css';
 @import 'recursos-visuais.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 .figure-caption {
   font-size: 75%;
   /* color: #6c757d; */
