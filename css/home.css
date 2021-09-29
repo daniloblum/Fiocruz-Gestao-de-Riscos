@@ -17,7 +17,7 @@ header {
   background-position-y: 20%;
   background-position-x: center;
   background-size: 200%;
-  transform: translateY(-80px);
+  /* transform: translateY(-80px); */
 }
 /* .main::after {
     content: " ";
@@ -45,7 +45,7 @@ header {
 }
 
 .header__title .logo img {
-  height: 60px;
+  width:100%;
 }
 
 .header__title h1 {
@@ -83,7 +83,7 @@ header {
 
 #course-program .card {
   border: 1px solid var(--secondary-color);
-  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 32px 0px rgb(100 100 100 / 16%);
   height: 100%;
 }
 
