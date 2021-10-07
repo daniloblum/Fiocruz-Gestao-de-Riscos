@@ -1,755 +1,718 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Fiocruz - Campus Virtual" />
+    <meta name="robots" content="noindex" />
+    <meta name="keywords" content="Saúde Pública, Brasil, Fiocruz, Campus Virtual, Observatório COVID-19, Ministério da Saúde, Curso" />
+    <meta name="description" content="Disciplina sobre a Gestão de Riscos de Emergência em Saúde Pública no Contexto da COVID-19." />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="author" content="Fiocruz - Campus Virtual" />
-  <meta name="robots" content="noindex" />
-  <meta name="keywords" content="Saúde Pública, Brasil, Fiocruz, Campus Virtual, Observatório COVID-19, Ministério da Saúde, Curso">
-  <meta name="description" content="Disciplina sobre a Gestão de Riscos de Emergência em Saúde Pública no Contexto da COVID-19.">
+    <!-- Favicons and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/icons//apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/icons/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/icons/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/icons/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/icons/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/icons/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/icons/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/icons/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/icons/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../images/icons/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/icons/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/icons/favicon-16x16.png" />
+    <link rel="manifest" href="../../images/icons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="../../images/icons/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Favicons and Touch Icons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="../../images/icons//apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="../../images/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="../../images/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="../../images/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="../../images/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="../../images/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="../../images/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="../../images/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../images/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="../../images/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../../images/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../images/icons/favicon-16x16.png">
-  <link rel="manifest" href="../../images/icons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="../../images/icons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+    <title>Gestão de Riscos de Emergência em Saúde Pública no Contexto da COVID-19 - Módulo 2 - Aula 3</title>
 
-  <title>Gestão de Riscos de Emergência em Saúde Pública no Contexto da COVID-19 - Módulo 2 - Aula 3</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap" rel="stylesheet" />
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../../css/animate.min.css" />
 
-  <!-- Bootstrap Icons CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
 
-  <!-- Animate CSS -->
-  <link rel="stylesheet" href="../../css/animate.min.css">
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="sidebar__inner">
+          <section class="sidebar__header">
+            <h4 class="m-0">Gestão de Riscos de Emergência em Saúde Pública no Contexto da COVID-19</h4>
+          </section>
+          <hr />
+          <section class="sidebar__section py-2">
+            <a href="../../index.html" class="sidebar__btn"> <i class="bi-house mr-2"></i>Voltar para o início </a>
+          </section>
+          <hr />
+          <nav class="sidebar__section">
+            <h6 class="">Aula 3</h6>
+            <h5>Preparação para a resposta a Emergências em Saúde Pública no contexto da COVID-19</h5>
+            <div class="sidebar__topic-list">
+              <div>
+                <a href="inicio.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Início da aula</span></a>
 
-  <!-- Project CSS -->
-  <link rel="stylesheet" href="../../css/style.css">
-</head>
+                <a href="topico1.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Necessidades de saúde</span></a>
 
-<body>
+                <a href="topico2.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Preparação dos serviços de saúde para resposta a emergências em saúde</span></a>
 
-  <div class="main">
-    <div class="sidebar">
-      <div class="sidebar__inner">
-        <section class="sidebar__header">
-          <h4 class="m-0">Gestão de Riscos de Emergência em Saúde Pública no Contexto da COVID-19</h4>
-        </section>
-        <hr>
-        <section class="sidebar__section py-2">
-          <a href="../../index.html" class="sidebar__btn">
-            <i class="bi-house mr-2"></i>Voltar para o início
-          </a>
-        </section>
-        <hr>
-        <nav class="sidebar__section">
-          <h6 class="">Aula 3</h6>
-          <h5>Preparação para a resposta a Emergências em Saúde Pública no contexto da COVID-19</h5>
-          <div class="sidebar__topic-list">
+                <a href="topico3.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Avaliação da capacidade de resposta a partir das competências e tipos de recursos necessários</span></a>
+
+                <a href="topico4.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Matriz de Linha de Cuidado COVID-19</span></a>
+
+                <a href="topico5.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Planos de Resposta: importância e principais componentes</span></a>
+
+                <a href="topico6.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Monitoramento da capacidade de respostas dos serviços de saúde para emergências em saúde no contexto da COVID-19</span></a>
+
+                <a href="topico7.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Resumo</span></a>
+
+                <a href="topico8.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-circle-fill"></i><span>Fim da aula</span></a>
+              </div>
+            </div>
             <div>
-
-              <a href="inicio.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Início da aula</span></a>
-
-              <a href="topico1.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Necessidades de saúde</span></a>
-
-              <a href="topico2.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Preparação dos serviços de saúde para resposta a emergências em saúde</span></a>
-
-              <a href="topico3.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Avaliação da capacidade de resposta a partir das competências e tipos de recursos necessários</span></a>
-
-              <a href="topico4.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Matriz de Linha de Cuidado COVID-19</span></a>
-
-              <a href="topico5.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Planos de Resposta: importância e principais componentes</span></a>
-
-              <a href="topico6.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Monitoramento da capacidade de respostas dos serviços de saúde para emergências em saúde no contexto da COVID-19</span></a>
-
-              <a href="topico7.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-check-circle-fill"></i><span>Resumo</span></a>
-
-              <a href="topico8.html" class="sidebar__btn sidebar__list-item sidebar__list-item--selected"><i class="bi-circle-fill"></i><span>Fim da aula</span></a>
-
+              <a href="" class="sidebar__btn" data-toggle="modal" data-target="#resumo-video"> <i class="bi bi-camera-video mr-2"></i> Resumo da aula </a>
             </div>
-          </div>
-          <div>
-            <a href="" class="sidebar__btn" data-toggle="modal" data-target="#resumo-video">
-              <i class="bi bi-camera-video mr-2"></i> Resumo da aula
-            </a>
-          </div>
 
-          <div>
-            <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-perfil">
-              <i class="bi bi-person-lines-fill mr-2"></i> Sobre os autores
-            </a>
-          </div>
-        </nav>
-        <hr>
-        <section class="sidebar__section">
-          <h6 class="">Aulas</h6>
-          <a href="../aula1/inicio.html" class="sidebar__btn">
-            1. Introdução à Gestão de Riscos em Emergências em Saúde Pública no contexto da COVID-19- tipos, características, fases, etapas e arcabouço legal - políticas e legislação
-          </a>
-          <a href="../aula2/inicio.html" class="sidebar__btn">
-            2. O papel do SUS no processo de Gestão de Emergências e o arcabouço legal
-          </a>
-        </section>
-        <hr>
-        <section class="sidebar__section py-2">
-          <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-bibliografia">
-            <i class="bi-book mr-2"></i> Bibliografia
-          </a>
-        </section>
-
-        <section class="sidebar__section py-2">
-          <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-creditos">
-            <i class="bi bi-list-ul mr-2"></i> Créditos
-          </a>
-        </section>
-      </div>
-    </div>
-    <div class="content">
-      <header class="header py-5" style="background-image: url(../../images/modulo1/header-tarja.jpg)">
-        <div class="container">
-          <div class="header__inner">
-            <!-- <img src="../../images/modulo1/header-tarja.jpg" alt=""> -->
-            <div class="header__title">
-              <div class="row justify-content-start">
-                <div class="col-12 col-md-10 col-lg-8 offset-lg-1 text-left">
-                  <h3>Módulo 2</h3>
-                  <h1 class="m-0">
-                    Gestão de Riscos de Emergências em Saúde Pública no contexto da COVID-19
-                  </h1>
-                </div>
-              </div>
+            <div>
+              <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-perfil"> <i class="bi bi-person-lines-fill mr-2"></i> Sobre os autores </a>
             </div>
-          </div>
+          </nav>
+          <hr />
+          <section class="sidebar__section">
+            <h6 class="">Aulas</h6>
+            <a href="../aula1/inicio.html" class="sidebar__btn"> 1. Introdução à Gestão de Riscos em Emergências em Saúde Pública no contexto da COVID-19- tipos, características, fases, etapas e arcabouço legal - políticas e legislação </a>
+            <a href="../aula2/inicio.html" class="sidebar__btn"> 2. O papel do SUS no processo de Gestão de Emergências e o arcabouço legal </a>
+          </section>
+          <hr />
+          <section class="sidebar__section py-2">
+            <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-bibliografia"> <i class="bi-book mr-2"></i> Bibliografia </a>
+          </section>
+
+          <section class="sidebar__section py-2">
+            <a href="" class="sidebar__btn" data-toggle="modal" data-target="#modal-creditos"> <i class="bi bi-list-ul mr-2"></i> Créditos </a>
+          </section>
         </div>
-      </header>
-
-      <div id="page-content" class="">
-
-        <!-- Inserir o conteúdo aqui -->
-        <section>
+      </div>
+      <div class="content">
+        <header class="header py-5" style="background-image: url(../../images/modulo1/header-tarja.jpg)">
           <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-12 col-md-10 col-lg-8">
-                <!-- Heading Block (Título h2 ou h3  + Lead (se houver)) -->
-                <div class="heading__block">
-                  <span class="heading__before">Aula 3</span>
-                  <h2 class="heading__title">Fim da aula</h2>
-                </div>
-                <!-- Fim do Heading Block -->
-              </div>
-            </div>
-
-            <div class="row justify-content-center mb-5">
-              <div class="col-12 col-md-10 col-lg-8">
-                <h4> Muito bem, você finalizou esta aula!</h4>
-                <p>Siga para o próximo Módulo e continue se empenhando em seus estudos!</p>
-                <p>Até lá!</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Destaque -->
-          <div class="container-fluid destaque-full bg-color-light mb-5">
-            <div class="container">
-              <div class="row justify-content-center m-0 py-3">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <div class="justify-content-center d-flex flex-column">
-                    <h2 class="text-center py-5 mb-0">Exercícios de Fixação</h2>
+            <div class="header__inner">
+              <!-- <img src="../../images/modulo1/header-tarja.jpg" alt=""> -->
+              <div class="header__title">
+                <div class="row justify-content-start">
+                  <div class="col-12 col-md-10 col-lg-8 offset-lg-1 text-left">
+                    <h3>Módulo 2</h3>
+                    <h1 class="m-0">Gestão de Riscos de Emergências em Saúde Pública no contexto da COVID-19</h1>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Fim do Destaque -->
+        </header>
 
+        <div id="page-content" class="">
+          <!-- Inserir o conteúdo aqui -->
+          <section>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                  <!-- Heading Block (Título h2 ou h3  + Lead (se houver)) -->
+                  <div class="heading__block">
+                    <span class="heading__before">Aula 3</span>
+                    <h2 class="heading__title">Fim da aula</h2>
+                  </div>
+                  <!-- Fim do Heading Block -->
+                </div>
+              </div>
+
+              <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 col-lg-8">
+                  <h4>Muito bem, você finalizou esta aula!</h4>
+                  <p>Siga para o próximo Módulo e continue se empenhando em seus estudos!</p>
+                  <p>Até lá!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Destaque -->
+            <div class="container-fluid destaque-full bg-color-light mb-5">
+              <div class="container">
+                <div class="row justify-content-center m-0 py-3">
+                  <div class="col-12 col-md-10 col-lg-8">
+                    <div class="justify-content-center d-flex flex-column">
+                      <h2 class="text-center py-5 mb-0">Exercícios de Fixação</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fim do Destaque -->
+
+            <div class="container">
+              <div class="row justify-content-center mb-5">
+                <div class="col-12 col-lg-8">
+                  <p class="lead mb-5">Agora chegou o momento de avaliar o que você aprendeu nessa aula. Não se preocupe, caso não acerte de primeira, se for preciso volte ao texto, aprofunde os estudos e tente novamente.</p>
+
+                  <h4>Exercício 1</h4>
+                  <iframe class="p-3 p-lg-5 bg-white rounded d-lg-none" src="https://educare.fiocruz.br/h5p-content/embed/?contentId=1750526591" width="100%" height="820" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                  <iframe class="p-3 p-lg-5 bg-white rounded d-none d-lg-block" src="https://educare.fiocruz.br/h5p-content/embed/?contentId=1750526591" width="100%" height="1000" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                  <h4>Exercício 2</h4>
+                  <iframe class="p-3 p-lg-5 bg-white rounded d-lg-none" src="https://educare.fiocruz.br/h5p-content/embed/?contentId=3495270544" width="100%" height="820" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                  <iframe class="p-3 p-lg-5 bg-white rounded d-none d-lg-block" src="https://educare.fiocruz.br/h5p-content/embed/?contentId=3495270544" width="100%" height="1000" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Navegação da aula -->
+          <section>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                  <div class="page-nav d-flex justify-content-around">
+                    <a class="button-primary mb-5 mb-md-0" href="topico5.html" rel="prev">Tópico anterior</a>
+                    <a class="button-primary" href="../../modulo3/aula1/inicio.html" rel="next">Módulo 3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <footer>
           <div class="container">
-            <div class="row justify-content-center mb-5">
-              <div class="col-12 col-lg-8">
-                <p class="lead mb-5">Agora, realize esses dois exercícios e fixe seus conhecimentos sobre alguns assuntos abordados nesta aula.</p>
-
-                <h4>Exercício 1</h4>
-                <iframe class="p-3 p-lg-5 bg-white rounded d-lg-none" src="https://educare.fiocruz.br/h5p-content/embed/?contentId=1750526591" width="100%" height="820" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                <iframe class="p-3 p-lg-5 bg-white rounded d-none d-lg-block" src="https://educare.fiocruz.br/h5p-content/embed/?contentId=1750526591" width="100%" height="620" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            <div class="row">
+              <div class="col-12">
+                <ul class="logos">
+                  <li><img src="../../images/logo-cv-black.svg" alt="Logo da Fiocruz" height="60px" /></li>
+                  <li><img src="../../images/logo-observatorio-covid-19.png" alt="Logo do Observatório Covid-19: Informação para ação" height="30px" /></li>
+                  <li><img src="../../images/logo-vigiar-sus-cinza.jpg" alt="Logo do Vigiar SUS" height="45px" /></li>
+                  <li><img src="../../images/sus.svg" alt="Logo do Sistema Único de Saúde" height="60px" /></li>
+                  <li><img src="../../images/ministerio-da-saude-e-governo-federal.svg" alt="Logo do Ministério da Saúde e Governo Federal" height="50px" /></li>
+                </ul>
               </div>
             </div>
+          </div>
+        </footer>
+      </div>
+    </div>
 
+    <!-- Sidebar Toggle only on mobile -->
+    <div id="sidebar-toggle">
+      <div class="box">
+        <div class="btn not-active">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <!-- Sticky Sidebar -->
+
+    <script type="text/javascript" src="../../js/ResizeSensor.js"></script>
+    <script type="text/javascript" src="../../js/sticky-sidebar.js"></script>
+    <script type="text/javascript" src="../../js/sidebar.js"></script>
+
+    <script type="text/javascript">
+      var sidebar = new StickySidebar('.sidebar', {
+        topSpacing: 0,
+        bottomSpacing: 0,
+        containerSelector: '.main',
+        innerWrapperSelector: '.sidebar__inner',
+        minWidth: 991,
+      });
+    </script>
+
+    <script type="text/javascript" src="../../js/scripts.js"></script>
+    <script type="text/javascript" src="../../js/anime.min.js"></script>
+    <script type="text/javascript" src="../../js/custom-anime.js"></script>
+    <script type="text/javascript" src="../../js/video-modal.js"></script>
+
+    <!-- Modal Video resumo da aula -->
+    <div class="modal modal-video fade p-0" id="resumo-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
+          </button>
+
+          <!--Video (embed Educare) -->
+          <div class="embed-responsive embed-responsive-16by9 my-5">
+            <video controls="" name="media" controls poster="../../images/modulo2/aula3/video-resumo-aula.jpg">
+              <source src="https://educare.fiocruz.br/file-storage/6fu0Znwh" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Perfil  -->
+    <div class="modal fade" id="modal-perfil" tabindex="-1" aria-labelledby="perfil-perfil" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-perfil">Sobre os autores</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="accordion-perfil" class="accordion mb-5">
+              <!-- Texto com Imagem à esquerda -->
+              <div class="row justify-content-center d-lg-block px-3 my-5 clearfix">
+                <!-- Imagem -->
+                <div class="col-md-8 col-lg-4 float-lg-left mr-lg-4 px-0 order-1 order-lg-2">
+                  <figure>
+                    <img class="img-fluid rounded mx-auto d-block mb-3" src="../../images/modulo2/aula3/conteudista.jpg" alt="Victor Grabois, autor desta aula." title="" />
+                  </figure>
+                </div>
+
+                <!-- Texto -->
+                <div class="order-2 order-lg-1">
+                  <h5 class="mb-3">Victor Grabois</h5>
+                  <p>Médico sanitarista doutor em saúde pública pela Ensp Fiocruz coordenador executivo do Proqualis/Icict/Fiocruz e presidente da SOBRASP. Autor de livros, capítulos de livros, artigos científicos e material didáticos sobre Gestão da Clínica, Gestão Hospitalar; Qualidade do Cuidado e Segurança do Paciente.</p>
+                </div>
+              </div>
+              <!-- Fim de texto e imagem à esquerda-->
+
+              <!-- Texto com Imagem à esquerda -->
+              <div class="row justify-content-center d-lg-block px-3 my-5">
+                <!-- Imagem -->
+                <div class="col-md-8 col-lg-4 float-lg-left mr-lg-4 px-0 order-1 order-lg-2">
+                  <figure>
+                    <img class="img-fluid rounded mx-auto d-block mb-3" src="../../images/modulo2/aula3/conteudista2.jpg" alt="Margareth Crisóstomo Portela, autora desta aula." title="" />
+                  </figure>
+                </div>
+
+                <!-- Texto -->
+                <div class="order-2 order-lg-1">
+                  <h5 class="mb-3">Margareth Crisóstomo Portela</h5>
+                  <p>Engenheira Eletricista pela UFBA, mestre (MSc) em Engenharia Biomédica pela UFRJ, PhD em Health Policy and Administration pela University of North Carolina at Chapel Hill e Pós-doutorado na Medical University of South Carolina, EUA. Realizou Estágio Sênior (Programa Ciências sem Fronteiras – CAPES), na University of Leicester, Inglaterra. É pesquisadora da Fundação Oswaldo Cruz (Fiocruz), lotada na Escola Nacional de Saúde Pública Sergio Arouca (ENSP), onde faz parte do corpo permanente do Programa de Pós-graduação em Saúde Pública.</p>
+                </div>
+              </div>
+              <!-- Fim de texto e imagem à esquerda-->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Bibliografia -->
+    <div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-bibliografia">Bibliografia</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="accordion-bibliografia" class="accordion mb-5">
+              <!-- Accordion item 1 -->
+              <div id="headingOne-bibliografia" class="accordion__header">
+                <a href="#" data-toggle="collapse" data-target="#collapseOne-bibliografia" aria-expanded="false" aria-controls="collapseOne-bibliografia" class="d-block position-relative collapsible-link py-2">Aula 1</a>
+              </div>
+              <div id="collapseOne-bibliografia" aria-labelledby="headingOne-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+                <div class="card-body p-4">
+                  <div class="obj-lista">
+                    <ul class="list-group">
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. Health Emergency and Disaster Risk Management Framework. Geneva: WHO. 2019.</li>
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. International Health Regulations (2005) - Third edition. WHO, 2016.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​World Health Organization. Critical preparedness, readiness and response actions for COVID-19. Geneva: WHO. 2020</li>
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>NARVÁEZ, L. ; LAVELL, A.; ORTEGA, G, P. La gestión del riesgo de desastres: un enfoque basado en procesos. Peru: Comunidade Andina. 2009.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​FREITAS, C. M. et al. A Gestão de Riscos e Governança na Pandemia por COVID-19 no Brasil: análise dos decretos estaduais no primeiro mês. Relatório Técnico. Rio de Janeiro, 2020.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>WILDER-SMITH, A. ; FREEDMAN, D. O. Isolation, quarantine, social distancing and community containment: pivotal role for old-style public health measures in the novel coronavirus (2019-nCoV). Journal of Travel Medicine, 2020, p.1–4.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​LUCHINNI, R. G. et al. A comparative assessment of major international disasters: the need for exposure assessment, systematic emergency preparedness, and lifetime health care. BMC Public Health. v. 17, n. 46, 2017.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>DE MARCHI, B.; RAVETZ, J. Risk management and governance: a post-normal Science approach. Futures v. 31, p. 743-757. 1999.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>FAN, V.Y. ; JAMISON, D. T. ; SUMMERS, L.H. Pandemic risk: how large are the expected losses? Bull World Health Organ. n. 96 v. 2, p.129–34. 2018.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​FREITAS, C.M. ; SILVA, I. V. M.; CIDADE, N. C. ; et al. A gestão de riscos e governança na pandemia por COVID-19 no Brasil: Análise dos decretos estaduais no primeiro mês. Relatório técnico e sumário executivo. CEPEDES, ENSP. Rio de Janeiro, 2020. Disponível em: <a href="https://www.arca.fiocruz.br/bitstream/icict/41452/2/relatorio_cepedes_gestao_riscos_covid19_final.pdf" target="_blank">https://www.arca.fiocruz.br/bitstream/icict/41452/2/relatorio_cepedes_gestao_riscos_covid19_final.pdf</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>FREITAS, CM (org). Guia de Preparação e Respostas do Setor Saúde aos Desastres. Rio de Janeiro: FIOCRUZ, 2018. Disponível em: <a href="https://www.arca.fiocruz.br/bitstream/icict/40925/2/GuiaPrepara%c3%a7%c3%a3oSetorSaude.PDF" target="_blank">https://www.arca.fiocruz.br/bitstream/icict/40925/2/GuiaPrepara%c3%a7%c3%a3oSetorSaude.PDF</a>​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>Nações Unidas. Brasil. Objetivos do Desenvolvimento Sustentável. Disponível em: <a href="https://brasil.un.org/pt-br/sdgs" target="_blank">https://brasil.un.org/pt-br/sdgs</a>​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​NARVÁEZ, L. ; IAVELL, A. N. ; ORTEGA, G. P. La gestión del riesgo de desastres: un enfoque basado en processos. Lima: Secretaria General de La Comunidad Andina, 2009. Disponível em:<a href=" http://www.comunidadandina.org/predecan/doc/libros/procesos_ok.pdf" target="_blank"> http://www.comunidadandina.org/predecan/doc/libros/procesos_ok.pdf</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​Organização Mundial da Saúde. Regulamento Sanitário Internacional RSI – 2005. Versão em português aprovada pelo Congresso Nacional por meio do Decreto Legislativo 395/2009 publicado no DOU de 10/07/09, pág.11. Brasília: Agência Nacional de Vigilância Santária ; Anvisa. Disponível em: <a href="https://www.gov.br/anvisa/pt-br/assuntos/paf/regulamento-sanitario-internacional/arquivos/7181json-file-1" target="_blank">https://www.gov.br/anvisa/pt-br/assuntos/paf/regulamento-sanitario-internacional/arquivos/7181json-file-1</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>Pan American Health Organization. Smart hospitals [website]. Washington (DC): Pan American Health Organization. s/d. Disponível em: <a href="https://www.paho.org/disasters/index.php?option=com_content&view=article&id=3660:hospitales-inteligentes&Itemid=911&lang=em" target="_blank">https://www.paho.org/disasters/index.php?option=com_content&view=article&id=3660:hospitales-inteligentes&Itemid=911&lang=em</a> ​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>United Nations Office for Disaster Risk Reduction. Bangkok Principles for the implementation of the health aspects of the Sendai Framework for Disaster Risk Reduction 2015–2030. Geneva: United Nations Office for Disaster Risk Reduction; 2016. Disponível em: <a href="http://www.who.int/hac/events/2016/Bangkok_Principles.pdf​" target="_blank">http://www.who.int/hac/events/2016/Bangkok_Principles.pdf​</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>United Nations Office for Disaster Risk Reduction. Terminology on disaster risk reduction. Geneva: United Nations Office for Disaster Risk Reduction; 2009. Disponível em: <a href="https://www.unisdr.org/files/7817_UNISDRTerminologyEnglish.pdf" target="_blank">https://www.unisdr.org/files/7817_UNISDRTerminologyEnglish.pdf</a>​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>United Nations Office of Disaster Risk Reduccion. Marco de Sendai para a Redução do Risco de Desastres 2015-2030. (traduzido). Geneva: UNDRR. Disponível em: <a href="https://www.unisdr.org/files/43291_63575sendaiframeworkportunofficialf%5B1%5D.pdf" target="_blank">https://www.unisdr.org/files/43291_63575sendaiframeworkportunofficialf%5B1%5D.pdf</a> ​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​United Nations. Note by the Secretary-General Report of the open-ended intergovernmental expert working group on indicators and terminology relating to disaster risk reduction. New York (NY): United Nations Note by the Secretary-General; 2016. Disponível em: A/71644; <a href="https://www.unisdr.org/we/inform/publications/51748" target="_blank">https://www.unisdr.org/we/inform/publications/51748</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Bank. Results briefs. Climate insurance. World Bank: Washington (DC): 1 December 2017. Disponível em: <a href="https://www.worldbank.org/en/results/2017/12/01/climate-insurance" target="_blank">https://www.worldbank.org/en/results/2017/12/01/climate-insurance</a>​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Bank; Institute for Health Metrics and Evaluation. The cost of air pollution: strengthening the economic case for action. Washington (DC): The World Bank; 2016. Disponível em: <a href="https://openknowledge.worldbank.org/handle/10986/25013" target="_blank">https://openknowledge.worldbank.org/handle/10986/25013</a>​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. Constitution of the World Health Organization. In: Basic documents, 48th edition. Geneva: World Health Organization; 2016:1-9. Disponível em: <a href="http://apps.who.int/gb/bd/PDF/bd48/basic-documents-48th-edition-en.pdf" target="_blank">http://apps.who.int/gb/bd/PDF/bd48/basic-documents-48th-edition-en.pdf</a>​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. Global assessment of national health sector emergency preparedness and response. Geneva: World Health Organization; 2008. Disponível em: <a href="http://www.who.int/hac/about/Global_survey_inside.pdf​" target="_blank">http://www.who.int/hac/about/Global_survey_inside.pdf​</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. Global health ethics: key issues. Geneva: World Health Organization; 2015. Disponível em: <a href="https://apps.who.int/iris/bitstream/handle/10665/164576/9789240694033_eng.pdf" target="_blank">https://apps.who.int/iris/bitstream/handle/10665/164576/9789240694033_eng.pdf</a>​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. Health Emergency and Disaster Risk Management Framework. Generva:WHO, 2019. Disponível em: <a href="https://www.who.int/hac/techguidance/preparedness/health-emergency-and-disaster-risk-management-framework-eng.pdf" target="_blank">https://www.who.int/hac/techguidance/preparedness/health-emergency-and-disaster-risk-management-framework-eng.pdf</a>​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. International Health Regulations (2005) monitoring and evaluation framework. Geneva: World Health Organization; 2018. Disponível em: <a href="https://apps.who.int/iris/bitstream/handle/10665/276651/WHO-WHE-CPI-2018.51-eng.pdf?sequence=1" target="_blank">https://apps.who.int/iris/bitstream/handle/10665/276651/WHO-WHE-CPI-2018.51-eng.pdf?sequence=1</a>​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​World Health Organization. Safe hospitals and health facilities [website]. Geneva: World Health Organization. s/d. Disponível em: <a href="https://www.who.int/hac/techguidance/safehospitals/en/" target="_blank">https://www.who.int/hac/techguidance/safehospitals/en/</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion item 2 -->
+              <div id="headingTwo-bibliografia" class="accordion__header">
+                <a href="#" data-toggle="collapse" data-target="#collapseTwo-bibliografia" aria-expanded="false" aria-controls="collapseTwo-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
+              </div>
+              <div id="collapseTwo-bibliografia" aria-labelledby="headingTwo-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+                <div class="card-body p-4">
+                  <div class="obj-lista">
+                    <ul class="list-group">
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>CARMO, E.H. Emergências de saúde pública: breve histórico, conceitos e aplicações. Saúde em Debate, Rio de Janeiro, v. 44, n. esp. 2, p. 9-19, 2020.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>CRODA, J. et al. COVID-19 in Brazil: advantages of a socialized unified health system and preparation to contain cases. Revista da Sociedade Brasileira de Medicina Tropical, v. 53, 2020.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>KERR, L. ET AL. COVID-19 in northeast Brazil: achievements and limitations in the responses of the state governments. Ciência e Saúde Coletiva, 25, suppl 2:4099-4120. 2020​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​TEIXEIRA ET AL. Conquistas do SUS no enfrentamento das doenças transmissíveis. Ciência e Saúde Coletiva. 23(6):1819-1828. 2018</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​SALES, C. M. M.; SILVA, A. I. da; MACIEL, E. L. N. Vigilância em saúde da Covid-19 no Brasil: investigação de contatos pela Atenção Primária em Saúde como estratégia de proteção comunitária. Epidemiologia e serviços de saúde: v. 29, n. 4, p. 2020373, 2020. Disponível em: <a href="https://doi.org/10.5123/s1679-49742020000400011" target="_blank">https://doi.org/10.5123/s1679-49742020000400011</a>.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​SOUSA ET AL, 2020. Atenção primária à saúde e COVID-19: uma revisão integrativa. Cadernos ESP - Revista Cientí¬fica da Escola de Saúde Pública do Ceará. Edição Especial - Enfrentamento da COVID-19,14(1); 2020</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​BRASIL. Presidência da República. Casa Civil. Subchefia para assuntos Jurídicos. Decreto Nº 7.616, de 17 de Novembro de 2011. Disponível em: <a href="http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7616.htm" target="_blank">http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7616.htm</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>CARMO, E.H.; OLIVEIRA, W.K. & PENNA, G. Emergências de saúde pública: conceito, caracterização, preparação e resposta. Estudos avançados. 22 (64): 19-31. 2008.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​FRANCO-NETTO, G. et al. Vigilância em saúde brasileira: reflexões e contribuição ao debate da 1a Conferência Nacional de Vigilância em Saúde. Ciência e Saúde Coletiva. 22 (10). <a href="https://doi.org/10.1590/1413-812320172210.18092017" target="_blank">https://doi.org/10.1590/1413-812320172210.18092017</a>.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>MINISTÉRIO DA SAÚDE. Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS). Brasília, DF, 2007. Disponível em: <a href="http://bvsms.saude.gov.br/bvs/publicacoes/centro_informacoes_estrategicas_vigilancia_saude.pdf" target="_blank">http://bvsms.saude.gov.br/bvs/publicacoes/centro_informacoes_estrategicas_vigilancia_saude.pdf</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​MINISTÉRIO DA SAÚDE (BR). Secretaria de Vigilância em Saúde. Informe técnico de Influenza. 2012; 1-15. Disponível em: <a href="http://portalsaude.saude.gov.br/images/pdf/2014/maio/22/ informe-influenza-2009-2010-2011-220514.pdf" target="_blank">http://portalsaude.saude.gov.br/images/pdf/2014/maio/22/ informe-influenza-2009-2010-2011-220514.pdf</a>.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​MOREL, C. M. Régua e compasso na turbulência da pandemia. Folha de S.Paulo, Opinião, 8 nov. 2020. Disponível em: <a href="https://www1.folha.uol.com.br/opiniao/2020/11/regua-e-compasso-na-turbulencia-da-pandemia.shtml" target="_blank">https://www1.folha.uol.com.br/opiniao/2020/11/regua-e-compasso-na-turbulencia-da-pandemia.shtml</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​OLIVEIRA, W.K. ET AL. Como o Brasil pode deter a COVID-19. Epidemiologia e Serviços de Saúde 29 (2). 2020. Disponível em: <a href="https://www.scielosp.org/article/ress/2020.v29n2/e2020044/" target="_blank">https://www.scielosp.org/article/ress/2020.v29n2/e2020044/</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE. MINISTÉRIO DA SAÚDE. Desastres Naturais e Saúde no Brasil. Brasília, DF: OPAS, Ministério da Saúde, 2015. il. (Série Desenvolvimento Sustentável e Saúde, 2).</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>ROMERO, L.C.P. Saúde e política: a doença como protagonista da história. Brasilia, Outubro Edições, 2019. 247 p.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>SILVA, J.A.A.; COSTA, E.A. & LUCCHESE, G. SUS 30 anos: Vigilância Sanitária. Ciência e Saúde Coletiva. 23(6): 1953-1961. 2018​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>TEIXEIRA ET AL. Vigilância em Saúde no SUS - construção, efeitos e perspectivas. Ciência e Saúde Coletiva. 23 (6):1811-1818. 2018b​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>WORLD HEALTH ORGANIZATION. International Health Regulations (2005). 3rd ed. Geneva, WHO. 2016.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>AITH, F. ; DALLARI, S.G. Vigilância em saúde no Brasil: os desafios dos riscos sanitários do século XXI e a necessidade de criação de um sistema nacional de vigilância em saúde. Revista De Direito Sanitário. n. 10, v.2, p. 94-125. 2009.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>BALTER, S. et al. Epidemic nephritis in Nova Serrana, Brazil. Lancet. n.20, 355 (9217): p.1776-80, 2000.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​BARRETO, M. L.; TEIXEIRA, M. G. Dengue no Brasil: situação epidemiológica e contribuições para uma agenda de pesquisa. Dossiê Epidemias. Estud. av. n.22, v.64, 2008.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>BENCHIMOL J. L. (coord). Manguinhos do sonho à vida: a ciência na Belle Époque. reimpressão atualizada. Rio de Janeiro: Editora Fiocruz. 2020, 320 p.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​BENCHIMOL, J. L et al, 2019. Leishmanioses: sua configuração histórica no Brasil com ênfase na doença visceral nos anos 1930 a 1960. Bol. Mus. Para. Emílio Goeldi. Cienc. Hum. n.14, v. 2, p. 611-26.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>BRASIL. Presidência da República. Casa Civil. Subchefia para Assuntos Jurídicos. Decreto Nº 7.616, de 17 de Novembro de 2011. Disponível em: <a href="http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7616.htm" target="_blank">http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7616.htm</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>Brasil. Presidência da República. Casa Civil. Subchefia para Assuntos Jurídicos. Lei 13.979, de 6 de fevereiro de 2020. Disponível em: <a href="http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13979.htm" target="_blank">http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13979.htm</a>. ​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>CARMO, E. Emergências de saúde pública: breve histórico, conceitos e aplicações. Saúde em Debate, Rio de Janeiro, v. 44, n. esp. 2, p. 9-19. 2020.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​CARMO, E.H. ; OLIVEIRA, W.K. ; PENNA, G. 2008. Emergências de saúde pública: conceito, caracterização, preparação e resposta. Estudos avançados. n.22 , v. 64, p. 19-31. 2008.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>CRODA, J. et al. COVID-19 in Brazil: advantages of a socialized unified health system and preparation to contain cases. Revista da Sociedade Brasileira de Medicina Tropical, v. 53. 2020.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​KERR, L. et al. COVID-19 in northeast Brazil: achievements and limitations in the responses of the state governments. Ciência e Saúde Coletiva, 25, suppl 2, p. 4099-4120, 2020.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​LIMA, Nisia T. et al. A Pandemia da Covid-19: uma crise sanitária e humanitária (p:35-40). IN: Buss PM & Fonseca LE (Org). Diplomacia da saúde e COVID-19: reflexões a meio caminho. Rio de Janeiro: Observatório Covid-19 Fiocruz / Editora Fiocruz. 363 p. 2020.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>BRASIL. Ministério da Saúde. Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS). Brasília, DF, 2007. Disponível em: <a href="http://bvsms.saude.gov.br/bvs/publicacoes/centro_informacoes_estrategicas_vigilancia_saude.pdf" target="_blank">http://bvsms.saude.gov.br/bvs/publicacoes/centro_informacoes_estrategicas_vigilancia_saude.pdf</a>​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​MOREL, CM. Régua e compasso na turbulência da pandemia. Folha de S.Paulo, Opinião, 8 nov. 2020. Disponível em: <a href="https://www1.folha.uol.com.br/opiniao/2020/11/regua-e-compasso-na-turbulencia-da-pandemia.shtml" target="_blank">https://www1.folha.uol.com.br/opiniao/2020/11/regua-e-compasso-na-turbulencia-da-pandemia.shtml</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>OLIVEIRA, R. M. Cidade dos Meninos, Duque de Caxias, RJ, linha do tempo sobre a contaminação ambiental e humana. 455 f. Tese (Doutorado em Saúde Pública) - Escola Nacional de Saúde Pública Sergio Arouca, Fundação Oswaldo Cruz, Rio de Janeiro. 2008.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>OLIVEIRA, W. K. et al, 2020. Como o Brasil pode deter a COVID-19. Epidemiologia e Serviços de Saúde. n. 29 (2). Disponível em: <a href="https://www.scielosp.org/article/ress/2020.v29n2/e2020044/" target="_blank">https://www.scielosp.org/article/ress/2020.v29n2/e2020044/</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>ROMERO, L. C. P., 2019. Saúde e política: a doença como protagonista da história. Brasilia, Outubro Edições, 2019. 247​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>SALES, C. M. M et al, 2020. Vigilância em saúde da Covid-19 no Brasil: investigação de contatos pela Atenção Primária em Saúde como estratégia de proteção comunitária. Epidemiologia e serviços de saúde: v. 29, n. 4, p. 373, 2020. Disponível em: <a href="https://doi.org/10.5123/s1679-49742020000400011​" target="_blank">https://doi.org/10.5123/s1679-49742020000400011​</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>SILVA, J. A. A. et al. SUS 30 anos: Vigilância Sanitária. Ciência e Saúde Coletiva. 23(6): p. 1953-1961, 2018.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>SOUZA, A. J. M. et al. Atenção primária à saúde e COVID-19: uma revisão integrativa. Cadernos ESP: Revista Científica da Escola de Saúde Pública do Ceará. Edição Especial, Enfrentamento da COVID-19. 14, 1. 2020.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​TEIXEIRA, M. G. et al. Vigilância em saúde: é necessária uma legislação de emergência? Revista De Direito Sanitário, 10(2), p.126-144. 2009.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>TEIXEIRA, M. G. et al. Vigilância em Saúde no SUS - construção, efeitos e perspectivas. Ciência e Saúde Coletiva. 23 (6): p.1811-1818. 2018.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>TEIXEIRA, M. G. et al. Vigilância Epidemiológica e emergências em Saúde Pública produzidas por agentes infecciosos. Rio de Janeiro: Fundação Oswaldo Cruz. 34 p. 2018. (Textos para Discussão; n. 57)​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​World Health Organization, 2016. International Health Regulations (2005). 3rd ed. Geneva, WHO.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion item 3 -->
+              <div id="headingThree-bibliografia" class="accordion__header">
+                <a href="#" data-toggle="collapse" data-target="#collapseThree-bibliografia" aria-expanded="false" aria-controls="collapseThree-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula 3</a>
+              </div>
+              <div id="collapseThree-bibliografia" aria-labelledby="headingThree-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
+                <div class="card-body p-4">
+                  <div class="obj-lista">
+                    <ul class="list-group">
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​World Health Organization. Health Emergency and Disaster Risk Management Framework. 2019.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>PORTELA, M. ; GRABOIS, V. ; TRAVASSO, C. Matriz Linha de Cuidado Covid-19 na Rede de Atenção à Saúde. Disponível em: <a href="https://portal.fiocruz.br/sites/portal.fiocruz.br/files/documentos/matrizlinhacuidado.pdf" target="_blank">https://portal.fiocruz.br/sites/portal.fiocruz.br/files/documentos/matrizlinhacuidado.pdf</a>. Acesso em: 06 de junho de 2020.​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​PUEHRINGER, C.A. PAM HOSPITAIS – CURITIBA, 2019. Disponível em <a href="https://saovicentecuritiba.com.br/artigos/cidec/2020-PAM_Hospitais_-_Curitiba.pdf" target="_blank">https://saovicentecuritiba.com.br/artigos/cidec/2020-PAM_Hospitais_-_Curitiba.pdf</a>. Acesso em: 31 de julho de 2021.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​PINHEIRO, R.S.; ESCOSTEGUY, C.C. Epidemiologia e Serviços de Saúde. In R.A. MEDRONHO; K.V. BLOCH; R.R. LUIZ; G.L. WERNECK (Org.). Epidemiologia, 2ª. Edição. Rio de Janeiro: Atheneu, 2009, capítulo 28, p.515-523.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>PORTELA, M.C.; GRABOIS, V.; TRAVASSOS, C. Matriz Linha de Cuidado Covid-19 na Rede de Atenção à Saúde. Rio de Janeiro: Observatório COVID-19 Fiocruz, 2020. Disponível em <a href="https://portal.fiocruz.br/sites/portal.fiocruz.br/files/documentos/matrizlinhacuidado.pdf" target="_blank">https://portal.fiocruz.br/sites/portal.fiocruz.br/files/documentos/matrizlinhacuidado.pdf</a>. [Acessado em 31/07/2021].​</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​WORLD HEALTH ORGANIZATION (WHO). Health Emergency and Disaster Risk Management Framework. Geneva: World Health Organization, 2019. Disponível em: <a href="https://www.who.int/hac/techguidance/preparedness/health-emergency-and-disaster-risk-management-framework-eng.pdf?ua=1" target="_blank">https://www.who.int/hac/techguidance/preparedness/health-emergency-and-disaster-risk-management-framework-eng.pdf?ua=1</a>. Acesso em: 31 de julho 2021.</li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​WORLD HEALTH ORGANIZATION (WHO). COVID-19: Operational guidance for maintaining essential health services during an outbreak. Geneva: WHO, 01 June 2020. Disponível em: <a href="https://www.who.int/publications-detail/covid-19-operational-guidance-for-maintaining-essential-health-services-during-an-outbreak" target="_blank">https://www.who.int/publications-detail/covid-19-operational-guidance-for-maintaining-essential-health-services-during-an-outbreak</a></li>
+
+                      <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>WORLD HEALTH ORGANIZATION (WHO). Critical preparedness, readiness and response actions for Covid-19. Interim Guidance, 27 May 2021. Disponível em: <a href="https://www.who.int/publications/i/item/critical-preparedness-readiness-and-response-actions-for-covid-19" target="_blank">https://www.who.int/publications/i/item/critical-preparedness-readiness-and-response-actions-for-covid-19</a>. Acesso em: 31 de julho de 2021.​</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Créditos -->
+    <div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-creditos">Créditos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
             <div class="row justify-content-center">
-              <div class="col-12 col-lg-8">
-                <h4>Exercício 2</h4>
-                <iframe class="p-3 p-lg-5 bg-white rounded d-lg-none" src="https://educare.fiocruz.br/h5p-content/embed/?contentId=3495270544" width="100%" height="820" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                <iframe class="p-3 p-lg-5 bg-white rounded d-none d-lg-block" src="https://educare.fiocruz.br/h5p-content/embed/?contentId=3495270544" width="100%" height="820" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-              </div>
-            </div>
-          </div>
-        </section>
+              <div class="col-12 col-md-10 col-lg-10">
+                <h6 class="mb-2">Ministério da Saúde</h6>
+                <div class="mb-5">
+                  <p class="mb-1">Marcelo Queiroga</p>
+                  <p class="small text-muted"><em>Ministro</em></p>
+                </div>
 
-        <!-- Navegação da aula -->
-        <section>
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-12 col-md-10 col-lg-8">
-                <div class="page-nav d-flex justify-content-around">
-                  <a class="button-primary mb-5 mb-md-0" href="topico5.html" rel="prev">Tópico anterior</a>
-                  <a class="button-primary" href="../../modulo3/aula1/inicio.html" rel="next">Módulo 3</a>
+                <h6 class="mb-2">Secretaria Vigilância em Saúde</h6>
+                <div class="mb-5">
+                  <p class="mb-1">Arnaldo Correia de Medeiros</p>
+                  <p class="small text-muted"><em>Secretário</em></p>
+                  <p class="mb-1">Daniela Buosi Rohlfs</p>
+                  <p class="small text-muted"><em>Diretora do Departamento de Saúde Ambiental, do Trabalhador e Vigilância das Emergências em Saúde Pública</em></p>
+                  <p class="mb-1">Programa Vigiar SUS</p>
+                </div>
+
+                <h6 class="mb-2">Fundação Oswaldo Cruz – Fiocruz</h6>
+                <div class="mb-5">
+                  <p class="mb-1">Nísia Trindade Lima</p>
+                  <p class="small text-muted"><em>Presidente</em></p>
+                  <p class="mb-1">Vice-Presidência de Educação, Informação e Comunicação (VPEIC)<br />Cristiani Vieira Machado</p>
+                  <p class="small text-muted"><em>Vice-Presidente</em></p>
+                </div>
+
+                <h6 class="mb-2">Campus Virtual Fiocruz</h6>
+                <div class="mb-5">
+                  <p class="mb-1">Ana Cristina da Matta Furniel</p>
+                  <p class="small text-muted"><em>Coordenadora geral</em></p>
+                  <p class="mb-1">Adélia Araújo</p>
+                  <p class="small text-muted"><em>Coordenador de produção</em></p>
+                </div>
+
+                <h6 class="mb-2">Gestão de Riscos de Emergências em Saúde Pública no contexto da COVID-19</h6>
+                <div class="mb-5">
+                  <p class="mb-1">Carlos Machado de Freitas<br />Maíra Lopes Mazoto</p>
+                  <p class="small text-muted"><em>Coordenação</em></p>
+
+                  <hr />
+                  <p class="mb-1 small">Carlos Machado de Freitas</p>
+                  <p class="small text-muted">Graduação em História pela Universidade Federal Fluminense (1989), mestrado em Engenharia de Produção pela Universidade Federal do Rio de Janeiro (1992), doutorado em Saúde Pública pela Fundação Oswaldo Cruz (1996) e pós-doutorado pelo Programa de Ciências Ambientais da Universidade de São Paulo (2007-2008). Pesquisador da Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz, Ministério da Saúde, Coordenador do Observatório Covid-19 Fiocruz e do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz. Médica. Pós-doutora em Saúde Coletiva pelo IMS/ UERJ. Tecnologista em Saúde Pública do ICICT/ Fiocruz. Coordenadora Adjunta do Proqualis/ Fiocruz.</p>
+                  <hr />
+                  <p class="mb-1 small">Maíra Lopes Mazoto</p>
+                  <p class="small text-muted">Graduação em Nutrição pela Universidade Federal Fluminense (2004), pós graduação em planejamento, implementação e gestão da educação a distância pela Universidade Federal Fluminense (2014), mestrado e doutorado em Saúde Coletiva pela Universidade Federal do Rio de Janeiro (2011 e 2015) e pós graduação em Design Instrucional pelo Instituto de Design Instrucional (2021). Pesquisadora colaboradora do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz e professora adjunta do Curso de Graduação em Nutrição do Centro Universitário Serra dos Órgãos (UNIFESO). Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde e produção de materiais didáticos para cursos a distância e presenciais.</p>
+                  <hr />
+                </div>
+
+                <div class="mb-5">
+                  <p class="mb-3"><strong>Conteudistas</strong></p>
+
+                  <p class="mb-1 small">Adelyne Maria Mendes Pereira</p>
+                  <p class="small text-muted">Professora e pesquisadora do Departamento de Administração e Planejamento em Saúde (DAPS) da Escola Nacional de Saúde Pública (ENSP) da Fundação Oswaldo Cruz (Fiocruz). Enfermeira, mestre em Saúde Pública com concentração em planejamento e gestão em saúde (ENSP/Fiocruz), doutora em Saúde Pública (ENSP/Fiocruz), com pós-doutorado em Saúde Global (Universitat de les Illes Balears, Espanha).</p>
+                  <hr />
+                  <p class="mb-1 small">Carlos Machado de Freitas</p>
+                  <p class="small text-muted">Graduação em História pela Universidade Federal Fluminense (1989), mestrado em Engenharia de Produção pela Universidade Federal do Rio de Janeiro (1992), doutorado em Saúde Pública pela Fundação Oswaldo Cruz (1996) e pós-doutorado pelo Programa de Ciências Ambientais da Universidade de São Paulo (2007-2008). Pesquisador da Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz, Ministério da Saúde, Coordenador do Observatório Covid-19 Fiocruz e do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz.</p>
+                  <hr />
+                  <p class="mb-1 small">Daniel Antunes Maciel Villela</p>
+                  <p class="small text-muted">Pesquisador da Fundação Oswaldo Cruz e atualmente coordenador do Programa de Computação Científica (PROCC/FIOCRUZ). Doutor pela Universidade de Columbia, tem experiência em modelagem matemática da dinâmica de transmissão de doenças infecciosas, com interesse em métodos quantitativos em Epidemiologia e Ecologia de vetores de importância para a Saúde Pública e atualmente realiza análises populacionais da dinâmica de Covid-19. Atua na pós graduação (mestrado e doutorado) na Fundação Oswaldo Cruz e atualmente é Coordenador Adjunto do Programa de Epidemiologia em Saúde Pública (ENSP/FIOCRUZ).</p>
+                  <hr />
+                  <p class="mb-1 small">Eduardo Hage Carmo</p>
+                  <p class="small text-muted">Médico, Sanitarista (Residência em Medicina Social), Mestre em Saúde Coletiva e Doutor em Saúde Pública pela Universidade Federal da Bahia. Atualmente é pesquisador do Cidacs/Fiocruz/BA, médico sanitarista da Secretaria de Saúde do Estado da Bahia (licenciado) e da Secretaria de Saúde do Distrito Federal, membro do Painel de Especialistas e consultor ad hoc da Organização Mundial da Saúde.</p>
+                  <hr />
+                  <p class="mb-1 small">Margareth Crisóstomo Portela</p>
+                  <p class="small text-muted">Engenheira Eletricista pela UFBA, mestre (MSc) em Engenharia Biomédica pela UFRJ, PhD em Health Policy and Administration pela University of North Carolina at Chapel Hill e Pós-doutorado na Medical University of South Carolina, EUA. Realizou Estágio Sênior (Programa Ciências sem Fronteiras – CAPES), na University of Leicester, Inglaterra. É pesquisadora da Fundação Oswaldo Cruz (Fiocruz), lotada na Escola Nacional de Saúde Pública Sergio Arouca (ENSP), onde faz parte do corpo permanente do Programa de Pós-graduação em Saúde Pública.</p>
+                  <hr />
+                  <p class="mb-1 small">Tais De Moura Ariza Alpino</p>
+                  <p class="small text-muted">Nutricionista, doutora em saúde pública pela Escola Nacional de Saúde Pública Sérgio Arouca (ENSP/ Fiocruz) e especialista em segurança alimentar e nutricional pela Universidade Federal do Estado do Rio de Janeiro (UNIRIO). Tanto o mestrado quanto o doutorado tiveram como objeto de estudo a seca no semiárido do Brasil como um desastre natural e social. Atualmente atuo como pesquisadora colaboradora no Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz (Cepedes/Fiocruz), atuando em vários projetos de pesquisa e na elaboração de artigos, documentos e materiais voltados para a qualificação e aprimoramento das ações de preparação e resposta do setor saúde a emergências e desastres.</p>
+                  <hr />
+                  <p class="mb-1 small">Vânia Rocha</p>
+                  <p class="small text-muted">Doutora em Saúde Pública, pesquisadora colaboradora do CEPEDES/Fiocruz entre 2012 e 2019 e Professora visitante do Laboratório de Geo-Hidroecologia e Gestão de Riscos da UFRJ entre 2019 e 2021. Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde, elaboração e validação de metodologias participativas e produção de materiais didáticos. Autora de livros, capítulos de livros e artigos sobre desastres e saúde.</p>
+                  <hr />
+                  <p class="mb-1 small">Victor Grabois</p>
+                  <p class="small text-muted">Médico sanitarista doutor em saúde pública pela Ensp Fiocruz coordenador executivo do Proqualis/Icict/Fiocruz e presidente da SOBRASP. Autor de livros, capítulos de livros, artigos científicos e material didáticos sobre Gestão da Clínica, Gestão Hospitalar; Qualidade do Cuidado e Segurança do Paciente.</p>
+                  <hr />
+                </div>
+
+                <div class="mb-5">
+                  <p class="mb-3"><strong>Colaboradores - Relatos em áudio e vídeo</strong></p>
+
+                  <p class="mb-1 small">Adelyne Maria Mendes Pereira</p>
+                  <p class="small text-muted">Professora e pesquisadora do Departamento de Administração e Planejamento em Saúde (DAPS) da Escola Nacional de Saúde Pública (ENSP) da Fundação Oswaldo Cruz (Fiocruz). Enfermeira, mestre em Saúde Pública com concentração em planejamento e gestão em saúde (ENSP/Fiocruz), doutora em Saúde Pública (ENSP/Fiocruz), com pós-doutorado em Saúde Global (Universitat de les Illes Balears, Espanha).</p>
+                  <hr />
+                  <p class="mb-1 small">Carlos Machado de Freitas</p>
+                  <p class="small text-muted">Graduação em História pela Universidade Federal Fluminense (1989), mestrado em Engenharia de Produção pela Universidade Federal do Rio de Janeiro (1992), doutorado em Saúde Pública pela Fundação Oswaldo Cruz (1996) e pós-doutorado pelo Programa de Ciências Ambientais da Universidade de São Paulo (2007-2008). Pesquisador da Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz, Ministério da Saúde, Coordenador do Observatório Covid-19 Fiocruz e do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz.</p>
+                  <hr />
+                  <p class="mb-1 small">Daniel Antunes Maciel Villela</p>
+                  <p class="small text-muted">Pesquisador da Fundação Oswaldo Cruz e atualmente coordenador do Programa de Computação Científica (PROCC/FIOCRUZ). Doutor pela Universidade de Columbia, tem experiência em modelagem matemática da dinâmica de transmissão de doenças infecciosas, com interesse em métodos quantitativos em Epidemiologia e Ecologia de vetores de importância para a Saúde Pública e atualmente realiza análises populacionais da dinâmica de Covid-19. Atua na pós graduação (mestrado e doutorado) na Fundação Oswaldo Cruz e atualmente é Coordenador Adjunto do Programa de Epidemiologia em Saúde Pública (ENSP/FIOCRUZ).</p>
+                  <hr />
+                  <p class="mb-1 small">Eduardo Hage Carmo</p>
+                  <p class="small text-muted">Médico, Sanitarista (Residência em Medicina Social), Mestre em Saúde Coletiva e Doutor em Saúde Pública pela Universidade Federal da Bahia. Atualmente é pesquisador do Cidacs/Fiocruz/BA, médico sanitarista da Secretaria de Saúde do Estado da Bahia (licenciado) e da Secretaria de Saúde do Distrito Federal, membro do Painel de Especialistas e consultor ad hoc da Organização Mundial da Saúde.</p>
+                  <hr />
+                  <p class="mb-1 small">Margareth Crisóstomo Portela</p>
+                  <p class="small text-muted">Engenheira Eletricista pela UFBA, mestre (MSc) em Engenharia Biomédica pela UFRJ, PhD em Health Policy and Administration pela University of North Carolina at Chapel Hill e Pós-doutorado na Medical University of South Carolina, EUA. Realizou Estágio Sênior (Programa Ciências sem Fronteiras – CAPES), na University of Leicester, Inglaterra. É pesquisadora da Fundação Oswaldo Cruz (Fiocruz), lotada na Escola Nacional de Saúde Pública Sergio Arouca (ENSP), onde faz parte do corpo permanente do Programa de Pós-graduação em Saúde Pública.</p>
+                  <hr />
+                  <p class="mb-1 small">Tais De Moura Ariza Alpino</p>
+                  <p class="small text-muted">Nutricionista, doutora em saúde pública pela Escola Nacional de Saúde Pública Sérgio Arouca (ENSP/ Fiocruz) e especialista em segurança alimentar e nutricional pela Universidade Federal do Estado do Rio de Janeiro (UNIRIO). Tanto o mestrado quanto o doutorado tiveram como objeto de estudo a seca no semiárido do Brasil como um desastre natural e social. Atualmente atuo como pesquisadora colaboradora no Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz (Cepedes/Fiocruz), atuando em vários projetos de pesquisa e na elaboração de artigos, documentos e materiais voltados para a qualificação e aprimoramento das ações de preparação e resposta do setor saúde a emergências e desastres.</p>
+                  <hr />
+                  <p class="mb-1 small">Vânia Rocha</p>
+                  <p class="small text-muted">Doutora em Saúde Pública, pesquisadora colaboradora do CEPEDES/Fiocruz entre 2012 e 2019 e Professora visitante do Laboratório de Geo-Hidroecologia e Gestão de Riscos da UFRJ entre 2019 e 2021. Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde, elaboração e validação de metodologias participativas e produção de materiais didáticos. Autora de livros, capítulos de livros e artigos sobre desastres e saúde.</p>
+                  <hr />
+                  <p class="mb-1 small">Victor Grabois</p>
+                  <p class="small text-muted">Médico sanitarista doutor em saúde pública pela Ensp Fiocruz coordenador executivo do Proqualis/Icict/Fiocruz e presidente da SOBRASP. Autor de livros, capítulos de livros, artigos científicos e material didáticos sobre Gestão da Clínica, Gestão Hospitalar; Qualidade do Cuidado e Segurança do Paciente.</p>
+                  <hr />
+                </div>
+
+                <div class="mb-5">
+                  <p class="mb-3"><strong>Revisão Técnica</strong></p>
+                  <p class="mb-1 small">Maíra Lopes Mazoto</p>
+                  <p class="small text-muted">Graduação em Nutrição pela Universidade Federal Fluminense (2004), pós graduação em planejamento, implementação e gestão da educação a distância pela Universidade Federal Fluminense (2014), mestrado e doutorado em Saúde Coletiva pela Universidade Federal do Rio de Janeiro (2011 e 2015) e pós graduação em Design Instrucional pelo Instituto de Design Instrucional (2021). Pesquisadora colaboradora do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz e professora adjunta do Curso de Graduação em Nutrição do Centro Universitário Serra dos Órgãos (UNIFESO). Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde e produção de materiais didáticos para cursos a distância e presenciais.</p>
+                  <hr />
+                </div>
+
+                <div class="mb-5">
+                  <p class="mb-3"><strong>Revisão de Português</strong></p>
+                  <p class="mb-1">Maria Angélica Marcondes Drska - Campus Virtual Fiocruz</p>
+                </div>
+
+                <div class="mb-5">
+                  <p class="mb-3"><strong>Designer Educacional</strong></p>
+                  <p class="mb-1">Fernanda Sousa - Campus Virtual Fiocruz</p>
+                  <p class="small text-muted"><em>Pedagoga, Especialista em Planejamento, Implementação e Gestão de Educação a Distância e Especialista em Gestão de Projetos</em></p>
+                </div>
+
+                <div class="mb-5">
+                  <p class="mb-3"><strong>Designer de Interface</strong></p>
+                  <p class="mb-1">Aline Polycarpo</p>
+                  <p class="small text-muted"><em>Designer de Interface e Interação</em></p>
+                  <p class="mb-1">Danilo Blum</p>
+                  <p class="small text-muted"><em>Desenvolvedor Front-end</em></p>
+                  <p class="mb-1">Luciana Nunes</p>
+                  <p class="small text-muted"><em>Designer de Interface e Interação</em></p>
+                </div>
+
+                <div class="mb-5">
+                  <p class="mb-3"><strong>Suporte Técnico de Tecnologia da Informação</strong></p>
+                  <p class="mb-1">Bruno Alexandre de Oliveira - Campus Virtual Fiocruz</p>
+                  <p class="small text-muted"><em>Desenvolvedor</em></p>
+                  <p class="mb-1">Eduardo Xavier da Silva - Campus Virtual Fiocruz</p>
+                  <p class="small text-muted"><em>Desenvolvedor</em></p>
+                  <p class="mb-1">Adriano Lourenço - Campus Virtual Fiocruz</p>
+                  <p class="small text-muted"><em>Analista de suporte</em></p>
+                  <p class="mb-1">Orlando Terra - Campus Virtual Fiocruz</p>
+                  <p class="small text-muted"><em>Analista de suporte</em></p>
+                </div>
+
+                <div class="mb-5">
+                  <p class="mb-3"><strong>Recursos Educacionais</strong></p>
+                  <p class="mb-1">Carmélia Brito - Campus Virtual Fiocruz</p>
+                  <p class="small text-muted"><em>Bibliotecária</em></p>
+                  <p class="mb-1">Rosane Mendes - Campus Virtual Fiocruz</p>
+                  <p class="small text-muted"><em>Coordenadora Plataforma Educare</em></p>
+                </div>
+
+                <div class="mb-5">
+                  <p class="mb-3"><strong>Recursos Audiovisuais</strong></p>
+                  <p class="mb-1">Teo Venerando - Campus Virtual Fiocruz</p>
+                  <p class="small text-muted"><em>Edição de vídeo</em></p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <ul class="logos">
-                <li><img src="../../images/logo-cv-black.svg" alt="Logo da Fiocruz" height="60px"></li>
-                <li><img src="../../images/logo-observatorio-covid-19.png" alt="Logo do Observatório Covid-19: Informação para ação" height="30px"></li>
-                <li><img src="../../images/logo-vigiar-sus-cinza.jpg" alt="Logo do Vigiar SUS" height="45px"></li>
-                <li><img src="../../images/sus.svg" alt="Logo do Sistema Único de Saúde" height="60px"></li>
-                <li><img src="../../images/ministerio-da-saude-e-governo-federal.svg" alt="Logo do Ministério da Saúde e Governo Federal" height="50px"></li>
-              </ul>
-            </div>
+          <div class="modal-footer">
+            <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
           </div>
         </div>
-      </footer>
-    </div>
-  </div>
-
-  <!-- Sidebar Toggle only on mobile -->
-  <div id="sidebar-toggle">
-    <div class="box">
-      <div class="btn not-active">
-        <span></span>
-        <span></span>
-        <span></span>
       </div>
     </div>
-  </div>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-
-  <!-- Sticky Sidebar -->
-
-  <script type="text/javascript" src="../../js/ResizeSensor.js"></script>
-  <script type="text/javascript" src="../../js/sticky-sidebar.js"></script>
-  <script type="text/javascript" src="../../js/sidebar.js"></script>
-
-  <script type="text/javascript">
-    var sidebar = new StickySidebar('.sidebar', {
-      topSpacing: 0,
-      bottomSpacing: 0,
-      containerSelector: '.main',
-      innerWrapperSelector: '.sidebar__inner',
-      minWidth: 991
-    });
-  </script>
-
-  <script type="text/javascript" src="../../js/scripts.js"></script>
-  <script type="text/javascript" src="../../js/anime.min.js"></script>
-  <script type="text/javascript" src="../../js/custom-anime.js"></script>
-  <script type="text/javascript" src="../../js/video-modal.js"></script>
-
-  <!-- Modal Video resumo da aula -->
-  <div class="modal modal-video fade p-0" id="resumo-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
-        </button>
-
-        <!--Video (embed Educare) -->
-        <div class="embed-responsive embed-responsive-16by9 my-5">
-          <video controls="" name="media" controls poster="../../images/modulo2/aula3/video-resumo-aula.jpg">
-            <source src="https://educare.fiocruz.br/file-storage/6fu0Znwh" type="video/mp4">
-          </video>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Perfil  -->
-  <div class="modal fade" id="modal-perfil" tabindex="-1" aria-labelledby="perfil-perfil" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal-perfil">Sobre os autores</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div id="accordion-perfil" class="accordion mb-5">
-
-            <!-- Texto com Imagem à esquerda -->
-            <div class="row justify-content-center d-lg-block px-3 my-5 clearfix">
-              <!-- Imagem -->
-              <div class="col-md-8 col-lg-4 float-lg-left mr-lg-4 px-0 order-1 order-lg-2">
-                <figure>
-                  <img class="img-fluid rounded mx-auto d-block mb-3" src="../../images/modulo2/aula3/conteudista.jpg" alt="Victor Grabois, autor desta aula." title="">
-                </figure>
-              </div>
-
-              <!-- Texto -->
-              <div class="order-2 order-lg-1">
-                <h5 class="mb-3">Victor Grabois</h5>
-                <p>Médico sanitarista doutor em saúde pública pela Ensp Fiocruz coordenador executivo do Proqualis/Icict/Fiocruz e presidente da SOBRASP. Autor de livros, capítulos de livros, artigos científicos e material didáticos sobre Gestão da Clínica, Gestão Hospitalar; Qualidade do Cuidado e Segurança do Paciente.</p>
-              </div>
-            </div>
-            <!-- Fim de texto e imagem à esquerda-->
-
-            <!-- Texto com Imagem à esquerda -->
-            <div class="row justify-content-center d-lg-block px-3 my-5">
-              <!-- Imagem -->
-              <div class="col-md-8 col-lg-4 float-lg-left mr-lg-4 px-0 order-1 order-lg-2">
-                <figure>
-                  <img class="img-fluid rounded mx-auto d-block mb-3" src="../../images/modulo2/aula3/conteudista2.jpg" alt="Margareth Crisóstomo Portela, autora desta aula." title="">
-                </figure>
-              </div>
-
-              <!-- Texto -->
-              <div class="order-2 order-lg-1">
-                <h5 class="mb-3">Margareth Crisóstomo Portela</h5>
-                <p>Engenheira Eletricista pela UFBA, mestre (MSc) em Engenharia Biomédica pela UFRJ, PhD em Health Policy and Administration pela University of North Carolina at Chapel Hill e Pós-doutorado na Medical University of South Carolina, EUA. Realizou Estágio Sênior (Programa Ciências sem Fronteiras – CAPES), na University of Leicester, Inglaterra. É pesquisadora da Fundação Oswaldo Cruz (Fiocruz), lotada na Escola Nacional de Saúde Pública Sergio Arouca (ENSP), onde faz parte do corpo permanente do Programa de Pós-graduação em Saúde Pública.</p>
-              </div>
-            </div>
-            <!-- Fim de texto e imagem à esquerda-->
-
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-
-  <!-- Modal Bibliografia -->
-  <div class="modal fade" id="modal-bibliografia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal-bibliografia">Bibliografia</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div id="accordion-bibliografia" class="accordion mb-5">
-
-            <!-- Accordion item 1 -->
-            <div id="headingOne-bibliografia" class="accordion__header">
-              <a href="#" data-toggle="collapse" data-target="#collapseOne-bibliografia" aria-expanded="false" aria-controls="collapseOne-bibliografia" class="d-block position-relative collapsible-link py-2">Aula 1</a>
-            </div>
-            <div id="collapseOne-bibliografia" aria-labelledby="headingOne-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
-              <div class="card-body p-4">
-                <div class="obj-lista">
-                  <ul class="list-group">
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. Health Emergency and Disaster Risk Management Framework. Geneva: WHO. 2019.</li>
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. International Health Regulations (2005) - Third edition. WHO, 2016.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​World Health Organization. Critical preparedness, readiness and response actions for COVID-19. Geneva: WHO. 2020</li>
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>NARVÁEZ, L. ; LAVELL, A.; ORTEGA, G, P. La gestión del riesgo de desastres: un enfoque basado en procesos. Peru: Comunidade Andina. 2009.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​FREITAS, C. M. et al. A Gestão de Riscos e Governança na Pandemia por COVID-19 no Brasil: análise dos decretos estaduais no primeiro mês. Relatório Técnico. Rio de Janeiro, 2020. </li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>WILDER-SMITH, A. ; FREEDMAN, D. O. Isolation, quarantine, social distancing and community containment: pivotal role for old-style public health measures in the novel coronavirus (2019-nCoV). Journal of Travel Medicine, 2020, p.1–4.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​LUCHINNI, R. G. et al. A comparative assessment of major international disasters: the need for exposure assessment, systematic emergency preparedness, and lifetime health care. BMC Public Health. v. 17, n. 46, 2017.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>DE MARCHI, B.; RAVETZ, J. Risk management and governance: a post-normal Science approach. Futures v. 31, p. 743-757. 1999.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>FAN, V.Y. ; JAMISON, D. T. ; SUMMERS, L.H. Pandemic risk: how large are the expected losses? Bull World Health Organ. n. 96 v. 2, p.129–34. 2018.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​FREITAS, C.M. ; SILVA, I. V. M.; CIDADE, N. C. ; et al. A gestão de riscos e governança na pandemia por COVID-19 no Brasil: Análise dos decretos estaduais no primeiro mês. Relatório técnico e sumário executivo. CEPEDES, ENSP. Rio de Janeiro, 2020. Disponível em: <a href='https://www.arca.fiocruz.br/bitstream/icict/41452/2/relatorio_cepedes_gestao_riscos_covid19_final.pdf' target='_blank'>https://www.arca.fiocruz.br/bitstream/icict/41452/2/relatorio_cepedes_gestao_riscos_covid19_final.pdf</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>FREITAS, CM (org). Guia de Preparação e Respostas do Setor Saúde aos Desastres. Rio de Janeiro: FIOCRUZ, 2018. Disponível em: <a href='https://www.arca.fiocruz.br/bitstream/icict/40925/2/GuiaPrepara%c3%a7%c3%a3oSetorSaude.PDF' target='_blank'>https://www.arca.fiocruz.br/bitstream/icict/40925/2/GuiaPrepara%c3%a7%c3%a3oSetorSaude.PDF</a>​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>Nações Unidas. Brasil. Objetivos do Desenvolvimento Sustentável. Disponível em: <a href='https://brasil.un.org/pt-br/sdgs' target='_blank'>https://brasil.un.org/pt-br/sdgs</a>​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​NARVÁEZ, L. ; IAVELL, A. N. ; ORTEGA, G. P. La gestión del riesgo de desastres: un enfoque basado en processos. Lima: Secretaria General de La Comunidad Andina, 2009. Disponível em:<a href=' http://www.comunidadandina.org/predecan/doc/libros/procesos_ok.pdf' target='_blank'> http://www.comunidadandina.org/predecan/doc/libros/procesos_ok.pdf</a> </li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​Organização Mundial da Saúde. Regulamento Sanitário Internacional RSI –
-                      2005. Versão em português aprovada pelo Congresso Nacional por meio do
-                      Decreto Legislativo 395/2009 publicado no DOU de 10/07/09, pág.11. Brasília:
-                      Agência Nacional de Vigilância Santária ; Anvisa.
-                      Disponível em: <a href='https://www.gov.br/anvisa/pt-br/assuntos/paf/regulamento-sanitario-internacional/arquivos/7181json-file-1' target='_blank'>https://www.gov.br/anvisa/pt-br/assuntos/paf/regulamento-sanitario-internacional/arquivos/7181json-file-1</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>Pan American Health Organization. Smart hospitals [website]. Washington (DC): Pan American Health Organization. s/d. Disponível em: <a href='https://www.paho.org/disasters/index.php?option=com_content&view=article&id=3660:hospitales-inteligentes&Itemid=911&lang=em' target='_blank'>https://www.paho.org/disasters/index.php?option=com_content&view=article&id=3660:hospitales-inteligentes&Itemid=911&lang=em</a> ​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>United Nations Office for Disaster Risk Reduction. Bangkok Principles for the implementation of the health aspects of the Sendai Framework for Disaster Risk Reduction 2015–2030. Geneva: United Nations Office for Disaster Risk Reduction; 2016. Disponível em: <a href='http://www.who.int/hac/events/2016/Bangkok_Principles.pdf​' target='_blank'>http://www.who.int/hac/events/2016/Bangkok_Principles.pdf​</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>United Nations Office for Disaster Risk Reduction. Terminology on disaster risk reduction. Geneva: United Nations Office for Disaster Risk Reduction; 2009. Disponível em: <a href='https://www.unisdr.org/files/7817_UNISDRTerminologyEnglish.pdf' target='_blank'>https://www.unisdr.org/files/7817_UNISDRTerminologyEnglish.pdf</a>​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>United Nations Office of Disaster Risk Reduccion. Marco de Sendai para a Redução do Risco de Desastres 2015-2030. (traduzido). Geneva: UNDRR. Disponível em: <a href='https://www.unisdr.org/files/43291_63575sendaiframeworkportunofficialf%5B1%5D.pdf' target='_blank'>https://www.unisdr.org/files/43291_63575sendaiframeworkportunofficialf%5B1%5D.pdf</a> ​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​United Nations. Note by the Secretary-General Report of the open-ended intergovernmental expert working group on indicators and terminology relating to disaster risk reduction. New York (NY): United Nations Note by the Secretary-General; 2016. Disponível em: A/71644; <a href='https://www.unisdr.org/we/inform/publications/51748' target='_blank'>https://www.unisdr.org/we/inform/publications/51748</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Bank. Results briefs. Climate insurance. World Bank: Washington (DC): 1 December 2017. Disponível em: <a href='https://www.worldbank.org/en/results/2017/12/01/climate-insurance' target='_blank'>https://www.worldbank.org/en/results/2017/12/01/climate-insurance</a>​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Bank; Institute for Health Metrics and Evaluation. The cost of air pollution: strengthening the economic case for action. Washington (DC): The World Bank; 2016. Disponível em: <a href='https://openknowledge.worldbank.org/handle/10986/25013' target='_blank'>https://openknowledge.worldbank.org/handle/10986/25013</a>​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. Constitution of the World Health Organization. In: Basic documents, 48th edition. Geneva: World Health Organization; 2016:1-9. Disponível em: <a href='http://apps.who.int/gb/bd/PDF/bd48/basic-documents-48th-edition-en.pdf' target='_blank'>http://apps.who.int/gb/bd/PDF/bd48/basic-documents-48th-edition-en.pdf</a>​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. Global assessment of national health sector emergency preparedness and response. Geneva: World Health Organization; 2008. Disponível em: <a href='http://www.who.int/hac/about/Global_survey_inside.pdf​' target='_blank'>http://www.who.int/hac/about/Global_survey_inside.pdf​</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. Global health ethics: key issues. Geneva: World Health Organization; 2015. Disponível em: <a href='https://apps.who.int/iris/bitstream/handle/10665/164576/9789240694033_eng.pdf' target='_blank'>https://apps.who.int/iris/bitstream/handle/10665/164576/9789240694033_eng.pdf</a>​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. Health Emergency and Disaster Risk Management Framework. Generva:WHO, 2019. Disponível em: <a href='https://www.who.int/hac/techguidance/preparedness/health-emergency-and-disaster-risk-management-framework-eng.pdf' target='_blank'>https://www.who.int/hac/techguidance/preparedness/health-emergency-and-disaster-risk-management-framework-eng.pdf</a>​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>World Health Organization. International Health Regulations (2005) monitoring and evaluation framework. Geneva: World Health Organization; 2018. Disponível em: <a href='https://apps.who.int/iris/bitstream/handle/10665/276651/WHO-WHE-CPI-2018.51-eng.pdf?sequence=1' target='_blank'>https://apps.who.int/iris/bitstream/handle/10665/276651/WHO-WHE-CPI-2018.51-eng.pdf?sequence=1</a>​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​World Health Organization. Safe hospitals and health facilities [website]. Geneva: World Health Organization. s/d. Disponível em: <a href='https://www.who.int/hac/techguidance/safehospitals/en/' target='_blank'>https://www.who.int/hac/techguidance/safehospitals/en/</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Accordion item 2 -->
-            <div id="headingTwo-bibliografia" class="accordion__header">
-              <a href="#" data-toggle="collapse" data-target="#collapseTwo-bibliografia" aria-expanded="false" aria-controls="collapseTwo-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula 2</a>
-            </div>
-            <div id="collapseTwo-bibliografia" aria-labelledby="headingTwo-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
-              <div class="card-body p-4">
-                <div class="obj-lista">
-                  <ul class="list-group">
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>CARMO, E.H. Emergências de saúde pública: breve histórico, conceitos e aplicações. Saúde em Debate, Rio de Janeiro, v. 44, n. esp. 2, p. 9-19, 2020.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>CRODA, J. et al. COVID-19 in Brazil: advantages of a socialized unified health system and preparation to contain cases. Revista da Sociedade Brasileira de Medicina Tropical, v. 53, 2020.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>KERR, L. ET AL. COVID-19 in northeast Brazil: achievements and limitations in the responses of the state governments. Ciência e Saúde Coletiva, 25, suppl 2:4099-4120. 2020​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​TEIXEIRA ET AL. Conquistas do SUS no enfrentamento das doenças transmissíveis. Ciência e Saúde Coletiva. 23(6):1819-1828. 2018</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​SALES, C. M. M.; SILVA, A. I. da; MACIEL, E. L. N. Vigilância em saúde da Covid-19 no Brasil: investigação de contatos pela Atenção Primária em Saúde como estratégia de proteção comunitária. Epidemiologia e serviços de saúde: v. 29, n. 4, p. 2020373, 2020. Disponível em: <a href='https://doi.org/10.5123/s1679-49742020000400011' target='_blank'>https://doi.org/10.5123/s1679-49742020000400011</a>.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​SOUSA ET AL, 2020. Atenção primária à saúde e COVID-19: uma revisão integrativa. Cadernos ESP - Revista Cientí¬fica da Escola de Saúde Pública do Ceará. Edição Especial - Enfrentamento da COVID-19,14(1); 2020 </li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​BRASIL. Presidência da República. Casa Civil. Subchefia para assuntos Jurídicos. Decreto Nº 7.616, de 17 de Novembro de 2011. Disponível em: <a href='http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7616.htm' target='_blank'>http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7616.htm</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>CARMO, E.H.; OLIVEIRA, W.K. & PENNA, G. Emergências de saúde pública: conceito, caracterização, preparação e resposta. Estudos avançados. 22 (64): 19-31. 2008.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​FRANCO-NETTO, G. et al. Vigilância em saúde brasileira: reflexões e contribuição ao debate da 1a Conferência Nacional de Vigilância em Saúde. Ciência e Saúde Coletiva. 22 (10). <a href='https://doi.org/10.1590/1413-812320172210.18092017' target='_blank'>https://doi.org/10.1590/1413-812320172210.18092017</a>.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>MINISTÉRIO DA SAÚDE. Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS). Brasília, DF, 2007. Disponível em: <a href='http://bvsms.saude.gov.br/bvs/publicacoes/centro_informacoes_estrategicas_vigilancia_saude.pdf' target='_blank'>http://bvsms.saude.gov.br/bvs/publicacoes/centro_informacoes_estrategicas_vigilancia_saude.pdf</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​MINISTÉRIO DA SAÚDE (BR). Secretaria de Vigilância em Saúde. Informe técnico de Influenza. 2012; 1-15. Disponível em: <a href='http://portalsaude.saude.gov.br/images/pdf/2014/maio/22/ informe-influenza-2009-2010-2011-220514.pdf' target='_blank'>http://portalsaude.saude.gov.br/images/pdf/2014/maio/22/ informe-influenza-2009-2010-2011-220514.pdf</a>. </li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​MOREL, C. M. Régua e compasso na turbulência da pandemia. Folha de S.Paulo, Opinião, 8 nov. 2020. Disponível em: <a href='https://www1.folha.uol.com.br/opiniao/2020/11/regua-e-compasso-na-turbulencia-da-pandemia.shtml' target='_blank'>https://www1.folha.uol.com.br/opiniao/2020/11/regua-e-compasso-na-turbulencia-da-pandemia.shtml</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​OLIVEIRA, W.K. ET AL. Como o Brasil pode deter a COVID-19. Epidemiologia e Serviços de Saúde 29 (2). 2020. Disponível em: <a href='https://www.scielosp.org/article/ress/2020.v29n2/e2020044/' target='_blank'>https://www.scielosp.org/article/ress/2020.v29n2/e2020044/</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE. MINISTÉRIO DA SAÚDE. Desastres Naturais e Saúde no Brasil. Brasília, DF: OPAS, Ministério da Saúde, 2015. il. (Série Desenvolvimento Sustentável e Saúde, 2).</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>ROMERO, L.C.P. Saúde e política: a doença como protagonista da história. Brasilia, Outubro Edições, 2019. 247 p.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>SILVA, J.A.A.; COSTA, E.A. & LUCCHESE, G. SUS 30 anos: Vigilância Sanitária. Ciência e Saúde Coletiva. 23(6): 1953-1961. 2018​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>TEIXEIRA ET AL. Vigilância em Saúde no SUS - construção, efeitos e perspectivas. Ciência e Saúde Coletiva. 23 (6):1811-1818. 2018b​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>WORLD HEALTH ORGANIZATION. International Health Regulations (2005). 3rd ed. Geneva, WHO. 2016.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>AITH, F. ; DALLARI, S.G. Vigilância em saúde no Brasil: os desafios dos riscos sanitários do século XXI e a necessidade de criação de um sistema nacional de vigilância em saúde. Revista De Direito Sanitário. n. 10, v.2, p. 94-125. 2009.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>BALTER, S. et al. Epidemic nephritis in Nova Serrana, Brazil. Lancet. n.20, 355 (9217): p.1776-80, 2000.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​BARRETO, M. L.; TEIXEIRA, M. G. Dengue no Brasil: situação epidemiológica e contribuições para uma agenda de pesquisa. Dossiê Epidemias. Estud. av. n.22, v.64, 2008.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>BENCHIMOL J. L. (coord). Manguinhos do sonho à vida: a ciência na Belle Époque. reimpressão atualizada. Rio de Janeiro: Editora Fiocruz. 2020, 320 p.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​BENCHIMOL, J. L et al, 2019. Leishmanioses: sua configuração histórica no Brasil com ênfase na doença visceral nos anos 1930 a 1960. Bol. Mus. Para. Emílio Goeldi. Cienc. Hum. n.14, v. 2, p. 611-26. </li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>BRASIL. Presidência da República. Casa Civil. Subchefia para Assuntos Jurídicos. Decreto Nº 7.616, de 17 de Novembro de 2011. Disponível em: <a href='http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7616.htm' target='_blank'>http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Decreto/D7616.htm</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>Brasil. Presidência da República. Casa Civil. Subchefia para Assuntos Jurídicos. Lei 13.979, de 6 de fevereiro de 2020. Disponível em: <a href='http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13979.htm' target='_blank'>http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13979.htm</a>.
-                      ​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>CARMO, E. Emergências de saúde pública: breve histórico, conceitos e aplicações. Saúde em Debate, Rio de Janeiro, v. 44, n. esp. 2, p. 9-19. 2020.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​CARMO, E.H. ; OLIVEIRA, W.K. ; PENNA, G. 2008. Emergências de saúde pública: conceito, caracterização, preparação e resposta. Estudos avançados. n.22 , v. 64, p. 19-31. 2008.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>CRODA, J. et al. COVID-19 in Brazil: advantages of a socialized unified health system and preparation to contain cases. Revista da Sociedade Brasileira de Medicina Tropical, v. 53. 2020.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​KERR, L. et al. COVID-19 in northeast Brazil: achievements and limitations in the responses of the state governments. Ciência e Saúde Coletiva, 25, suppl 2, p. 4099-4120, 2020.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​LIMA, Nisia T. et al. A Pandemia da Covid-19: uma crise sanitária e humanitária (p:35-40). IN: Buss PM & Fonseca LE (Org). Diplomacia da saúde e COVID-19: reflexões a meio caminho. Rio de Janeiro: Observatório Covid-19 Fiocruz / Editora Fiocruz. 363 p. 2020.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>BRASIL. Ministério da Saúde. Centro de Informações Estratégicas em Vigilância em Saúde (CIEVS). Brasília, DF, 2007. Disponível em: <a href='http://bvsms.saude.gov.br/bvs/publicacoes/centro_informacoes_estrategicas_vigilancia_saude.pdf' target='_blank'>http://bvsms.saude.gov.br/bvs/publicacoes/centro_informacoes_estrategicas_vigilancia_saude.pdf</a>​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​MOREL, CM. Régua e compasso na turbulência da pandemia. Folha de S.Paulo, Opinião, 8 nov. 2020. Disponível em: <a href='https://www1.folha.uol.com.br/opiniao/2020/11/regua-e-compasso-na-turbulencia-da-pandemia.shtml' target='_blank'>https://www1.folha.uol.com.br/opiniao/2020/11/regua-e-compasso-na-turbulencia-da-pandemia.shtml</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>OLIVEIRA, R. M. Cidade dos Meninos, Duque de Caxias, RJ, linha do tempo sobre a contaminação ambiental e humana. 455 f. Tese (Doutorado em Saúde Pública) - Escola Nacional de Saúde Pública Sergio Arouca, Fundação Oswaldo Cruz, Rio de Janeiro. 2008.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>OLIVEIRA, W. K. et al, 2020. Como o Brasil pode deter a COVID-19. Epidemiologia e Serviços de Saúde. n. 29 (2). Disponível em: <a href='https://www.scielosp.org/article/ress/2020.v29n2/e2020044/' target='_blank'>https://www.scielosp.org/article/ress/2020.v29n2/e2020044/</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>ROMERO, L. C. P., 2019. Saúde e política: a doença como protagonista da história. Brasilia, Outubro Edições, 2019. 247​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>SALES, C. M. M et al, 2020. Vigilância em saúde da Covid-19 no Brasil: investigação de contatos pela Atenção Primária em Saúde como estratégia de proteção comunitária. Epidemiologia e serviços de saúde: v. 29, n. 4, p. 373, 2020. Disponível em: <a href='https://doi.org/10.5123/s1679-49742020000400011​' target='_blank'>https://doi.org/10.5123/s1679-49742020000400011​</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>SILVA, J. A. A. et al. SUS 30 anos: Vigilância Sanitária. Ciência e Saúde Coletiva. 23(6): p. 1953-1961, 2018.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>SOUZA, A. J. M. et al. Atenção primária à saúde e COVID-19: uma revisão integrativa. Cadernos ESP: Revista Científica da Escola de Saúde Pública do Ceará. Edição Especial, Enfrentamento da COVID-19. 14, 1. 2020.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​TEIXEIRA, M. G. et al. Vigilância em saúde: é necessária uma legislação de emergência? Revista De Direito Sanitário, 10(2), p.126-144. 2009.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>TEIXEIRA, M. G. et al. Vigilância em Saúde no SUS - construção, efeitos e perspectivas. Ciência e Saúde Coletiva. 23 (6): p.1811-1818. 2018.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>TEIXEIRA, M. G. et al. Vigilância Epidemiológica e emergências em Saúde Pública produzidas por agentes infecciosos. Rio de Janeiro: Fundação Oswaldo Cruz. 34 p. 2018. (Textos para Discussão; n. 57)​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​World Health Organization, 2016. International Health Regulations (2005). 3rd ed. Geneva, WHO.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Accordion item 3 -->
-            <div id="headingThree-bibliografia" class="accordion__header">
-              <a href="#" data-toggle="collapse" data-target="#collapseThree-bibliografia" aria-expanded="false" aria-controls="collapseThree-bibliografia" class="d-block position-relative collapsed collapsible-link py-2">Aula
-                3</a>
-            </div>
-            <div id="collapseThree-bibliografia" aria-labelledby="headingThree-bibliografia" data-parent="#accordion-bibliografia" class="collapse">
-              <div class="card-body p-4">
-                <div class="obj-lista">
-                  <ul class="list-group">
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​World Health Organization. Health Emergency and Disaster Risk Management Framework. 2019.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>PORTELA, M. ; GRABOIS, V. ; TRAVASSO, C. Matriz Linha de Cuidado Covid-19 na Rede de Atenção à Saúde. Disponível em: <a href='https://portal.fiocruz.br/sites/portal.fiocruz.br/files/documentos/matrizlinhacuidado.pdf' target='_blank'>https://portal.fiocruz.br/sites/portal.fiocruz.br/files/documentos/matrizlinhacuidado.pdf</a>. Acesso em: 06 de junho de 2020.​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​PUEHRINGER, C.A. PAM HOSPITAIS – CURITIBA, 2019. Disponível em <a href='https://saovicentecuritiba.com.br/artigos/cidec/2020-PAM_Hospitais_-_Curitiba.pdf' target='_blank'>https://saovicentecuritiba.com.br/artigos/cidec/2020-PAM_Hospitais_-_Curitiba.pdf</a>. Acesso em: 31 de julho de 2021.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​PINHEIRO, R.S.; ESCOSTEGUY, C.C. Epidemiologia e Serviços de Saúde. In R.A. MEDRONHO; K.V. BLOCH; R.R. LUIZ; G.L. WERNECK (Org.). Epidemiologia, 2ª. Edição. Rio de Janeiro: Atheneu, 2009, capítulo 28, p.515-523. </li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>PORTELA, M.C.; GRABOIS, V.; TRAVASSOS, C. Matriz Linha de Cuidado Covid-19 na Rede de Atenção à Saúde. Rio de Janeiro: Observatório COVID-19 Fiocruz, 2020. Disponível em <a href='https://portal.fiocruz.br/sites/portal.fiocruz.br/files/documentos/matrizlinhacuidado.pdf' target='_blank'>https://portal.fiocruz.br/sites/portal.fiocruz.br/files/documentos/matrizlinhacuidado.pdf</a>. [Acessado em 31/07/2021].​</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​WORLD HEALTH ORGANIZATION (WHO). Health Emergency and Disaster Risk Management Framework. Geneva: World Health Organization, 2019. Disponível em: <a href='https://www.who.int/hac/techguidance/preparedness/health-emergency-and-disaster-risk-management-framework-eng.pdf?ua=1' target='_blank'>https://www.who.int/hac/techguidance/preparedness/health-emergency-and-disaster-risk-management-framework-eng.pdf?ua=1</a>. Acesso em: 31 de julho 2021.</li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>​WORLD HEALTH ORGANIZATION (WHO). COVID-19: Operational guidance for maintaining essential health services during an outbreak. Geneva: WHO, 01 June 2020. Disponível em: <a href='https://www.who.int/publications-detail/covid-19-operational-guidance-for-maintaining-essential-health-services-during-an-outbreak' target='_blank'>https://www.who.int/publications-detail/covid-19-operational-guidance-for-maintaining-essential-health-services-during-an-outbreak</a></li>
-
-                    <li class="list-group-item"><i class="bi bi-record-circle text-secondary mr-2"></i>WORLD HEALTH ORGANIZATION (WHO). Critical preparedness, readiness and response actions for Covid-19. Interim Guidance, 27 May 2021. Disponível em: <a href='https://www.who.int/publications/i/item/critical-preparedness-readiness-and-response-actions-for-covid-19' target='_blank'>https://www.who.int/publications/i/item/critical-preparedness-readiness-and-response-actions-for-covid-19</a>. Acesso em: 31 de julho de 2021.​</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal Créditos -->
-  <div class="modal fade" id="modal-creditos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal-creditos">Créditos</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-10">
-
-              <h6 class="mb-2">Ministério da Saúde</h6>
-              <div class="mb-5">
-                <p class="mb-1">Marcelo Queiroga</p>
-                <p class="small text-muted"><em>Ministro</em></p>
-              </div>
-
-              <h6 class="mb-2">Secretaria Vigilância em Saúde</h6>
-              <div class="mb-5">
-                <p class="mb-1">Arnaldo Correia de Medeiros</p>
-                <p class="small text-muted"><em>Secretário</em></p>
-                <p class="mb-1">Daniela Buosi Rohlfs</p>
-                <p class="small text-muted"><em>Diretora do Departamento de Saúde Ambiental, do Trabalhador e Vigilância das Emergências em Saúde Pública</em></p>
-                <p class="mb-1">Programa Vigiar SUS</p>
-              </div>
-
-              <h6 class="mb-2">Fundação Oswaldo Cruz – Fiocruz</h6>
-              <div class="mb-5">
-                <p class="mb-1">Nísia Trindade Lima</p>
-                <p class="small text-muted"><em>Presidente</em></p>
-                <p class="mb-1">Vice-Presidência de Educação, Informação e Comunicação (VPEIC)<br>Cristiani Vieira Machado</p>
-                <p class="small text-muted"><em>Vice-Presidente</em></p>
-              </div>
-
-              <h6 class="mb-2">Campus Virtual Fiocruz</h6>
-              <div class="mb-5">
-                <p class="mb-1">Ana Cristina da Matta Furniel</p>
-                <p class="small text-muted"><em>Coordenadora geral</em></p>
-                <p class="mb-1">Adélia Araújo</p>
-                <p class="small text-muted"><em>Coordenador de produção</em></p>
-              </div>
-
-              <h6 class="mb-2">Gestão de Riscos de Emergências em Saúde Pública no contexto da COVID-19</h6>
-              <div class="mb-5">
-                <p class="mb-1">Carlos Machado de Freitas<br>Maíra Lopes Mazoto</p>
-                <p class="small text-muted"><em>Coordenação</em></p>
-
-                <hr>
-                <p class="mb-1 small">Carlos Machado de Freitas</p>
-                <p class="small text-muted">Graduação em História pela Universidade Federal Fluminense (1989), mestrado em Engenharia de Produção pela Universidade Federal do Rio de Janeiro (1992), doutorado em Saúde Pública pela Fundação Oswaldo Cruz (1996) e pós-doutorado pelo Programa de Ciências Ambientais da Universidade de São Paulo (2007-2008). Pesquisador da Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz, Ministério da Saúde, Coordenador do Observatório Covid-19 Fiocruz e do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz. Médica. Pós-doutora em Saúde Coletiva pelo IMS/ UERJ. Tecnologista em Saúde Pública do ICICT/ Fiocruz. Coordenadora Adjunta do Proqualis/ Fiocruz.</p>
-                <hr>
-                <p class="mb-1 small">Maíra Lopes Mazoto</p>
-                <p class="small text-muted">Graduação em Nutrição pela Universidade Federal Fluminense (2004), pós graduação em planejamento, implementação e gestão da educação a distância pela Universidade Federal Fluminense (2014), mestrado e doutorado em Saúde Coletiva pela Universidade Federal do Rio de Janeiro (2011 e 2015) e pós graduação em Design Instrucional pelo Instituto de Design Instrucional (2021). Pesquisadora colaboradora do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz e professora adjunta do Curso de Graduação em Nutrição do Centro Universitário Serra dos Órgãos (UNIFESO). Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde e produção de materiais didáticos para cursos a distância e presenciais.</p>
-                <hr>
-              </div>
-
-              <div class="mb-5">
-                <p class="mb-3"><strong>Conteudistas</strong></p>
-
-                <p class="mb-1 small">Adelyne Maria Mendes Pereira</p>
-                <p class="small text-muted">Professora e pesquisadora do Departamento de Administração e Planejamento em Saúde (DAPS) da Escola Nacional de Saúde Pública (ENSP) da Fundação Oswaldo Cruz (Fiocruz). Enfermeira, mestre em Saúde Pública com concentração em planejamento e gestão em saúde (ENSP/Fiocruz), doutora em Saúde Pública (ENSP/Fiocruz), com pós-doutorado em Saúde Global (Universitat de les Illes Balears, Espanha).</p>
-                <hr>
-                <p class="mb-1 small">Carlos Machado de Freitas</p>
-                <p class="small text-muted">Graduação em História pela Universidade Federal Fluminense (1989), mestrado em Engenharia de Produção pela Universidade Federal do Rio de Janeiro (1992), doutorado em Saúde Pública pela Fundação Oswaldo Cruz (1996) e pós-doutorado pelo Programa de Ciências Ambientais da Universidade de São Paulo (2007-2008). Pesquisador da Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz, Ministério da Saúde, Coordenador do Observatório Covid-19 Fiocruz e do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz.</p>
-                <hr>
-                <p class="mb-1 small">Daniel Antunes Maciel Villela</p>
-                <p class="small text-muted">Pesquisador da Fundação Oswaldo Cruz e atualmente coordenador do Programa de Computação Científica (PROCC/FIOCRUZ). Doutor pela Universidade de Columbia, tem experiência em modelagem matemática da dinâmica de transmissão de doenças infecciosas, com interesse em métodos quantitativos em Epidemiologia e Ecologia de vetores de importância para a Saúde Pública e atualmente realiza análises populacionais da dinâmica de Covid-19. Atua na pós graduação (mestrado e doutorado) na Fundação Oswaldo Cruz e atualmente é Coordenador Adjunto do Programa de Epidemiologia em Saúde Pública (ENSP/FIOCRUZ).</p>
-                <hr>
-                <p class="mb-1 small">Eduardo Hage Carmo</p>
-                <p class="small text-muted">Médico, Sanitarista (Residência em Medicina Social), Mestre em Saúde Coletiva e Doutor em Saúde Pública pela Universidade Federal da Bahia. Atualmente é pesquisador do Cidacs/Fiocruz/BA, médico sanitarista da Secretaria de Saúde do Estado da Bahia (licenciado) e da Secretaria de Saúde do Distrito Federal, membro do Painel de Especialistas e consultor ad hoc da Organização Mundial da Saúde.</p>
-                <hr>
-                <p class="mb-1 small">Margareth Crisóstomo Portela</p>
-                <p class="small text-muted">Engenheira Eletricista pela UFBA, mestre (MSc) em Engenharia Biomédica pela UFRJ, PhD em Health Policy and Administration pela University of North Carolina at Chapel Hill e Pós-doutorado na Medical University of South Carolina, EUA. Realizou Estágio Sênior (Programa Ciências sem Fronteiras – CAPES), na University of Leicester, Inglaterra. É pesquisadora da Fundação Oswaldo Cruz (Fiocruz), lotada na Escola Nacional de Saúde Pública Sergio Arouca (ENSP), onde faz parte do corpo permanente do Programa de Pós-graduação em Saúde Pública.</p>
-                <hr>
-                <p class="mb-1 small">Tais De Moura Ariza Alpino</p>
-                <p class="small text-muted">Nutricionista, doutora em saúde pública pela Escola Nacional de Saúde Pública Sérgio Arouca (ENSP/ Fiocruz) e especialista em segurança alimentar e nutricional pela Universidade Federal do Estado do Rio de Janeiro (UNIRIO). Tanto o mestrado quanto o doutorado tiveram como objeto de estudo a seca no semiárido do Brasil como um desastre natural e social. Atualmente atuo como pesquisadora colaboradora no Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz (Cepedes/Fiocruz), atuando em vários projetos de pesquisa e na elaboração de artigos, documentos e materiais voltados para a qualificação e aprimoramento das ações de preparação e resposta do setor saúde a emergências e desastres.</p>
-                <hr>
-                <p class="mb-1 small">Vânia Rocha</p>
-                <p class="small text-muted">Doutora em Saúde Pública, pesquisadora colaboradora do CEPEDES/Fiocruz entre 2012 e 2019 e Professora visitante do Laboratório de Geo-Hidroecologia e Gestão de Riscos da UFRJ entre 2019 e 2021. Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde, elaboração e validação de metodologias participativas e produção de materiais didáticos. Autora de livros, capítulos de livros e artigos sobre desastres e saúde.</p>
-                <hr>
-                <p class="mb-1 small">Victor Grabois</p>
-                <p class="small text-muted">Médico sanitarista doutor em saúde pública pela Ensp Fiocruz coordenador executivo do Proqualis/Icict/Fiocruz e presidente da SOBRASP. Autor de livros, capítulos de livros, artigos científicos e material didáticos sobre Gestão da Clínica, Gestão Hospitalar; Qualidade do Cuidado e Segurança do Paciente.</p>
-                <hr>
-              </div>
-
-              <div class="mb-5">
-                <p class="mb-3"><strong>Colaboradores - Relatos em áudio e vídeo</strong></p>
-
-                <p class="mb-1 small">Adelyne Maria Mendes Pereira</p>
-                <p class="small text-muted">Professora e pesquisadora do Departamento de Administração e Planejamento em Saúde (DAPS) da Escola Nacional de Saúde Pública (ENSP) da Fundação Oswaldo Cruz (Fiocruz). Enfermeira, mestre em Saúde Pública com concentração em planejamento e gestão em saúde (ENSP/Fiocruz), doutora em Saúde Pública (ENSP/Fiocruz), com pós-doutorado em Saúde Global (Universitat de les Illes Balears, Espanha).</p>
-                <hr>
-                <p class="mb-1 small">Carlos Machado de Freitas</p>
-                <p class="small text-muted">Graduação em História pela Universidade Federal Fluminense (1989), mestrado em Engenharia de Produção pela Universidade Federal do Rio de Janeiro (1992), doutorado em Saúde Pública pela Fundação Oswaldo Cruz (1996) e pós-doutorado pelo Programa de Ciências Ambientais da Universidade de São Paulo (2007-2008). Pesquisador da Escola Nacional de Saúde Pública, Fundação Oswaldo Cruz, Ministério da Saúde, Coordenador do Observatório Covid-19 Fiocruz e do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz.</p>
-                <hr>
-                <p class="mb-1 small">Daniel Antunes Maciel Villela</p>
-                <p class="small text-muted">Pesquisador da Fundação Oswaldo Cruz e atualmente coordenador do Programa de Computação Científica (PROCC/FIOCRUZ). Doutor pela Universidade de Columbia, tem experiência em modelagem matemática da dinâmica de transmissão de doenças infecciosas, com interesse em métodos quantitativos em Epidemiologia e Ecologia de vetores de importância para a Saúde Pública e atualmente realiza análises populacionais da dinâmica de Covid-19. Atua na pós graduação (mestrado e doutorado) na Fundação Oswaldo Cruz e atualmente é Coordenador Adjunto do Programa de Epidemiologia em Saúde Pública (ENSP/FIOCRUZ).</p>
-                <hr>
-                <p class="mb-1 small">Eduardo Hage Carmo</p>
-                <p class="small text-muted">Médico, Sanitarista (Residência em Medicina Social), Mestre em Saúde Coletiva e Doutor em Saúde Pública pela Universidade Federal da Bahia. Atualmente é pesquisador do Cidacs/Fiocruz/BA, médico sanitarista da Secretaria de Saúde do Estado da Bahia (licenciado) e da Secretaria de Saúde do Distrito Federal, membro do Painel de Especialistas e consultor ad hoc da Organização Mundial da Saúde.</p>
-                <hr>
-                <p class="mb-1 small">Margareth Crisóstomo Portela</p>
-                <p class="small text-muted">Engenheira Eletricista pela UFBA, mestre (MSc) em Engenharia Biomédica pela UFRJ, PhD em Health Policy and Administration pela University of North Carolina at Chapel Hill e Pós-doutorado na Medical University of South Carolina, EUA. Realizou Estágio Sênior (Programa Ciências sem Fronteiras – CAPES), na University of Leicester, Inglaterra. É pesquisadora da Fundação Oswaldo Cruz (Fiocruz), lotada na Escola Nacional de Saúde Pública Sergio Arouca (ENSP), onde faz parte do corpo permanente do Programa de Pós-graduação em Saúde Pública.</p>
-                <hr>
-                <p class="mb-1 small">Tais De Moura Ariza Alpino</p>
-                <p class="small text-muted">Nutricionista, doutora em saúde pública pela Escola Nacional de Saúde Pública Sérgio Arouca (ENSP/ Fiocruz) e especialista em segurança alimentar e nutricional pela Universidade Federal do Estado do Rio de Janeiro (UNIRIO). Tanto o mestrado quanto o doutorado tiveram como objeto de estudo a seca no semiárido do Brasil como um desastre natural e social. Atualmente atuo como pesquisadora colaboradora no Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz (Cepedes/Fiocruz), atuando em vários projetos de pesquisa e na elaboração de artigos, documentos e materiais voltados para a qualificação e aprimoramento das ações de preparação e resposta do setor saúde a emergências e desastres.</p>
-                <hr>
-                <p class="mb-1 small">Vânia Rocha</p>
-                <p class="small text-muted">Doutora em Saúde Pública, pesquisadora colaboradora do CEPEDES/Fiocruz entre 2012 e 2019 e Professora visitante do Laboratório de Geo-Hidroecologia e Gestão de Riscos da UFRJ entre 2019 e 2021. Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde, elaboração e validação de metodologias participativas e produção de materiais didáticos. Autora de livros, capítulos de livros e artigos sobre desastres e saúde.</p>
-                <hr>
-                <p class="mb-1 small">Victor Grabois</p>
-                <p class="small text-muted">Médico sanitarista doutor em saúde pública pela Ensp Fiocruz coordenador executivo do Proqualis/Icict/Fiocruz e presidente da SOBRASP. Autor de livros, capítulos de livros, artigos científicos e material didáticos sobre Gestão da Clínica, Gestão Hospitalar; Qualidade do Cuidado e Segurança do Paciente.</p>
-                <hr>
-              </div>
-
-              <div class="mb-5">
-                <p class="mb-3"><strong>Revisão Técnica</strong></p>
-                <p class="mb-1 small">Maíra Lopes Mazoto</p>
-                <p class="small text-muted">Graduação em Nutrição pela Universidade Federal Fluminense (2004), pós graduação em planejamento, implementação e gestão da educação a distância pela Universidade Federal Fluminense (2014), mestrado e doutorado em Saúde Coletiva pela Universidade Federal do Rio de Janeiro (2011 e 2015) e pós graduação em Design Instrucional pelo Instituto de Design Instrucional (2021). Pesquisadora colaboradora do Centro de Estudos e Pesquisas em Emergências e Desastres em Saúde da Fiocruz e professora adjunta do Curso de Graduação em Nutrição do Centro Universitário Serra dos Órgãos (UNIFESO). Possui experiência em formação e capacitação para profissionais do Sistema Único de Saúde e produção de materiais didáticos para cursos a distância e presenciais.</p>
-                <hr>
-              </div>
-
-              <div class="mb-5">
-                <p class="mb-3"><strong>Revisão de Português</strong></p>
-                <p class="mb-1">Maria Angélica Marcondes Drska - Campus Virtual Fiocruz</p>
-              </div>
-
-              <div class="mb-5">
-                <p class="mb-3"><strong>Designer Educacional</strong></p>
-                <p class="mb-1">Fernanda Sousa - Campus Virtual Fiocruz</p>
-                <p class="small text-muted"><em>Pedagoga, Especialista em Planejamento, Implementação e Gestão de Educação a Distância e Especialista em Gestão de Projetos</em></p>
-              </div>
-
-              <div class="mb-5">
-                <p class="mb-3"><strong>Designer de Interface</strong></p>
-                <p class="mb-1">Aline Polycarpo</p>
-                <p class="small text-muted"><em>Designer de Interface e Interação</em></p>
-                <p class="mb-1">Danilo Blum</p>
-                <p class="small text-muted"><em>Desenvolvedor Front-end</em></p>
-                <p class="mb-1">Luciana Nunes</p>
-                <p class="small text-muted"><em>Designer de Interface e Interação</em></p>
-              </div>
-
-              <div class="mb-5">
-                <p class="mb-3"><strong>Suporte Técnico de Tecnologia da Informação</strong></p>
-                <p class="mb-1">Bruno Alexandre de Oliveira - Campus Virtual Fiocruz</p>
-                <p class="small text-muted"><em>Desenvolvedor</em></p>
-                <p class="mb-1">Eduardo Xavier da Silva - Campus Virtual Fiocruz</p>
-                <p class="small text-muted"><em>Desenvolvedor</em></p>
-                <p class="mb-1">Adriano Lourenço - Campus Virtual Fiocruz</p>
-                <p class="small text-muted"><em>Analista de suporte</em></p>
-                <p class="mb-1">Orlando Terra - Campus Virtual Fiocruz</p>
-                <p class="small text-muted"><em>Analista de suporte</em></p>
-              </div>
-
-              <div class="mb-5">
-                <p class="mb-3"><strong>Recursos Educacionais</strong></p>
-                <p class="mb-1">Carmélia Brito - Campus Virtual Fiocruz</p>
-                <p class="small text-muted"><em>Bibliotecária</em></p>
-                <p class="mb-1">Rosane Mendes - Campus Virtual Fiocruz</p>
-                <p class="small text-muted"><em>Coordenadora Plataforma Educare</em></p>
-              </div>
-
-              <div class="mb-5">
-                <p class="mb-3"><strong>Recursos Audiovisuais</strong></p>
-                <p class="mb-1">Teo Venerando - Campus Virtual Fiocruz</p>
-                <p class="small text-muted"><em>Edição de vídeo</em></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="button-primary" data-dismiss="modal">Fechar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
